@@ -1,0 +1,22 @@
+{
+	"ids": [
+		"e60aa346-f6da-11ed-b67e-0242ac120002",
+		"e60aa346-f6da-11ed-b67e-0242ac120003"
+	],
+	"details": {
+		"e60aa346-f6da-11ed-b67e-0242ac120002": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120002",
+			"desc": "Thank you, MakerGram, for the opportunity to speak at MakerChat. It was a privilege to connect with fellow makers and share Docker Vision's journey.The energy and support from the community were incredible. Platforms like MakerGram are crucial for fostering innovation and driving the maker movement forward",
+			"profileImg": "/uploads/testimonials/prajith-docker.jpeg",
+			"name": "Prajith Nair",
+			"designation": "Founder & CEO at Docker Vision"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120003": {
+			"id": "v",
+			"desc": "Community is not just an alternative way of knowing, experiencing, and learning new things, sometimes, it is the only accessible way to understand and excel in technology, especially in hardware. The significance of MakerGram in Kerala's tech ecosystem lies in its undeniable efforts to make new tools and knowledge accessible to students and makers through peer learning and community-driven component libraries. Your efforts will be celebrated for the transformative impact you have made on aspiring minds, contributing to the creation of a future-ready society.",
+			"profileImg": "/uploads/testimonials/jogin-fablab.jpeg",
+			"name": "Jogin Francis",
+			"designation": "Lead, FabLab Kerala, Kerala Startup Mission"
+		}
+	}
+}
