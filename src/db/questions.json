@@ -1,0 +1,37 @@
+{
+	"ids": [
+		"e60aa346-f6da-11ed-b67e-0242ac120002",
+		"e60aa346-f6da-11ed-b67e-0242ac120003",
+		"e60aa346-f6da-11ed-b67e-0242ac120004",
+		"e60aa346-f6da-11ed-b67e-0242ac120005",
+		"e60aa346-f6da-11ed-b67e-0242ac120006"
+	],
+
+	"details": {
+		"e60aa346-f6da-11ed-b67e-0242ac120002": {
+			"id": "8636e095-1128-4e0d-858a-d2c45ff383be",
+			"title": "Is the event free? 💸",
+			"body": "Yes! It’s completely free 👍✨. Come join us and bring your enthusiasm!"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120003": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120003",
+			"title": "How can I stay updated about upcoming MakerChats? 📢",
+			"body": "Follow us on social media to get the latest updates! 📲 Check out our [Instagram page](https://ik.imagekit.io/layr94dmr/Portfolio/Blog/Nature-walk-kadamakudi/video_2024-10-30_21-48-58-ezgif.com-video-to-gif-converter.gif?updatedAt=1730305339258) 🧑‍🔧."
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120004": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120004",
+			"title": "How do I join the MakerGram community? 👥",
+			"body": "Join our community by following our social media page 🌍 and participating in events and discussions! 📅🔊"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120005": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120005",
+			"title": "What topics are covered in MakerChat sessions? 🛠️",
+			"body": "We cover a wide range of topics, including hardware 🖥️, software 💻, AI 🤖, IoT 🌐, and sensors 🔍—aimed at both beginners and experienced makers! 🎉"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120006": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120006",
+			"title": "Are there any prerequisites to join a MakerChat session? 🎓",
+			"body": "No prerequisites! MakerChat is open to anyone interested, regardless of experience 🙌. Just bring your curiosity! 🚀"
+		}
+	}
+}

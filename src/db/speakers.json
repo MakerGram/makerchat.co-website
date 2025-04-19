@@ -1,0 +1,47 @@
+{
+	"ids": [
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8a",
+		"e60aa346-f6da-11ed-b67e-0242ac120003",
+		"e60aa346-f6da-11ed-b67e-0242ac120004",
+		"e60aa346-f6da-11ed-b67e-0242ac120005",
+		"e60aa346-f6da-11ed-b67e-0242ac120006"
+	],
+
+	"details": {
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8a": {
+			"id": "f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8a",
+			"firstName": "Salman Faris",
+			"lastName": "",
+			"designation": "Co-founder, MakerGram",
+			"avtarImg": "/uploads/speakers/salman-faris.webp"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120003": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120003",
+			"firstName": "Rohith t p",
+			"lastName": "T P",
+			"designation": "Solutions Architect, Lascade",
+			"avtarImg": "/uploads/speakers/rahul.webp"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120004": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120004",
+			"firstName": "Muhammed Zain",
+			"lastName": "",
+			"designation": "Artificial Intelligence and Robotics Laboratory",
+			"avtarImg": "/uploads/speakers/zain.jpeg"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120005": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120005",
+			"firstName": "Vignesh Naduvathuparambil",
+			"lastName": "",
+			"designation": "CEO, MeviTech",
+			"avtarImg": "/uploads/speakers/vignesh.jpeg"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120006": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120006",
+			"firstName": "Swalah amani",
+			"lastName": "",
+			"designation": "Co-founder, MakerGram",
+			"avtarImg": "/uploads/speakers/swalah.jpeg"
+		}
+	}
+}

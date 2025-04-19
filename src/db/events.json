@@ -1,0 +1,912 @@
+{
+	"ids": [
+		"evt-mcHQC9Yh1hM9fv7",
+		"evt-0c9EomiYEQJ8Hbb",
+		"evt-I7G26hI7KtKwDrs",
+		"evt-O9ABcE09QmZn0oC",
+		"evt-De3kVWDLEOfbsYc",
+		"evt-OnY6eixxcV5742K",
+		"evt-BBABWjS6W7WAEiL",
+		"evt-BNbxltjzET2tvGT",
+		"evt-fE9iTUGXfam0skL",
+		"evt-p9LDb2X233SfSZu",
+		"evt-hjULCp96ioCTavR",
+		"evt-ZMCZhnrpUqlrHmn",
+		"evt-uWWjxD0B8e1T3AD",
+		"evt-XA6ZoAzstoNu3Ro",
+		"evt-FXCTIRkPNj5dHoJ",
+		"evt-BY8S8UtFAr1W5xE",
+		"evt-2WBHBUepDMzATQ3",
+		"evt-hq0HmOUsRgKAuVc",
+		"evt-iYxF2cwgUQ75iyG",
+		"evt-uGlo4TfSQYdfa1v",
+		"evt-pdqmWdTAuBDfniM",
+		"evt-CtlSNsjtpH4sTtf",
+		"evt-x4etAb4Zg8VG96X",
+		"evt-aqulCUke80fNYVX",
+		"evt-dnZaOtaPwPgFDB1",
+		"evt-LKvPUBGvTRvQESB",
+		"evt-SXkjeetDBvbYIET",
+		"evt-MlV6H8xROQqpaUY",
+		"evt-WJO7ca4JwW6yD2F",
+		"evt-Uja9Ob4a9KtaKdG",
+		"evt-32pt1dTKkQFpd36",
+		"evt-BrcI7fmUdaHAXcm",
+		"evt-1BREjGb0IjGRM85",
+		"evt-frv2HLBhzS5mVAv",
+		"evt-q3AKUNEOXwq6K1r",
+		"evt-PRqluWUfinfjYwx",
+		"evt-Y1mK6wuHVOaidpI",
+		"evt-sqJONarc23kugBd",
+		"evt-FSHCYeCEx2pwVYE"
+	],
+	"details": {
+		"evt-mcHQC9Yh1hM9fv7": {
+			"id": "evt-mcHQC9Yh1hM9fv7",
+			"title": "From Passion to Profit: My Journey from Maker to Entrepreneur",
+			"coverImg": "https://images.lumacdn.com/event-covers/f1/77c64134-7d09-44e4-aa7f-5a06e3036248",
+			"description": "From Passion to Profit: My Journey from Maker to Entrepreneur",
+			"startDateTime": "2024-11-02T05:00:00.000Z",
+			"endDateTime": "2024-11-02T07:00:00.000Z",
+			"registerUrl": "5225in7w",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-0c9EomiYEQJ8Hbb": {
+			"id": "evt-0c9EomiYEQJ8Hbb",
+			"title": "MakeChat0x25 - From Concept to Containerization: Docker Vision’s Journey.",
+			"coverImg": "https://images.lumacdn.com/event-covers/mc/5eaf6547-f741-4564-a8bb-b1dacec892ff",
+			"description": "MakeChat0x25 - From Concept to Containerization: Docker Vision’s Journey.",
+			"startDateTime": "2024-10-05T05:00:00.000Z",
+			"endDateTime": "2024-10-05T07:00:00.000Z",
+			"registerUrl": "8fy5qx7x",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-I7G26hI7KtKwDrs": {
+			"id": "evt-I7G26hI7KtKwDrs",
+			"title": "MakerChat0x24 - Build a Decentralised  Communication Network With Meshtastic 📡",
+			"coverImg": "https://images.lumacdn.com/event-covers/st/6f476d69-9c04-4cda-893d-f0f68065eb5e",
+			"description": "MakerChat0x24 - Build a Decentralised  Communication Network With Meshtastic 📡",
+			"startDateTime": "2024-09-07T09:15:00.000Z",
+			"endDateTime": "2024-09-07T11:15:00.000Z",
+			"registerUrl": "jzzj9srt",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-O9ABcE09QmZn0oC": {
+			"id": "evt-O9ABcE09QmZn0oC",
+			"title": "MakerChat0x23:  Experience AI at the Edge ",
+			"coverImg": "https://images.lumacdn.com/event-covers/1q/634ec038-3d2c-4375-9f72-29205cb3537b",
+			"description": "MakerChat0x23:  Experience AI at the Edge ",
+			"startDateTime": "2024-08-03T09:15:00.000Z",
+			"endDateTime": "2024-08-03T11:00:00.000Z",
+			"registerUrl": "xhghh4dj",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-De3kVWDLEOfbsYc": {
+			"id": "evt-De3kVWDLEOfbsYc",
+			"title": "MakerChat0x22: Maker Journey with Nadec",
+			"coverImg": "https://images.lumacdn.com/event-covers/xe/a9ec9e23-c5e4-444f-9b53-4765d1134d61",
+			"description": "MakerChat0x22: Maker Journey with Nadec",
+			"startDateTime": "2024-07-06T09:15:00.000Z",
+			"endDateTime": "2024-07-06T11:15:00.000Z",
+			"registerUrl": "scn4ml5c",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-OnY6eixxcV5742K": {
+			"id": "evt-OnY6eixxcV5742K",
+			"title": "MakerChat0x21: Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/wp/0cfacf26-5002-4cc4-a5ce-bcec35046a52",
+			"description": "MakerChat0x21: Community Gathering",
+			"startDateTime": "2024-06-01T09:15:00.000Z",
+			"endDateTime": "2024-06-01T11:00:00.000Z",
+			"registerUrl": "zrwjpvug",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-BBABWjS6W7WAEiL": {
+			"id": "evt-BBABWjS6W7WAEiL",
+			"title": "MakerChat0x20: From Maker to hardware Entrepreneur: The Autobonics Journey.",
+			"coverImg": "https://images.lumacdn.com/event-covers/ml/c992754d-ec8e-45fc-86d4-4ca22f594d58",
+			"description": "MakerChat0x20: From Maker to hardware Entrepreneur: The Autobonics Journey.",
+			"startDateTime": "2024-05-04T09:15:00.000Z",
+			"endDateTime": "2024-05-04T11:00:00.000Z",
+			"registerUrl": "mc0x20",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-BNbxltjzET2tvGT": {
+			"id": "evt-BNbxltjzET2tvGT",
+			"title": "MakerChat0x1F: Experiences from the European Rover Challenge 2023",
+			"coverImg": "https://images.lumacdn.com/event-covers/sj/7e8236ba-f1d7-4d23-ac8b-116323e6315a",
+			"description": "MakerChat0x1F: Experiences from the European Rover Challenge 2023",
+			"startDateTime": "2024-04-06T09:15:00.000Z",
+			"endDateTime": "2024-04-06T11:00:00.000Z",
+			"registerUrl": "mc0x1f",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-fE9iTUGXfam0skL": {
+			"id": "evt-fE9iTUGXfam0skL",
+			"title": "MakerChat0x1E",
+			"coverImg": "https://images.lumacdn.com/event-covers/6y/4e9a1af3-374b-45d2-9bd9-653d85f1cdd7",
+			"description": "MakerChat0x1E",
+			"startDateTime": "2024-03-02T09:15:00.000Z",
+			"endDateTime": "2024-03-02T11:00:00.000Z",
+			"registerUrl": "zkbqoj29",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-p9LDb2X233SfSZu": {
+			"id": "evt-p9LDb2X233SfSZu",
+			"title": "MakerChat 0x1D - UnBreakable rules in computer Science",
+			"coverImg": "https://images.lumacdn.com/event-covers/lr/5bb03f78-7791-4d2d-b7f8-b378db9f6335",
+			"description": "MakerChat 0x1D - UnBreakable rules in computer Science",
+			"startDateTime": "2024-02-03T09:15:00.000Z",
+			"endDateTime": "2024-02-03T10:45:00.000Z",
+			"registerUrl": "mc0x1d",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-hjULCp96ioCTavR": {
+			"id": "evt-hjULCp96ioCTavR",
+			"title": "MakerChat0xPi: Unveiling Raspberry Pi 5",
+			"coverImg": "https://images.lumacdn.com/event-covers/e9/df0460d2-16aa-47f1-b8e7-171c08479ffa",
+			"description": "MakerChat0xPi: Unveiling Raspberry Pi 5",
+			"startDateTime": "2024-01-06T05:30:00.000Z",
+			"endDateTime": "2024-01-06T11:00:00.000Z",
+			"registerUrl": "MakerChat0xPi",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-ZMCZhnrpUqlrHmn": {
+			"id": "evt-ZMCZhnrpUqlrHmn",
+			"title": "MakerChat0x1B: Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/9f/bd9c3514-da79-498e-b2dc-b793833a1ffe",
+			"description": "MakerChat0x1B: Community Gathering",
+			"startDateTime": "2023-12-02T09:15:00.000Z",
+			"endDateTime": "2023-12-02T11:00:00.000Z",
+			"registerUrl": "MakerChat0x1B",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-uWWjxD0B8e1T3AD": {
+			"id": "evt-uWWjxD0B8e1T3AD",
+			"title": "MakerChat 0x1A : How to build a Magic Wand 🪄 ",
+			"coverImg": "https://images.lumacdn.com/event-covers/n4/e6b89a6d-eea6-49d2-bc15-c09f458e7baf",
+			"description": "MakerChat 0x1A : How to build a Magic Wand 🪄 ",
+			"startDateTime": "2023-11-04T09:00:00.000Z",
+			"endDateTime": "2023-11-04T10:30:00.000Z",
+			"registerUrl": "2g2yk7i6",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-XA6ZoAzstoNu3Ro": {
+			"id": "evt-XA6ZoAzstoNu3Ro",
+			"title": "MakerChat0x19: Introduction to Electric vehicle inverter",
+			"coverImg": "https://images.lumacdn.com/event-covers/as/c188b6c3-40d4-4dd7-ac02-4e53f76f08ae",
+			"description": "MakerChat0x19: Introduction to Electric vehicle inverter",
+			"startDateTime": "2023-10-07T09:15:09.081Z",
+			"endDateTime": "2023-10-07T11:00:09.081Z",
+			"registerUrl": "makerchat0x19",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-FXCTIRkPNj5dHoJ": {
+			"id": "evt-FXCTIRkPNj5dHoJ",
+			"title": "MakerChat0x18: Computer Vision: How Machines See?",
+			"coverImg": "https://images.lumacdn.com/event-covers/ex/73b440ba-568f-4095-8f3c-9313a510625a",
+			"description": "MakerChat0x18: Computer Vision: How Machines See?",
+			"startDateTime": "2023-09-02T09:15:08.612Z",
+			"endDateTime": "2023-09-02T11:00:08.612Z",
+			"registerUrl": "makerchat0x18",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-BY8S8UtFAr1W5xE": {
+			"id": "evt-BY8S8UtFAr1W5xE",
+			"title": "MakerChat0x17: Mechanical Keyboards - What You Need to Build One & QMK! 🎉",
+			"coverImg": "https://images.lumacdn.com/event-covers/e5/982888a0-5b00-4970-996a-456e8bb4c995",
+			"description": "MakerChat0x17: Mechanical Keyboards - What You Need to Build One & QMK! 🎉",
+			"startDateTime": "2023-08-05T09:15:00.643Z",
+			"endDateTime": "2023-08-05T11:00:00.643Z",
+			"registerUrl": "makerchat0x17",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-2WBHBUepDMzATQ3": {
+			"id": "evt-2WBHBUepDMzATQ3",
+			"title": "MakerChat 0x16:  From Dream to Flight - My Journey of Building Drone!",
+			"coverImg": "https://images.lumacdn.com/event-covers/rd/73a5d62d-1a9f-423f-99ac-efa6ace5d188",
+			"description": "MakerChat 0x16:  From Dream to Flight - My Journey of Building Drone!",
+			"startDateTime": "2023-07-01T09:15:23.677Z",
+			"endDateTime": "2023-07-01T11:00:23.677Z",
+			"registerUrl": "makerchat0x16",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Vidya Nagar Colony, Thrikkakara, HMT Kalamassery, Kochi, Kerala 682024, India"
+			}
+		},
+		"evt-hq0HmOUsRgKAuVc": {
+			"id": "evt-hq0HmOUsRgKAuVc",
+			"title": "MakerChat 0x15 : A World Skills Journey: From Kerala to France",
+			"coverImg": "https://images.lumacdn.com/event-covers/gw/2aed4e69-9a02-4166-b225-d7cdace5f8ab",
+			"description": "MakerChat 0x15 : A World Skills Journey: From Kerala to France",
+			"startDateTime": "2023-06-03T08:00:22.285Z",
+			"endDateTime": "2023-06-03T11:00:22.285Z",
+			"registerUrl": "makerchat0x15",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Vidya Nagar Colony, Thrikkakara, HMT Kalamassery, Kochi, Kerala 682024, India"
+			}
+		},
+		"evt-iYxF2cwgUQ75iyG": {
+			"id": "evt-iYxF2cwgUQ75iyG",
+			"title": "MakerChat 0x14 : Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/sb/865fa42f-6a53-4a62-ba45-3807ef27cdf0",
+			"description": "MakerChat 0x14 : Community Gathering",
+			"startDateTime": "2023-05-06T08:00:00.000Z",
+			"endDateTime": "2023-05-06T11:00:00.000Z",
+			"registerUrl": "makerchat0x14",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Vidya Nagar Colony, Thrikkakara, HMT Kalamassery, Kochi, Kerala 682024, India"
+			}
+		},
+		"evt-uGlo4TfSQYdfa1v": {
+			"id": "evt-uGlo4TfSQYdfa1v",
+			"title": "MakerChat 0x13 :  Microchip's SAM Ds & Arduino",
+			"coverImg": "https://images.lumacdn.com/event-covers/2a/f84a7cc0-638c-4c2d-b08d-d18666176c69",
+			"description": "MakerChat 0x13 :  Microchip's SAM Ds & Arduino",
+			"startDateTime": "2023-04-01T08:00:00.000Z",
+			"endDateTime": "2023-04-01T10:00:00.000Z",
+			"registerUrl": "makerchat0x13",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TINKERSPACE",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TINKERSPACE, 21/258, Vidya Nagar Colony, Thrikkakara, HMT Kalamassery, Kochi, Kerala 682024, India"
+			}
+		},
+		"evt-pdqmWdTAuBDfniM": {
+			"id": "evt-pdqmWdTAuBDfniM",
+			"title": "MakerChat 0x12: Story of Astrek Innovations - A Robotics Startup 🤖. ",
+			"coverImg": "https://cdn.lu.ma/event-covers/dg/fe80d69c-c811-4fe6-a21d-b8ff07624a5d",
+			"description": "MakerChat 0x12: Story of Astrek Innovations - A Robotics Startup 🤖. ",
+			"startDateTime": "2023-02-03T20:00:00.000Z",
+			"endDateTime": "2023-02-03T21:00:00.000Z",
+			"registerUrl": "makerchat0x12",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TINKERSPACE",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TINKERSPACE, 21/258, Vidya Nagar Colony, Thrikkakara, HMT Kalamassery, Kochi, Kerala 682024, India"
+			}
+		},
+		"evt-CtlSNsjtpH4sTtf": {
+			"id": "evt-CtlSNsjtpH4sTtf",
+			"title": "MakerChat 0x11: Build Autonomous Robots Using ROS 🤖. ",
+			"coverImg": "https://cdn.lu.ma/event-covers/15/c05ba169-4a63-4a0a-81aa-2b52478014d2",
+			"description": "MakerChat 0x11: Build Autonomous Robots Using ROS 🤖. ",
+			"startDateTime": "2023-01-07T08:00:00.000Z",
+			"endDateTime": "2023-01-07T10:30:00.000Z",
+			"registerUrl": "mc0x11",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"fullAddress": "TinkerSpace, 21/258, Vidya Nagar Colony, Thrikkakara, HMT Kalamassery, Kochi, Kerala 682024, India"
+			}
+		},
+		"evt-x4etAb4Zg8VG96X": {
+			"id": "evt-x4etAb4Zg8VG96X",
+			"title": "MakerChat 0x10 Introduction to Matter & Thread Protocol 📡",
+			"coverImg": "https://cdn.lu.ma/event-covers/ap/ce2798e2-dedf-494c-8d63-80ed6c075ae9",
+			"description": "MakerChat 0x10 Introduction to Matter & Thread Protocol 📡",
+			"startDateTime": "2022-12-03T08:00:00.000Z",
+			"endDateTime": "2022-12-03T10:00:00.000Z",
+			"registerUrl": "mc0x10",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJA62L2_MLCDsRcmitp5MMs5k",
+				"name": "KeyValue Software Systems Pvt Ltd, C113, 1st floor, Building SCK-01 SmartCity, Kakkanad, Kochi, Kerala 682042, India",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India"
+			}
+		},
+		"evt-aqulCUke80fNYVX": {
+			"id": "evt-aqulCUke80fNYVX",
+			"title": "MakerChat 0x0F - Rapid Prototyping Using Digital Fabrication 🖨 ",
+			"coverImg": "https://cdn.lu.ma/event-covers/ud/3aae8a48-bc27-45f7-a83a-a29def2c7134",
+			"description": "MakerChat 0x0F - Rapid Prototyping Using Digital Fabrication 🖨 ",
+			"startDateTime": "2022-11-05T08:00:00.000Z",
+			"endDateTime": "2022-11-05T09:30:00.000Z",
+			"registerUrl": "makerchat0x0f",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJJTFDuTUNCDsRcW2YEtJzv5U",
+				"name": "Integrated Startup Complex (ISC) - KSUM, Kerala Technology Innovation Zone, Kinfra Hi-tech Park, HMT Colony, North Kalamassery, Kalamassery, Kochi, Kerala 683503, India",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India"
+			}
+		},
+		"evt-dnZaOtaPwPgFDB1": {
+			"id": "evt-dnZaOtaPwPgFDB1",
+			"title": "MakerChat 0x0E - Introduction to Node-RED 🔧",
+			"coverImg": "https://cdn.lu.ma/event-covers/9l/5d9a7b8e-0a56-4de6-b277-53aca871be7e",
+			"description": "MakerChat 0x0E - Introduction to Node-RED 🔧",
+			"startDateTime": "2022-10-08T08:30:00.000Z",
+			"endDateTime": "2022-10-08T10:30:00.000Z",
+			"registerUrl": "makerchat0x0E",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJA62L2_MLCDsRcmitp5MMs5k",
+				"name": "KeyValue Software Systems Pvt Ltd, C113, 1st floor, Building SCK-01 SmartCity, Kakkanad, Kochi, Kerala 682042, India",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India"
+			}
+		},
+		"evt-LKvPUBGvTRvQESB": {
+			"id": "evt-LKvPUBGvTRvQESB",
+			"title": "Arduino Week 2022 🎉",
+			"coverImg": "https://cdn.lu.ma/event-covers/ph/f436d4ab-00e3-40fb-821f-151121355234",
+			"description": "Arduino Week 2022 🎉",
+			"startDateTime": "2022-04-02T03:30:00.000Z",
+			"endDateTime": "2022-04-02T07:30:00.000Z",
+			"registerUrl": "arduinoweek2022",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJJTFDuTUNCDsRcW2YEtJzv5U",
+				"name": "Integrated Startup Complex (ISC) - KSUM, Kerala Technology Innovation Zone, Kinfra Hi-tech Park, HMT Colony, North Kalamassery, Kalamassery, Kochi, Kerala 683503, India",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India"
+			}
+		},
+		"evt-SXkjeetDBvbYIET": {
+			"id": "evt-SXkjeetDBvbYIET",
+			"title": "MakerChat 0x0D - Introduction to Node-RED 🔧",
+			"coverImg": "https://cdn.lu.ma/event-covers/n5/9100f986-1ff2-4369-bda7-950fbade6880",
+			"description": "MakerChat 0x0D - Introduction to Node-RED 🔧",
+			"startDateTime": "2022-03-19T04:00:00.000Z",
+			"endDateTime": "2022-03-19T06:30:00.000Z",
+			"registerUrl": "makerchat0x0D",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-MlV6H8xROQqpaUY": {
+			"id": "evt-MlV6H8xROQqpaUY",
+			"title": "MakerChat 0x0C - Importance of Assembly Language ⚒ ",
+			"coverImg": "https://cdn.lu.ma/event-covers/rv/a7126cbc-5e93-4a24-a6d5-8928a8943fe8",
+			"description": "MakerChat 0x0C - Importance of Assembly Language ⚒ ",
+			"startDateTime": "2022-02-19T04:00:00.000Z",
+			"endDateTime": "2022-02-19T05:00:00.000Z",
+			"registerUrl": "makerchat0x0C",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-WJO7ca4JwW6yD2F": {
+			"id": "evt-WJO7ca4JwW6yD2F",
+			"title": "MakerChat 0x0B - Introduction to Robot Operating System 🤖",
+			"coverImg": "https://cdn.lu.ma/event-covers/p8/ad44d3a1-2646-476e-a849-22b74201123b",
+			"description": "MakerChat 0x0B - Introduction to Robot Operating System 🤖",
+			"startDateTime": "2022-02-05T04:00:00.000Z",
+			"endDateTime": "2022-02-05T05:00:00.000Z",
+			"registerUrl": "makerchat0x0B",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-Uja9Ob4a9KtaKdG": {
+			"id": "evt-Uja9Ob4a9KtaKdG",
+			"title": "MakerChat 0x0A - TinyML 🧠 with Edge Impluse ✨",
+			"coverImg": "https://cdn.lu.ma/event-covers/id/63916a45-d460-4c7c-91dd-730967a62a44",
+			"description": "MakerChat 0x0A - TinyML 🧠 with Edge Impluse ✨",
+			"startDateTime": "2022-01-22T04:00:00.000Z",
+			"endDateTime": "2022-01-22T05:30:00.000Z",
+			"registerUrl": "makerchat0x0A",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-32pt1dTKkQFpd36": {
+			"id": "evt-32pt1dTKkQFpd36",
+			"title": "Maker Chat 0x09: Hardware Show and Tell",
+			"coverImg": "https://cdn.lu.ma/event-covers/4g/553790fd-cd50-483e-bc9d-21194046fad5",
+			"description": "Maker Chat 0x09: Hardware Show and Tell",
+			"startDateTime": "2021-02-20T13:30:00.000Z",
+			"endDateTime": "2021-02-20T14:30:00.000Z",
+			"registerUrl": "makerchat0x09",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-BrcI7fmUdaHAXcm": {
+			"id": "evt-BrcI7fmUdaHAXcm",
+			"title": "MakerChat 0x08: Demystifying Git: A Rope Of Hope for Beginners",
+			"coverImg": "https://cdn.lu.ma/event-covers/jb/95de9878-202e-401e-a001-aa14d8f971cd",
+			"description": "MakerChat 0x08: Demystifying Git: A Rope Of Hope for Beginners",
+			"startDateTime": "2020-08-20T14:30:00.000Z",
+			"endDateTime": "2020-08-20T15:30:00.000Z",
+			"registerUrl": "makerchat0x08",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-1BREjGb0IjGRM85": {
+			"id": "evt-1BREjGb0IjGRM85",
+			"title": "MakerChat 0x07 How to learn machine learning (for humans)",
+			"coverImg": "https://cdn.lu.ma/event-covers/m7/96af3966-d790-4135-be17-2cab0046dfc3",
+			"description": "MakerChat 0x07 How to learn machine learning (for humans)",
+			"startDateTime": "2020-08-02T14:30:00.000Z",
+			"endDateTime": "2020-08-02T15:30:00.000Z",
+			"registerUrl": "makerchat0x07",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-frv2HLBhzS5mVAv": {
+			"id": "evt-frv2HLBhzS5mVAv",
+			"title": "MakerChat 0x06: Introduction to Machine Learning with Intel Tools.",
+			"coverImg": "https://cdn.lu.ma/event-covers/ek/61cca40b-5ad6-47d7-a557-1dde5990a9e8",
+			"description": "MakerChat 0x06: Introduction to Machine Learning with Intel Tools.",
+			"startDateTime": "2020-07-26T14:30:00.000Z",
+			"endDateTime": "2020-07-26T15:30:00.000Z",
+			"registerUrl": "makerchat0x06",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-q3AKUNEOXwq6K1r": {
+			"id": "evt-q3AKUNEOXwq6K1r",
+			"title": "MakerChat 0x05: LabVIEW Basic Concepts & GUI Development",
+			"coverImg": "https://cdn.lu.ma/event-covers/wa/def60823-f76e-4fb8-9a9d-65944db990cd",
+			"description": "MakerChat 0x05: LabVIEW Basic Concepts & GUI Development",
+			"startDateTime": "2020-06-21T14:30:00.000Z",
+			"endDateTime": "2020-06-21T15:30:00.000Z",
+			"registerUrl": "makerchat0x05",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-PRqluWUfinfjYwx": {
+			"id": "evt-PRqluWUfinfjYwx",
+			"title": "MakerChat 0x04: Fusion360 Basics: 3D modeling for additive manufacturing.",
+			"coverImg": "https://cdn.lu.ma/event-covers/zz/6885de4c-7228-47e9-b8e8-ba517d9ce67b",
+			"description": "MakerChat 0x04: Fusion360 Basics: 3D modeling for additive manufacturing.",
+			"startDateTime": "2020-06-07T14:30:00.000Z",
+			"endDateTime": "2020-06-07T15:30:00.000Z",
+			"registerUrl": "makerchat0x04",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-Y1mK6wuHVOaidpI": {
+			"id": "evt-Y1mK6wuHVOaidpI",
+			"title": "MakerChat 0x03: Demystifying Embedded Development",
+			"coverImg": "https://cdn.lu.ma/event-covers/eq/88d53e05-5b42-469a-8f72-c25162563558",
+			"description": "MakerChat 0x03: Demystifying Embedded Development",
+			"startDateTime": "2020-05-10T15:10:00.000Z",
+			"endDateTime": "2020-05-10T16:10:00.000Z",
+			"registerUrl": "makerchat0x03",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-sqJONarc23kugBd": {
+			"id": "evt-sqJONarc23kugBd",
+			"title": "MakerChat 0x02: Schematic & PCB Design using KiCad.",
+			"coverImg": "https://cdn.lu.ma/event-covers/ky/ff61748c-5841-47a9-afb8-adc911ee8f28",
+			"description": "MakerChat 0x02: Schematic & PCB Design using KiCad.",
+			"startDateTime": "2020-05-02T15:10:00.000Z",
+			"endDateTime": "2020-05-02T16:10:00.000Z",
+			"registerUrl": "makerchat0x02",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		},
+		"evt-FSHCYeCEx2pwVYE": {
+			"id": "evt-FSHCYeCEx2pwVYE",
+			"title": "MakerChat 0x01: Beyond The Arduino IDE.",
+			"coverImg": "https://cdn.lu.ma/event-covers/2z/02e6ec32-258f-4ee9-9d8b-c1fb6deb5e19",
+			"description": "MakerChat 0x01: Beyond The Arduino IDE.",
+			"startDateTime": "2020-04-25T15:10:00.000Z",
+			"endDateTime": "2020-04-25T16:10:00.000Z",
+			"registerUrl": "makerchat0x01",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {}
+		}
+	}
+}
