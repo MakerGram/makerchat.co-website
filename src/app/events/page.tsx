@@ -28,7 +28,7 @@ export default function Photos() {
 	});
 
 	return (
-		<section className="bg-grid-black/10 relative pb-32 pt-10 md:pt-10 z-10">
+		<section className="bg-grid-black/10 relative pb-32 pt-16 md:pt-10 z-10">
 			{/* Background Mask */}
 			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 

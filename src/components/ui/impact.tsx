@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-export default function ResponsiveGrid() {
+export default function ImpactCard() {
 	return (
 		<div className="bg-[#f5f5f7] py-16 px-4 md:px-16 font-manrope">
 			<h2 className="text-center text-sm md:text-base text-gray-400 uppercase tracking-widest mb-2">
