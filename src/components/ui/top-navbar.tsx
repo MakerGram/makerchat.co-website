@@ -28,9 +28,9 @@ const DockNavBar = () => {
 		const handleScroll = () => {
 			const currentScrollY = window.scrollY;
 			if (currentScrollY > lastScrollY) {
-				setShowLogo(false); // scrolling down → hide logo
+				setShowLogo(false); // scrolling down → hide
 			} else {
-				setShowLogo(true); // scrolling up → show logo
+				setShowLogo(true); // scrolling up → show
 			}
 			setLastScrollY(currentScrollY);
 		};
@@ -47,7 +47,7 @@ const DockNavBar = () => {
 			<div className="sticky top-0 z-50">
 				<Link
 					href="/"
-					className={`fixed top-3 left-4 md:left-4  md:translate-x-0 flex items-center gap-2 pl-1 pr-3 py-1 bg-black/60 backdrop-blur-md rounded-full shadow-lg border border-white/10 transition-all duration-300 ${
+					className={`fixed top-3 left-4 flex items-center gap-2 pl-1 pr-3 py-1 bg-black/60 backdrop-blur-md rounded-full shadow-lg border border-white/10 transition-all duration-300 ${
 						isShowLogo ? "opacity-100" : "opacity-0 pointer-events-none"
 					}`}
 				>
