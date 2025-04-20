@@ -40,7 +40,7 @@ const sponsorshipTiers = [
 
 export default function Photos() {
 	return (
-		<section className="bg-grid-[#4b3f33]/10 relative pb-32 pt-10 md:pt-10">
+		<section className="bg-grid-[#4b3f33]/10 relative pb-32 pt-16 md:pt-10">
 			{/* Background mask */}
 			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
