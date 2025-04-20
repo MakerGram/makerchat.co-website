@@ -7,8 +7,8 @@ import {useParams} from "next/navigation";
 import Image from "next/image";
 import {MapPin, CalendarDays, UsersRound} from "lucide-react";
 
-import Example from "@/components/ui/scroll-both";
 import {SlidingNumber} from "@/components/ui/sliding-number";
+import EventCards from "@/components/ui/scroll-both";
 
 type LocationSlug = "kochi" | "bangalore" | "dubai" | "hyderabad";
 
@@ -270,7 +270,7 @@ export default function LocationHero() {
 				</div>
 			</div>
 
-			{data.type === "active" && <Example />}
+			{data.type === "active" && <EventCards />}
 		</>
 	);
 }

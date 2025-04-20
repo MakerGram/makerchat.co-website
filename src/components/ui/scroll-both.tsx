@@ -5,7 +5,7 @@ import {useState, useRef} from "react";
 import Image from "next/image";
 import {ChevronLeft, ChevronRight} from "lucide-react";
 
-const Example = () => {
+const EventCards = () => {
 	return (
 		<div className="bg-white">
 			<HorizontalScrollCarousel />
@@ -116,7 +116,7 @@ const Card = ({card}: {card: CardType}) => {
 	);
 };
 
-export default Example;
+export default EventCards;
 
 type CardType = {
 	url: string;
@@ -175,7 +175,7 @@ export const cards: CardType[] = [
 		id: 8,
 	},
 	{
-		link: "/events",
+		link: "https://lu.ma/user/MakerGram",
 		url: "/uploads/posters/view-all-poster.webp",
 		title: "Title 9",
 		id: 9,
