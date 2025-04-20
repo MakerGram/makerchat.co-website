@@ -1,13 +1,14 @@
 /* eslint-disable react/react-in-jsx-scope */
 "use client";
 
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 
 import {useParams} from "next/navigation";
 import Image from "next/image";
 import {MapPin, CalendarDays, UsersRound} from "lucide-react";
 
 import Example from "@/components/ui/scroll-both";
+import {SlidingNumber} from "@/components/ui/sliding-number";
 
 type LocationSlug = "kochi" | "bangalore" | "dubai" | "hyderabad";
 
@@ -63,27 +64,47 @@ const locationData: Record<
 
 export default function LocationHero() {
 	const params = useParams();
-
 	const rawSlug = params?.slug;
 	const slug = Array.isArray(rawSlug) ? rawSlug[0] : rawSlug;
-	const isValidSlug = slug && Object.keys(locationData).includes(slug);
 
-	const [timeLeft, setTimeLeft] = useState("");
+	const isValidSlug = useMemo(() => {
+		return slug && Object.keys(locationData).includes(slug);
+	}, [slug]);
 
-	const data = locationData[slug as LocationSlug];
+	const data = useMemo(() => {
+		return locationData[slug as LocationSlug];
+	}, [slug]);
 
-	// Countdown for Bangalore
+	const countdownTarget = useMemo(() => {
+		if (slug === "bangalore" && data?.type === "notify") {
+			return new Date("2025-05-01T10:00:00").getTime();
+		}
+		return null;
+	}, [slug, data]);
+
+	const [countdown, setCountdown] = useState({
+		days: 0,
+		hours: 0,
+		minutes: 0,
+		seconds: 0,
+		isDone: false,
+	});
+
 	useEffect(() => {
-		if (!isValidSlug || data.type !== "notify" || slug !== "bangalore") return;
-
-		const countdownTarget = new Date("2025-05-01T10:00:00").getTime();
+		if (!countdownTarget) return;
 
 		const interval = setInterval(() => {
 			const now = new Date().getTime();
 			const distance = countdownTarget - now;
 
 			if (distance <= 0) {
-				setTimeLeft("Launching Now!");
+				setCountdown({
+					days: 0,
+					hours: 0,
+					minutes: 0,
+					seconds: 0,
+					isDone: true,
+				});
 				clearInterval(interval);
 				return;
 			}
@@ -95,13 +116,13 @@ export default function LocationHero() {
 			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			setTimeLeft(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+			setCountdown({days, hours, minutes, seconds, isDone: false});
 		}, 1000);
 
 		return () => {
 			return clearInterval(interval);
 		};
-	}, [isValidSlug, slug, data]);
+	}, [countdownTarget]);
 
 	if (!isValidSlug) {
 		return <div className="text-white p-10">Location not found</div>;
@@ -117,9 +138,9 @@ export default function LocationHero() {
 					className="object-cover"
 					priority
 				/>
-				<div className="absolute inset-0 z-10 bg-gradient-to-t md:bg-gradient-to-l from-black/70 to-transparent" />
+				<div className="absolute inset-0 z-10 bg-gradient-to-t md:bg-gradient-to-l from-black/70 to-transparent " />
 
-				<div className="relative z-20 flex flex-col items-center justify-center px-5  md:px-16 min-h-screen space-y-12 w-fit mx-auto">
+				<div className="relative z-20 flex flex-col items-center justify-center px-5 md:px-16 min-h-screen space-y-12 w-fit mx-auto">
 					<div className="w-full text-white space-y-4 bg-black/10 backdrop-blur-sm rounded-xl p-6">
 						{data.topLabel && (
 							<div className="text-sm uppercase tracking-wide text-white/80 font-semibold">
@@ -135,79 +156,98 @@ export default function LocationHero() {
 							{data.desc}
 						</p>
 
-						{/* Impact of Kochi – Active Events */}
 						{data.type === "active" && (
 							<div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-								<div className="bg-white/10 rounded-2xl p-4 flex items-start gap-4 shadow-lg">
-									<MapPin className="w-8 h-8 text-white/80 mt-1" />
-									<div>
-										<p className="text-3xl font-extrabold text-white leading-snug">
-											28+
-										</p>
-										<p className="text-sm text-white/70 font-medium">
-											Ongoing Offline Events
-										</p>
-									</div>
-								</div>
-								<div className="bg-white/10 rounded-2xl p-4 flex items-start gap-4 shadow-lg">
-									<CalendarDays className="w-8 h-8 text-white/80 mt-1" />
-									<div>
-										<p className="text-3xl font-extrabold text-white leading-snug">
-											41+
-										</p>
-										<p className="text-sm text-white/70 font-medium">
-											MakerChats Conducted
-										</p>
-									</div>
-								</div>
-								<div className="bg-white/10 rounded-2xl p-4 flex items-start gap-4 shadow-lg">
-									<UsersRound className="w-8 h-8 text-white/80 mt-1" />
-									<div>
-										<p className="text-3xl font-extrabold text-white leading-snug">
-											520+
-										</p>
-										<p className="text-sm text-white/70 font-medium">
-											Attendees Engaged
-										</p>
-									</div>
-								</div>
+								{[
+									{
+										icon: <MapPin />,
+										value: "28+",
+										label: "Ongoing Offline Events",
+									},
+									{
+										icon: <CalendarDays />,
+										value: "41+",
+										label: "MakerChats Conducted",
+									},
+									{
+										icon: <UsersRound />,
+										value: "520+",
+										label: "Attendees Engaged",
+									},
+								].map((item, idx) => {
+									return (
+										<div
+											key={idx}
+											className="bg-white/10 rounded-2xl p-4 flex items-start gap-4 shadow-lg"
+										>
+											<div className="w-8 h-8 text-white/80 mt-1">
+												{item.icon}
+											</div>
+											<div>
+												<p className="text-3xl font-extrabold text-white leading-snug">
+													{item.value}
+												</p>
+												<p className="text-sm text-white/70 font-medium">
+													{item.label}
+												</p>
+											</div>
+										</div>
+									);
+								})}
 							</div>
 						)}
 
-						{/* Notify Section */}
 						{data.type === "notify" && (
-							<div className="mt-10 text-white font-manrope space-y-4">
+							<div className=" text-white font-manrope space-y-6 flex flex-col items-center">
 								{slug === "bangalore" && (
-									<div className="text-white text-sm md:text-base font-medium leading-tight tracking-tight">
-										<span className="text-white/60">Countdown to launch:</span>{" "}
-										<span className="text-yellow-400 font-semibold font-mono text-[20px] md:text-[28px]">
-											{timeLeft}
-										</span>
+									<div className="bg-white/10 rounded-2xl p-4 flex items-center gap-4 shadow-lg w-full max-w-xs justify-center ">
+										<div className="text-center">
+											<p className="text-sm text-white/70 font-medium mb-2 uppercase">
+												Countdown to launch
+											</p>
+
+											{countdown.isDone ? (
+												<p className="text-lg font-semibold text-white">
+													Launching Now!
+												</p>
+											) : (
+												<div className="flex items-center gap-2 justify-center font-manrope text-xl md:text-3xl font-bold">
+													<SlidingNumber value={countdown.days} padStart />
+													<span>d</span>
+													<SlidingNumber value={countdown.hours} padStart />
+													<span>h</span>
+													<SlidingNumber value={countdown.minutes} padStart />
+													<span>m</span>
+													<SlidingNumber value={countdown.seconds} padStart />
+													<span>s</span>
+												</div>
+											)}
+										</div>
 									</div>
 								)}
-								<p className="text-lg font-semibold">
+
+								<p className="text-lg font-semibold text-center">
 									Interested in joining us in {data.location}?
 								</p>
-								<p className="text-lg text-white/80">
+								<p className="text-lg text-white/80 text-center">
 									Leave your email and we’ll notify you when we launch!
 								</p>
 
-								<div className="flex items-center gap-3 pt-2">
+								<div className="flex items-center gap-3 pt-2 flex-wrap justify-center">
 									<input
 										type="email"
 										placeholder="me@email.com"
 										className="px-4 py-2 w-full md:w-[500px] rounded-full text-white bg-white/10 border border-white/20 placeholder-white/60 backdrop-blur-sm focus:outline-none"
 									/>
-									<button className="px-4 py-2 bg-white text-black text-base font-medium rounded-full whitespace-nowrap hover:bg-gray-200 transition font-manrope">
+									<button className="px-4 py-2 bg-white text-black text-base font-medium rounded-full whitespace-nowrap hover:bg-gray-200 transition font-manrope w-full md:w-auto">
 										Notify Me
 									</button>
 								</div>
 							</div>
 						)}
 
-						{/* Interest Section */}
 						{data.type === "interest" && (
-							<div className="mt-10 text-white font-manrope space-y-4">
+							<div className=" text-white font-manrope space-y-4">
 								<p className="text-lg font-semibold">
 									Interested in joining us in {data.location}?
 								</p>

@@ -43,57 +43,6 @@ export default function Photos() {
 				/>
 			</div>
 
-			{/* <div className="relative z-10 mb-12 text-center">
-				<h2 className="text-sm md:text-base text-neutral-500 uppercase tracking-widest mb-2">
-					Upcoming Events
-				</h2>
-				<p className="text-3xl md:text-4xl font-semibold text-neutral-900">
-					Happening Around the Maker Community
-				</p>
-				<p className="mt-3 max-w-2xl mx-auto text-base text-neutral-600 font-light">
-					Dive into our curated events — from hands-on sessions to networking
-					with makers, techies, and creators who build the future.
-				</p>
-			</div> */}
-
-			{/* <div className="mx-auto max-w-7xl px-4 relative z-10 mt-10">
-				<div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-					{filteredIds.map((id, index) => {
-						const {coverImg, title, description, registerUrl} =
-							events.details[id];
-
-						return (
-							<a
-								key={index}
-								href={`https://lu.ma/${registerUrl}`}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="group bg-[#f5f5f7] rounded-3xl p-5 flex flex-col shadow-none hover:shadow-[0_12px_28px_rgba(0,0,0,0.08)] transition-all duration-300"
-							>
-								<div className="overflow-hidden rounded-2xl mb-4">
-									<img
-										src={coverImg}
-										alt={title}
-										className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-									/>
-								</div>
-
-								<h3 className="text-xl font-semibold text-[#1d1d1f] group-hover:text-black transition-colors">
-									{title}
-								</h3>
-
-								<p className="mt-2 text-sm text-neutral-600 leading-relaxed line-clamp-3">
-									{description}
-								</p>
-
-								<span className="mt-4 inline-block w-fit text-sm font-medium text-[#1d1d1f] border border-neutral-300 rounded-full px-4 py-2 hover:bg-black hover:text-white transition">
-									View Event
-								</span>
-							</a>
-						);
-					})}
-				</div>
-			</div> */}
 			<section className="bg-white px-4 md:px-8 lg:px-16 ">
 				<h2 className="text-center text-sm md:text-base text-gray-500 uppercase tracking-widest mb-2">
 					MakerChat across the Cities
