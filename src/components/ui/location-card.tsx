@@ -9,6 +9,7 @@ export default function PlaceCard({
 	image,
 	title,
 	url,
+	description,
 	location,
 }: {
 	image?: string;
@@ -19,36 +20,30 @@ export default function PlaceCard({
 }) {
 	return (
 		<Link href={url || "#"} passHref>
-			<div className="group relative bg-white rounded-[28px] overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 ease-in-out cursor-pointer">
-				{/* Image background */}
-				<div className="relative w-full h-64">
+			<div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer border border-white/10 backdrop-blur-md">
+				{/* Background Image */}
+				<div className="relative w-full h-80">
 					<Image
 						src={image || "/placeholder.jpg"}
 						alt={title || "Place Image"}
 						fill
 						className="object-cover"
 					/>
-
-					{location && (
-						<div className="absolute inset-0 flex justify-center items-center">
-							<p className="text-white text-[20px] font-medium bg-black px-5 py-1.5 rounded-full backdrop-blur-md shadow-sm">
-								{location}
-							</p>
-						</div>
-					)}
-
-					{/* {description && (
-						<div className="absolute top-4 left-4">
-							<span className="text-[12px] px-3 py-[4px] bg-black text-white font-medium rounded-full shadow backdrop-blur-sm leading-none transition-all duration-200 ease-in-out">
-								{description}
-							</span>
-						</div>
-					)} */}
 				</div>
 
-				{/* Arrow icon */}
-				<div className="absolute bottom-5 right-5 bg-neutral-100 group-hover:bg-neutral-200 transition-colors duration-300 p-2 rounded-full shadow-sm">
-					<ArrowUpRight className="text-black w-4 h-4" />
+				{/* Content Overlay */}
+				<div className="absolute inset-0 flex flex-col justify-end p-5 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+					<h3 className="text-white text-xl font-semibold">{location}</h3>
+					{description && (
+						<p className="text-white/90 text-lg mt-1 line-clamp-2">
+							{description}
+						</p>
+					)}
+				</div>
+
+				{/* Arrow Icon */}
+				<div className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md p-2 rounded-full transition-all">
+					<ArrowUpRight className="text-white w-4 h-4" />
 				</div>
 			</div>
 		</Link>
