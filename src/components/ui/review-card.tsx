@@ -4,7 +4,7 @@ import Image from "next/image";
 import {cn} from "@/lib/utils";
 
 /* eslint-disable react/react-in-jsx-scope */
-export const ReviewCard = ({
+export const SpeakerCard = ({
 	img,
 	name,
 	designation,

@@ -1,5 +1,4 @@
 /* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable @typescript-eslint/naming-convention */
 "use client";
 import {useRef, useState} from "react";
 
@@ -8,43 +7,12 @@ import {useRouter} from "next/navigation";
 import {Volume2, VolumeOff} from "lucide-react";
 
 import {Button} from "@/components/ui/button";
-import {speakers, sponsorData} from "@/db";
-import VantaraSection from "@/components/ui/impact";
+import {placesData, speakers, sponsorData} from "@/db";
 import QuoteSlider from "@/components/ui/founder-quote";
 import {Marquee} from "@/components/ui/marquee";
-import {ReviewCard} from "@/components/ui/review-card";
+import {SpeakerCard} from "@/components/ui/review-card";
 import PlaceCard from "@/components/ui/location-card";
-
-const places = [
-	{
-		title: "India",
-		location: "Kochi",
-		image: "/uploads/photos/kochi.jpg",
-		url: "/location/kochi",
-		description: "Where conversations flow like the backwaters",
-	},
-	{
-		title: "India",
-		location: "Bangalore",
-		image: "/uploads/photos/blr-1.jpg",
-		url: "/location/bangalore",
-		description: "Innovation meets coffee and code",
-	},
-	{
-		title: "India",
-		location: "Hyderabad",
-		image: "/uploads/photos/hyd-char.jpg",
-		url: "/location/hyderabad",
-		description: "City of Pearls, powered by ideas",
-	},
-	{
-		title: "Dubai",
-		location: "Dubai",
-		image: "/uploads/photos/dubai-1.jpg",
-		url: "/location/dubai",
-		description: "Desert dreams. Global voices.",
-	},
-];
+import ImpactCard from "@/components/ui/impact";
 
 export default function Home() {
 	const router = useRouter();
@@ -74,19 +42,19 @@ export default function Home() {
 				<div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-black via-black/60 to-transparent pointer-events-none z-10" />
 
 				{/* Mute/Unmute button */}
-				<button
+				<Button
 					onClick={() => {
-						return setIsMuted((prev) => {
+						setIsMuted((prev) => {
 							return !prev;
 						});
 					}}
-					className="z-50 absolute bottom-9 md:top-auto md:bottom-12 right-6 w-14 h-14 rounded-full bg-black/60 flex items-center justify-center text-white hover:bg-black/80 transition"
+					className="z-50 absolute bottom-28 md:top-auto md:bottom-12 right-6 w-12 h-12 rounded-full border border-white/30 text-white bg-white/5 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center"
 				>
 					{isMuted ? <Volume2 size={28} /> : <VolumeOff size={28} />}
-				</button>
+				</Button>
 
 				{/* Text content */}
-				<div className="relative  flex items-center justify-start z-10 bg-black/40 w-full py-10 px-5 md:px-20">
+				<div className="relative  flex items-center justify-start z-10 bg-black/40 w-full  px-5 md:px-20 pb-28">
 					<div className="relative z-10 flex flex-col items-start md:items-start text-left md:text-left md:max-w-5xl ">
 						<span className="text-sm text-white font-manrope font-normal tracking-wide mt-2 italic flex items-center gap-2 mb-2 lowercase">
 							by{" "}
@@ -112,7 +80,7 @@ export default function Home() {
 							onClick={() => {
 								return router.push("/events");
 							}}
-							className="font-manrope mt-12 text-base md:text-small px-6 md:px-8 py-3 md:py-4 rounded-full border border-white/30 text-white font-medium bg-white/5 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300"
+							className="font-manrope text-base md:text-small px-6 md:px-8  rounded-full border border-white/30 text-white font-medium bg-white/5 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 mt-5"
 						>
 							Register Now →
 						</Button>
@@ -151,7 +119,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<VantaraSection />
+			<ImpactCard />
 			<section className="w-full px-6 md:px-0 py-16 md:py-10 bg-white text-[#2f2f2f]">
 				<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 					{/* Text Content */}
@@ -189,8 +157,9 @@ export default function Home() {
 				</p>
 
 				<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
-					{places.map((place, index) => {
-						return <PlaceCard key={index} {...place} />;
+					{placesData.ids.map((placeId: string) => {
+						const place = placesData.details[placeId];
+						return <PlaceCard key={placeId} {...place} />;
 					})}
 				</div>
 			</section>
@@ -209,7 +178,7 @@ export default function Home() {
 							const speaker = speakers.details[review];
 							if (!speaker) return null;
 							return (
-								<ReviewCard
+								<SpeakerCard
 									key={review}
 									img={speaker.avtarImg}
 									name={speaker.firstName}
