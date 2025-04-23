@@ -44,7 +44,7 @@ const testimonialData: {
 	},
 };
 
-export default function TestimonialSection() {
+export default function QuoteSlider() {
 	const [current, setCurrent] = useState(0);
 	const [showFull, setShowFull] = useState(false);
 
