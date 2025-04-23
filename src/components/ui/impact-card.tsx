@@ -1,4 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
+"use client";
 
 export default function ImpactCard() {
 	return (
