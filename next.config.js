@@ -4,8 +4,11 @@ const {withContentlayer} = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	output: "export",
+	trailingSlash: true, // GitHub Pages prefers this for routing
 	reactStrictMode: false,
 	images: {
+		unoptimized: true, // ✅ Required for `next export`
 		remotePatterns: [
 			{
 				protocol: "https",
@@ -32,9 +35,9 @@ const nextConfig = {
 				hostname: "cdn.lu.ma",
 			},
 			{
-				protocol:"https",
-				hostname:"lh3.googleusercontent.com"
-			}
+				protocol: "https",
+				hostname: "lh3.googleusercontent.com",
+			},
 		],
 	},
 };

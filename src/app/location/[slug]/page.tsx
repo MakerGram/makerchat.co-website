@@ -2,8 +2,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 /* eslint-disable react/react-in-jsx-scope */
 
-// src/app/location/[slug]/page.tsx
-
 import {Metadata} from "next";
 import Image from "next/image";
 
@@ -12,6 +10,15 @@ import {placesData} from "@/db";
 import LocationHero from "@/components/ui/location-hero";
 
 type Params = Promise<{slug: string}>;
+
+export async function generateStaticParams() {
+	return [
+		{slug: "kochi"},
+		{slug: "bangalore"},
+		{slug: "hyderabad"},
+		{slug: "dubai"},
+	];
+}
 
 export async function generateMetadata({
 	params,
