@@ -1,39 +1,74 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
-"use client";
-
-import {useState, useEffect} from "react";
 
 import Image from "next/image";
 
-import {eventData, placesData} from "@/db";
+import {placesData} from "@/db";
 import PlaceCard from "@/components/ui/location-card";
 
-export default function Photos() {
-	const [events, setEvents] = useState<typeof eventData | null>(null);
-	const [query, setQuery] = useState("");
+export const metadata = {
+	title: "Cities – MakerChat",
+	description:
+		"Discover where MakerChat comes to life across India. Join inspiring events, meet fellow makers, and be part of the growing community of innovators in your city.",
+	icons: {
+		icon: [
+			{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
+			{url: "/favicon.svg", type: "image/svg+xml"},
+			{url: "/favicon.ico", rel: "shortcut icon"},
+		],
+		apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+	},
+	manifest: "/site.webmanifest",
+	appleWebApp: {
+		title: "MakerGram",
+	},
+	keywords: [
+		"MakerChat cities",
+		"MakerChat Kochi",
+		"MakerChat Bangalore",
+		"maker events India",
+		"startup meetups",
+		"tech meetups India",
+		"maker community",
+		"hardware innovation events",
+		"startup city events",
+		"maker ecosystem locations",
+	],
+	openGraph: {
+		title: "Cities – MakerChat",
+		description:
+			"Discover where MakerChat comes to life across India. Join inspiring events, meet fellow makers, and be part of the growing community of innovators in your city.",
+		url: "https://yourdomain.com/cities",
+		siteName: "MakerChat",
+		images: [
+			{
+				url: "/uploads/photos/makerchat-group-photo.webp",
+				width: 1200,
+				height: 630,
+				alt: "MakerChat Community Event",
+			},
+		],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Cities – MakerChat",
+		description:
+			"Explore the cities where MakerChat thrives. Connect, create, and collaborate with India's most passionate maker community.",
+		images: ["/uploads/photos/makerchat-group-photo.webp"],
+	},
+	robots: "index, follow",
+};
 
-	useEffect(() => {
-		setEvents(eventData);
-	}, []);
-
-	if (!events) return null;
-
-	const filteredIds = events.ids.filter((id) => {
-		{
-			return events.details[id].title
-				.toLowerCase()
-				.includes(query.toLowerCase());
-		}
-	});
-
+export default function Events() {
 	return (
-		<section className="bg-grid-black/10 relative pb-32 pt-16 md:pt-10 z-10">
+		<section className="bg-grid-black/10 relative pb-32 pt-16 md:pt-10">
 			{/* Background Mask */}
-			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
+
+			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] -z-10"></div>
 
 			{/* Background Image */}
-			<div className="absolute top-0 left-0 pointer-events-none z-0">
+			<div className="absolute top-0 left-0 pointer-events-none ">
 				<Image
 					src="/elements/pi-skelton.png"
 					width={600}
@@ -43,11 +78,11 @@ export default function Photos() {
 				/>
 			</div>
 
-			<section className="bg-white px-4 md:px-8 lg:px-16 ">
-				<h2 className="text-center text-sm md:text-base text-gray-500 uppercase tracking-widest mb-2">
+			<section className=" px-4 md:px-8 lg:px-16 z-50">
+				<h2 className="text-left md:text-center text-sm md:text-base text-gray-500 uppercase tracking-widest mb-2">
 					MakerChat across the Cities
 				</h2>
-				<p className="text-center text-3xl md:text-4xl font-bold text-[#1d1d1f] mb-12 leading-snug">
+				<p className="text-left md:text-center text-3xl md:text-4xl font-bold text-[#1d1d1f] mb-10 leading-snug">
 					Where MakerChat Comes to Life
 				</p>
 
