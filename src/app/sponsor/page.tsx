@@ -1,12 +1,63 @@
-"use client";
-
 import React from "react";
 
 import {Check, XCircle} from "lucide-react";
 import Image from "next/image";
 
-import {Button} from "@/components/ui/button";
 import {Card, CardContent} from "@/components/ui/card";
+
+export const metadata = {
+	title: "Sponsorship Tiers – MakerChat",
+	description:
+		"Explore sponsorship opportunities with MakerChat – where your brand shines among builders, dreamers, and grassroots innovators. Choose your tier and join the maker movement.",
+	icons: {
+		icon: [
+			{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
+			{url: "/favicon.svg", type: "image/svg+xml"},
+			{url: "/favicon.ico", rel: "shortcut icon"},
+		],
+		apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+	},
+	manifest: "/site.webmanifest",
+	appleWebApp: {
+		title: "MakerGram",
+	},
+	keywords: [
+		"MakerChat sponsorship",
+		"sponsor maker events",
+		"support grassroots innovation",
+		"hardware startup sponsors",
+		"tech community sponsors",
+		"founder sponsorship tiers",
+		"DIY community support",
+		"maker event sponsorship",
+		"brand visibility India startups",
+		"support maker ecosystem",
+	],
+	openGraph: {
+		title: "Sponsorship Tiers – MakerChat",
+		description:
+			"Explore sponsorship opportunities with MakerChat – where your brand shines among builders, dreamers, and grassroots innovators. Choose your tier and join the maker movement.",
+		url: "https://yourdomain.com/sponsorship",
+		siteName: "MakerChat",
+		images: [
+			{
+				url: "/uploads/photos/makerchat-group-photo.webp",
+				width: 1200,
+				height: 630,
+				alt: "MakerChat Sponsorship Open Graph Image",
+			},
+		],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Sponsorship Tiers – MakerChat",
+		description:
+			"Explore sponsorship opportunities with MakerChat – where your brand shines among builders, dreamers, and grassroots innovators.",
+		images: ["/uploads/photos/makerchat-group-photo.webp"],
+	},
+	robots: "index, follow",
+};
 
 const allBenefits = [
 	"Your logo shining bright on our banners, socials, and website",
@@ -38,7 +89,7 @@ const sponsorshipTiers = [
 	},
 ];
 
-export default function Photos() {
+export default function Sponsor() {
 	return (
 		<section className="bg-grid-[#4b3f33]/10 relative pb-32 pt-16 md:pt-10">
 			{/* Background mask */}
@@ -68,19 +119,19 @@ export default function Photos() {
 			<div className="mx-auto max-w-7xl relative z-10 px-4">
 				{/* Sponsor intro section */}
 				<div className="mb-12 text-center max-w-4xl mx-auto">
-					<h2 className="text-center text-sm md:text-base text-neutral-500 uppercase tracking-widest mb-2">
+					<h2 className="text-left md:text-center text-sm md:text-base text-neutral-500 uppercase tracking-widest mb-2">
 						Why Sponsor Us
 					</h2>
-					<p className="text-center text-3xl md:text-4xl font-semibold text-neutral-900 mb-6 leading-snug">
+					<p className="text-left md:text-center text-3xl md:text-4xl font-semibold text-neutral-900 mb-6 leading-snug">
 						Plant Your Flag in the Maker Community
 					</p>
-					<p className="text-center text-lg text-neutral-600 font-light mb-6 max-w-3xl mx-auto">
+					<p className="text-left md:text-center text-lg text-neutral-600 font-light mb-6 max-w-3xl mx-auto">
 						MakerChat is more than an event — it’s a movement of builders,
 						creators, and dreamers. By sponsoring us, youre not just placing
 						your logo — youre planting your flag in the heart of the maker
 						community.
 					</p>
-					<ul className="text-neutral-700 space-y-2 text-base max-w-3xl mx-auto list-disc list-inside text-center">
+					<ul className="text-neutral-700 space-y-2 text-base max-w-3xl mx-auto list-disc list-inside text-left md:text-center">
 						<li>
 							Boost your brand visibility among an engaged, innovative audience
 						</li>
@@ -93,7 +144,7 @@ export default function Photos() {
 				</div>
 
 				{/* Sponsorship tiers */}
-				<section className="p-4 rounded-lg">
+				<section className="md:p-4 rounded-lg">
 					<div className="grid gap-6 md:grid-cols-3">
 						{sponsorshipTiers.map((tier, index) => {
 							return (
@@ -127,14 +178,12 @@ export default function Photos() {
 												);
 											})}
 										</div>
-										<Button
-											className="mt-auto w-full bg-black hover:bg-neutral-800 text-white text-base py-2 font-medium"
-											onClick={() => {
-												window.open("mailto:contact@makergram.com", "_blank");
-											}}
+										<a
+											href="mailto:contact@makergram.com"
+											className="mt-auto block w-full bg-black hover:bg-neutral-800 text-white text-base py-2 font-medium text-center rounded-md"
 										>
-											Let’s Talk ✨
-										</Button>
+											Let’s talk
+										</a>
 									</CardContent>
 								</Card>
 							);

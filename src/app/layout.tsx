@@ -1,13 +1,10 @@
 // The root layout is a Server Component
 // by default and can not be set to a Client Component.
-"use client";
-
 import React from "react";
 
 import {Manrope, Instrument_Serif} from "next/font/google";
 const manrope = Manrope({subsets: ["latin"], variable: "--font-manrope"});
 import localFont from "next/font/local";
-import "lenis/dist/lenis.css";
 
 import "./globals.css";
 import TopNavBar from "@/components/ui/top-navbar";
