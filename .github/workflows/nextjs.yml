@@ -53,7 +53,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('yarn.lock') }}-
       - name: Install dependencies
-        run: yarn install --immutable
+        run: |
+          # Generate yarn.lock if it doesn't exist
+          if [ ! -f yarn.lock ]; then
+            yarn install
+          else
+            yarn install --immutable
+          fi
       - name: Build with Next.js
         run: |
           yarn build
