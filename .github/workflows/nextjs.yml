@@ -37,9 +37,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "yarn"
-      - name: Setup Yarn
-        run: npm install -g yarn
+      - name: Enable Corepack
+        run: corepack enable
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -60,7 +59,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('yarn.lock') }}-
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
       - name: Build with Next.js
         run: yarn build
       - name: Upload artifact
