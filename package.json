@@ -16,7 +16,10 @@
 		"bump-version": "npm version --no-git-tag-version",
 		"get-next-version": "ts-node -P tsconfig.scripts.json ./.standard-version/commands/ComputeNextVersion.ts",
 		"release-branch": "git flow release start $(ts-node -P tsconfig.scripts.json ./.standard-version/commands/ComputeNextVersion.ts)",
-		"release": "standard-version"
+		"release": "standard-version",
+		"export": "next export",
+		"build-export": "next build && next export",
+		"github-pages-deploy": "GITHUB_PAGES=true next build && next export"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
