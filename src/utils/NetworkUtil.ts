@@ -19,8 +19,14 @@ function buildResult(
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	data: any,
 ): APIResponse {
+	// Ensure error is an instance of Error
+	const normalizedError =
+		error instanceof Error
+			? error
+			: new Error(error?.message || "Unknown error");
+
 	return {
-		error: error || null,
+		error: normalizedError,
 		httpStatusCode: httpStatusCode || null,
 		message: message || null,
 		data: data || null,
