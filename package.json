@@ -1,6 +1,6 @@
 {
 	"name": "makerchat.co-website",
-	"packageManager": "yarn@3.5.0",
+	"packageManager": "yarn@1.22.22",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
