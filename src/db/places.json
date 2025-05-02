@@ -30,7 +30,7 @@
 			"title": "Dubai",
 			"location": "Dubai",
 			"image": "/uploads/photos/dubai-1.jpg",
-			"url": "/location/dubai",
+			"url": "/#/location/dubai",
 			"description": "Desert dreams. Global voices."
 		}
 	}

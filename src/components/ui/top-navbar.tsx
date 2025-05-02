@@ -8,6 +8,8 @@ import Image from "next/image";
 import {usePathname} from "next/navigation";
 import {Home, BookOpen, Calendar, Bookmark} from "lucide-react";
 
+import Images from "@/config/constants/Images";
+
 const dockItems = [
 	{href: "/", label: "Home", icon: Home},
 	{href: "/sponsor", label: "Sponsor", icon: Bookmark},
@@ -53,7 +55,7 @@ const DockNavBar = () => {
 				>
 					<div className="w-7 h-7 rounded-full overflow-hidden border border-white/20 shadow-inner">
 						<Image
-							src="/mg-logo.webp"
+							src={Images.brandIcon}
 							alt="Brand Logo"
 							width={32}
 							height={32}

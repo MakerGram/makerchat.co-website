@@ -7,6 +7,9 @@ import {useState, useRef} from "react";
 
 import Image from "next/image";
 import {ChevronLeft, ChevronRight} from "lucide-react";
+import {StaticImageData} from "next/image";
+
+import Images from "@/config/constants/Images";
 
 const EventCards = () => {
 	return (
@@ -103,7 +106,7 @@ const Card = ({card}: {card: CardType}) => {
 			href={card.link}
 			target="_blank"
 			rel="noopener noreferrer"
-			className="group relative h-[456px] min-w-[300px] md:min-w-[392px] overflow-hidden bg-transparent rounded-2xl"
+			className="group relative h-[320px] md:h-[456px] min-w-[300px] md:min-w-[392px] overflow-hidden bg-transparent rounded-2xl"
 		>
 			<div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110">
 				<Image
@@ -122,7 +125,7 @@ const Card = ({card}: {card: CardType}) => {
 export default EventCards;
 
 type CardType = {
-	url: string;
+	url: string | StaticImageData;
 	link?: string;
 	title: string;
 	id: number;
@@ -131,55 +134,55 @@ type CardType = {
 export const cards: CardType[] = [
 	{
 		link: "https://makergram.com/community/",
-		url: "/uploads/posters/flipper-poster.webp",
+		url: Images.eventPosters.flipper,
 		title: "Title 1",
 		id: 1,
 	},
 	{
 		link: "https://makergram.com/community/",
-		url: "/uploads/posters/keyboard-poster.webp",
+		url: Images.eventPosters.keyboard,
 		title: "Title 2",
 		id: 2,
 	},
 	{
 		link: "https://lu.ma/yulr3vd9https://makergram.com/community/",
-		url: "/uploads/posters/build-drone-poster.webp",
+		url: Images.eventPosters.buildDrone,
 		title: "Title 3",
 		id: 3,
 	},
 	{
 		link: "https://makergram.com/community/",
-		url: "/uploads/posters/robot-poster.webp",
+		url: Images.eventPosters.robot,
 		title: "Title 4",
 		id: 4,
 	},
 	{
 		link: "https://makergram.com/community/",
-		url: "/uploads/posters/pi-event-poster.webp",
+		url: Images.eventPosters.piEvent,
 		title: "Title 5",
 		id: 5,
 	},
 	{
 		link: "https://makergram.com/community/",
-		url: "/uploads/posters/astrek-poster.webp",
+		url: Images.eventPosters.astrek,
 		title: "Title 6",
 		id: 6,
 	},
 	{
 		link: "https://workshop.makergram.com/docs/tiny-ml-workshop/magicWand/",
-		url: "/uploads/posters/magic-wand-poster.webp",
+		url: Images.eventPosters.magicWand,
 		title: "Title 7",
 		id: 7,
 	},
 	{
 		link: "https://makergram.com/community/",
-		url: "/uploads/posters/arduino-day-poster.webp",
+		url: Images.eventPosters.arduinoDay,
 		title: "Title 8",
 		id: 8,
 	},
 	{
 		link: "https://lu.ma/user/MakerGram",
-		url: "/uploads/posters/view-all-poster.webp",
+		url: Images.eventPosters.viewAll,
 		title: "Title 9",
 		id: 9,
 	},
