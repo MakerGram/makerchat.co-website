@@ -1,6 +1,6 @@
 # PROPRIETARY SOFTWARE LICENSE AGREEMENT (PSLA)
 
-**Effective Date**: [Insert Date]  
+**Effective Date**: **2025 Apr 19**
 **Licensor**: [**XiStart Innovations**](https://xistart.com)
 
 ---
