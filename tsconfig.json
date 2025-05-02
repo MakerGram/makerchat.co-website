@@ -39,7 +39,8 @@
 		"src/app/layout.tsx",
 		"tailwind.config.js",
 		"postcss.config.js",
-		".contentlayer/generated"
+		".contentlayer/generated",
+		"src/customTypes/custom.d.ts"
 	],
 	"exclude": ["node_modules", "next.config.js"]
 }

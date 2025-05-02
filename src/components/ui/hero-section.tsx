@@ -9,6 +9,7 @@ import {useRouter} from "next/navigation";
 import {Volume2, VolumeOff} from "lucide-react";
 
 import {Button} from "@/components/ui/button";
+import Images from "@/config/constants/Images";
 
 export default function HeroSection() {
 	const router = useRouter();
@@ -25,7 +26,7 @@ export default function HeroSection() {
 				loop
 				className="absolute inset-0 w-full h-full object-cover"
 			>
-				<source src="/uploads/cover.mp4" type="video/mp4" />
+				<source src={Images.heroVideo} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 
@@ -53,7 +54,7 @@ export default function HeroSection() {
 					<span className="text-sm text-white font-manrope font-normal tracking-wide mt-2 italic flex items-center gap-2 mb-2 lowercase">
 						by{" "}
 						<Image
-							src="/mg-logo-white.png"
+							src={Images.mgLogoWhite}
 							alt="MakerGram Logo"
 							width={130}
 							height={40}

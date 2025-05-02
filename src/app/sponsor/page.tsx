@@ -4,6 +4,7 @@ import {Check, XCircle} from "lucide-react";
 import Image from "next/image";
 
 import {Card, CardContent} from "@/components/ui/card";
+import Images from "@/config/constants/Images";
 
 export const metadata = {
 	title: "Sponsorship Tiers – MakerChat",
@@ -11,11 +12,12 @@ export const metadata = {
 		"Explore sponsorship opportunities with MakerChat – where your brand shines among builders, dreamers, and grassroots innovators. Choose your tier and join the maker movement.",
 	icons: {
 		icon: [
-			{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
-			{url: "/favicon.svg", type: "image/svg+xml"},
-			{url: "/favicon.ico", rel: "shortcut icon"},
+			{url: Images.faviconIco.src},
+			{url: Images.favicon96.src, type: "image/png", sizes: "96x96"},
+			{url: Images.faviconSvg.src, type: "image/svg+xml"},
+			{url: Images.faviconIco.src, rel: "shortcut icon"},
 		],
-		apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+		apple: [{url: Images.appleTouchIcon.src, sizes: "180x180"}],
 	},
 	manifest: "/site.webmanifest",
 	appleWebApp: {
@@ -41,7 +43,7 @@ export const metadata = {
 		siteName: "MakerChat",
 		images: [
 			{
-				url: "/uploads/photos/makerchat-group-photo.webp",
+				url: Images.groupPhoto.src,
 				width: 1200,
 				height: 630,
 				alt: "MakerChat Sponsorship Open Graph Image",
@@ -54,14 +56,14 @@ export const metadata = {
 		title: "Sponsorship Tiers – MakerChat",
 		description:
 			"Explore sponsorship opportunities with MakerChat – where your brand shines among builders, dreamers, and grassroots innovators.",
-		images: ["/uploads/photos/makerchat-group-photo.webp"],
+		images: [Images.groupPhoto.src],
 	},
 	robots: "index, follow",
 };
 
 const allBenefits = [
 	"Your logo shining bright on our banners, socials, and website",
-	"A shoutout during the MakerChat event (we’ll make it loud)",
+	"A shoutout during the MakerChat event (we'll make it loud)",
 	"A dedicated thank-you post – because legends deserve spotlights",
 ];
 
@@ -84,7 +86,7 @@ const sponsorshipTiers = [
 		title: "Strategic Sponsor Tier",
 		image: "power-drill.png",
 		description:
-			"Bold and visionary. This is for those who want to lead from the front. Elevate your brand by becoming a core part of MakerChat’s story and future. Ideal for companies committed to championing creativity and community.",
+			"Bold and visionary. This is for those who want to lead from the front. Elevate your brand by becoming a core part of MakerChat's story and future. Ideal for companies committed to championing creativity and community.",
 		benefits: allBenefits,
 	},
 ];
@@ -98,7 +100,7 @@ export default function Sponsor() {
 			{/* Background images */}
 			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
 				<Image
-					src="/elements/pi-skelton.png"
+					src={Images.elements.piSkelton.src}
 					width={600}
 					height={600}
 					alt="Raspberry Pi"
@@ -107,7 +109,7 @@ export default function Sponsor() {
 			</div>
 			<div className="absolute -bottom-36 -right-0 flex justify-start items-center pointer-events-none z-0">
 				<Image
-					src="/elements/arduino-skelton.png"
+					src={Images.elements.arduinoSkelton.src}
 					width={500}
 					height={500}
 					alt="Arduino"
@@ -126,7 +128,7 @@ export default function Sponsor() {
 						Plant Your Flag in the Maker Community
 					</p>
 					<p className="text-left md:text-center text-lg text-neutral-600 font-light mb-6 max-w-3xl mx-auto">
-						MakerChat is more than an event — it’s a movement of builders,
+						MakerChat is more than an event — its a movement of builders,
 						creators, and dreamers. By sponsoring us, youre not just placing
 						your logo — youre planting your flag in the heart of the maker
 						community.
@@ -182,7 +184,7 @@ export default function Sponsor() {
 											href="mailto:contact@makergram.com"
 											className="mt-auto block w-full bg-black hover:bg-neutral-800 text-white text-base py-2 font-medium text-center rounded-md"
 										>
-											Let’s talk
+											Lets talk
 										</a>
 									</CardContent>
 								</Card>

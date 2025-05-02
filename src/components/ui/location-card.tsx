@@ -5,14 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import {ArrowUpRight} from "lucide-react";
 
+import Images from "@/config/constants/Images";
+
 export default function PlaceCard({
-	image,
+	id,
 	title,
 	url,
 	description,
 	location,
 }: {
-	image?: string;
+	id: string;
 	title?: string;
 	url?: string;
 	description?: string;
@@ -24,7 +26,7 @@ export default function PlaceCard({
 				{/* Background Image */}
 				<div className="relative w-full h-80">
 					<Image
-						src={image || "/placeholder.jpg"}
+						src={Images.locations[id as keyof typeof Images.locations]}
 						alt={title || "Place Image"}
 						fill
 						className="object-cover"

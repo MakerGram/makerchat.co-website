@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import {placesData} from "@/db";
 import PlaceCard from "@/components/ui/location-card";
+import Images from "@/config/constants/Images";
 
 export const metadata = {
 	title: "Cities – MakerChat",
@@ -12,11 +13,12 @@ export const metadata = {
 		"Discover where MakerChat comes to life across India. Join inspiring events, meet fellow makers, and be part of the growing community of innovators in your city.",
 	icons: {
 		icon: [
-			{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
-			{url: "/favicon.svg", type: "image/svg+xml"},
-			{url: "/favicon.ico", rel: "shortcut icon"},
+			{url: Images.faviconIco.src},
+			{url: Images.favicon96.src, type: "image/png", sizes: "96x96"},
+			{url: Images.faviconSvg.src, type: "image/svg+xml"},
+			{url: Images.faviconIco.src, rel: "shortcut icon"},
 		],
-		apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+		apple: [{url: Images.appleTouchIcon.src, sizes: "180x180"}],
 	},
 	manifest: "/site.webmanifest",
 	appleWebApp: {
@@ -42,7 +44,7 @@ export const metadata = {
 		siteName: "MakerChat",
 		images: [
 			{
-				url: "/uploads/photos/makerchat-group-photo.webp",
+				url: Images.groupPhoto.src,
 				width: 1200,
 				height: 630,
 				alt: "MakerChat Community Event",
@@ -55,7 +57,7 @@ export const metadata = {
 		title: "Cities – MakerChat",
 		description:
 			"Explore the cities where MakerChat thrives. Connect, create, and collaborate with India's most passionate maker community.",
-		images: ["/uploads/photos/makerchat-group-photo.webp"],
+		images: [Images.groupPhoto.src],
 	},
 	robots: "index, follow",
 };
@@ -65,16 +67,25 @@ export default function Events() {
 		<section className="bg-grid-black/10 relative pb-32 pt-16 md:pt-10">
 			{/* Background Mask */}
 
-			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] -z-10"></div>
+			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)] z-0" />
 
 			{/* Background Image */}
-			<div className="absolute top-0 left-0 pointer-events-none ">
+			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
 				<Image
-					src="/elements/pi-skelton.png"
+					src={Images.elements.piSkelton.src}
 					width={600}
 					height={600}
-					alt="Background Element"
+					alt="Raspberry Pi"
 					className="opacity-10 object-contain"
+				/>
+			</div>
+			<div className="absolute -bottom-36 -right-20 flex justify-start items-center pointer-events-none z-0">
+				<Image
+					src={Images.elements.arduinoSkelton.src}
+					width={500}
+					height={500}
+					alt="Arduino"
+					className="opacity-10 object-cover"
 				/>
 			</div>
 

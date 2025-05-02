@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import BlogCards from "@/components/ui/blog-cards";
+import Images from "@/config/constants/Images";
 
 export const metadata = {
 	title: "Blog – MakerChat",
@@ -9,11 +10,12 @@ export const metadata = {
 		"Fresh stories from the Maker Zone — read startup journeys, project spotlights, and behind-the-build insights.",
 	icons: {
 		icon: [
-			{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
-			{url: "/favicon.svg", type: "image/svg+xml"},
-			{url: "/favicon.ico", rel: "shortcut icon"},
+			{url: Images.faviconIco.src},
+			{url: Images.favicon96.src, type: "image/png", sizes: "96x96"},
+			{url: Images.faviconSvg.src, type: "image/svg+xml"},
+			{url: Images.faviconIco.src, rel: "shortcut icon"},
 		],
-		apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+		apple: [{url: Images.appleTouchIcon.src, sizes: "180x180"}],
 	},
 	manifest: "/site.webmanifest",
 	appleWebApp: {
@@ -41,7 +43,7 @@ export const metadata = {
 		siteName: "MakerChat",
 		images: [
 			{
-				url: "/uploads/photos/makerchat-group-photo.webp",
+				url: Images.groupPhoto.src,
 				width: 1200,
 				height: 630,
 				alt: "MakerChat Blog Open Graph Image",
@@ -54,7 +56,7 @@ export const metadata = {
 		title: "Blog – MakerChat",
 		description:
 			"Fresh stories from the Maker Zone — read startup journeys, project spotlights, and behind-the-build insights.",
-		images: ["/uploads/photos/makerchat-group-photo.webp"],
+		images: [Images.groupPhoto.src],
 	},
 	robots: "index, follow",
 };
@@ -68,7 +70,7 @@ export default function Blog() {
 			{/* Background Images */}
 			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
 				<Image
-					src="/elements/pi-skelton.png"
+					src={Images.elements.piSkelton.src}
 					width={600}
 					height={600}
 					alt="Raspberry Pi"
@@ -77,7 +79,7 @@ export default function Blog() {
 			</div>
 			<div className="absolute -bottom-36 -right-20 flex justify-start items-center pointer-events-none z-0">
 				<Image
-					src="/elements/arduino-skelton.png"
+					src={Images.elements.arduinoSkelton.src}
 					width={500}
 					height={500}
 					alt="Arduino"

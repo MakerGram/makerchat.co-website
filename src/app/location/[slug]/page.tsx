@@ -8,6 +8,7 @@ import Image from "next/image";
 import EventCards from "@/components/ui/scroll-both";
 import {placesData} from "@/db";
 import LocationHero from "@/components/ui/location-hero";
+import Images from "@/config/constants/Images";
 
 type Params = Promise<{slug: string}>;
 
@@ -38,11 +39,12 @@ export async function generateMetadata({
 		description: `Discover events and updates in ${data.location}.`,
 		icons: {
 			icon: [
-				{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
-				{url: "/favicon.svg", type: "image/svg+xml"},
-				{url: "/favicon.ico", rel: "shortcut icon"},
+				{url: Images.faviconIco.src},
+				{url: Images.favicon96.src, type: "image/png", sizes: "96x96"},
+				{url: Images.faviconSvg.src, type: "image/svg+xml"},
+				{url: Images.faviconIco.src, rel: "shortcut icon"},
 			],
-			apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+			apple: [{url: Images.appleTouchIcon.src, sizes: "180x180"}],
 		},
 		manifest: "/site.webmanifest",
 		appleWebApp: {
@@ -68,7 +70,7 @@ export async function generateMetadata({
 			siteName: "MakerChat",
 			images: [
 				{
-					url: "/uploads/photos/makerchat-group-photo.webp",
+					url: Images.groupPhoto.src,
 					width: 1200,
 					height: 630,
 					alt: "MakerChat Sponsorship Open Graph Image",
@@ -81,7 +83,7 @@ export async function generateMetadata({
 			title: "Sponsorship Tiers – MakerChat",
 			description:
 				"Explore sponsorship opportunities with MakerChat – where your brand shines among builders, dreamers, and grassroots innovators.",
-			images: ["/uploads/photos/makerchat-group-photo.webp"],
+			images: [Images.groupPhoto.src],
 		},
 		robots: "index, follow",
 	};
@@ -96,7 +98,7 @@ export default async function LocationPage({params}: {params: Params}) {
 		<>
 			<div className="relative w-full min-h-screen overflow-hidden">
 				<Image
-					src={data.image}
+					src={Images.locations[data.id as keyof typeof Images.locations]}
 					alt={data.location}
 					fill
 					className="object-cover"

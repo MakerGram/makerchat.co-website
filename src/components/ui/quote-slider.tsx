@@ -5,44 +5,11 @@
 
 import {useState} from "react";
 
-import {motion} from "framer-motion";
 import Image from "next/image";
 import {Quote, ArrowLeft, ArrowRight} from "lucide-react";
 
-const testimonialData: {
-	ids: string[];
-	details: Record<
-		string,
-		{
-			id: string;
-			desc: string;
-			profileImg: string;
-			name: string;
-			designation: string;
-		}
-	>;
-} = {
-	ids: [
-		"e60aa346-f6da-11ed-b67e-0242ac120002",
-		"e60aa346-f6da-11ed-b67e-0242ac120003",
-	],
-	details: {
-		"e60aa346-f6da-11ed-b67e-0242ac120002": {
-			id: "e60aa346-f6da-11ed-b67e-0242ac120002",
-			desc: "Thank you, MakerGram, for the opportunity to speak at MakerChat. It was a privilege to connect with fellow makers and share Docker Vision's journey. The energy and support from the community were incredible. Platforms like MakerGram are crucial for fostering innovation and driving the maker movement forward.",
-			profileImg: "/uploads/testimonials/prajith-docker.jpeg",
-			name: "Prajith Nair",
-			designation: "Founder & CEO at Docker Vision",
-		},
-		"e60aa346-f6da-11ed-b67e-0242ac120003": {
-			id: "e60aa346-f6da-11ed-b67e-0242ac120003",
-			desc: "Community is not just an alternative way of knowing, experiencing, and learning new things, sometimes, it is the only accessible way to understand and excel in technology, especially in hardware. The significance of MakerGram in Kerala's tech ecosystem lies in its undeniable efforts to make new tools and knowledge accessible to students and makers through peer learning and community-driven component libraries. Your efforts will be celebrated for the transformative impact you have made on aspiring minds, contributing to the creation of a future-ready society.",
-			profileImg: "/uploads/testimonials/jogin-fablab.jpeg",
-			name: "Jogin Francis",
-			designation: "Lead, FabLab Kerala, Kerala Startup Mission",
-		},
-	},
-};
+import {testimonialData} from "@/db";
+import Images from "@/config/constants/Images";
 
 export default function QuoteSlider() {
 	const [current, setCurrent] = useState(0);
@@ -73,10 +40,11 @@ export default function QuoteSlider() {
 			? testimonial?.desc
 			: testimonial?.desc.slice(0, maxChars) + "...";
 
-	console.log("Current testimonial:", testimonial);
-
 	return (
-		<section className="w-full px-4 py-16 bg-[#f5f5f7] flex flex-col md:flex-row items-center justify-between mx-auto gap-12 md:px-16">
+		<section
+			className="w-full px-4 py-16 bg-[#f5f5f7] flex flex-col md:flex-row items-start justify-between mx-auto gap-12 md:px-16"
+			style={{minHeight: "400px"}}
+		>
 			{/* Left Content */}
 			<div className="flex-1 max-w-6xl">
 				<h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -121,48 +89,53 @@ export default function QuoteSlider() {
 				</div>
 			</div>
 
-			{/* Testimonial Card */}
-			{testimonial && (
-				<motion.div
-					key={testimonial.id}
-					initial={{opacity: 0, x: 50}}
-					animate={{opacity: 1, x: 0}}
-					transition={{duration: 0.5}}
-					className="flex-1 max-w-xl bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.08)] transition-shadow p-8 relative"
+			{/* Testimonial Card Container with fixed dimensions */}
+			<div className="flex-1 max-w-xl">
+				<div
+					className="bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.08)] p-8"
+					style={{minHeight: "350px"}}
 				>
-					<Quote className="mx-auto mb-4 w-12 h-12 text-[#bb8f5e]" />
-					<p className="text-base md:text-lg text-gray-800 leading-relaxed font-light font-manrope">
-						{displayedDesc}
-						{isLong && (
-							<span
-								onClick={() => {
-									return setShowFull(!showFull);
-								}}
-								className="ml-2 text-[#bb8f5e] cursor-pointer font-medium"
-							>
-								{showFull ? "Show less" : "Read more"}
-							</span>
-						)}
-					</p>
-					<div className="mt-6 flex items-center space-x-4">
-						<Image
-							src={testimonial.profileImg || "/placeholder.jpg"}
-							alt={testimonial.name}
-							width={50}
-							height={50}
-							className="rounded-full object-cover"
-							onError={(e) => {
-								// fallback to placeholder
-								(e.currentTarget as HTMLImageElement).src = "/placeholder.jpg";
-							}}
-						/>
+					{testimonial && (
 						<div>
-							<p className="font-semibold text-gray-900">{testimonial.name}</p>
-							<p className="text-sm text-gray-600">{testimonial.designation}</p>
+							<Quote className="mx-auto mb-4 w-12 h-12 text-[#bb8f5e]" />
+							<p className="text-base md:text-lg text-gray-800 leading-relaxed font-light font-manrope">
+								{displayedDesc}
+								{isLong && (
+									<span
+										onClick={() => {
+											return setShowFull(!showFull);
+										}}
+										className="ml-2 text-[#bb8f5e] cursor-pointer font-medium"
+									>
+										{showFull ? "Show less" : "Read more"}
+									</span>
+								)}
+							</p>
+							<div className="mt-6 flex items-center space-x-4">
+								<Image
+									src={
+										Images.testimonials[
+											testimonial.id as keyof typeof Images.testimonials
+										]
+									}
+									alt={testimonial.name}
+									width={50}
+									height={50}
+									className="rounded-full object-cover"
+								/>
+								<div>
+									<p className="font-semibold text-gray-900">
+										{testimonial.name}
+									</p>
+									<p className="text-sm text-gray-600">
+										{testimonial.designation}
+									</p>
+								</div>
+							</div>
 						</div>
-					</div>
-				</motion.div>
-			)}
+					)}
+				</div>
+			</div>
 		</section>
 	);
 }

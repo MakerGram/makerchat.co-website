@@ -9,17 +9,19 @@ import PlaceCard from "@/components/ui/location-card";
 import ImpactCard from "@/components/ui/impact-card";
 import HeroSection from "@/components/ui/hero-section";
 import QuoteSlider from "@/components/ui/quote-slider";
+import Images from "@/config/constants/Images";
 
 export const metadata = {
 	title: "Home – MakerChat",
 	description: "where makers meet to chat and build together",
 	icons: {
 		icon: [
-			{url: "/favicon-96x96.png", type: "image/png", sizes: "96x96"},
-			{url: "/favicon.svg", type: "image/svg+xml"},
-			{url: "/favicon.ico", rel: "shortcut icon"},
+			{url: Images.faviconIco.src},
+			{url: Images.favicon96.src, type: "image/png", sizes: "96x96"},
+			{url: Images.faviconSvg.src, type: "image/svg+xml"},
+			{url: Images.faviconSvg.src, rel: "shortcut icon"},
 		],
-		apple: [{url: "/apple-touch-icon.png", sizes: "180x180"}],
+		apple: [{url: Images.appleTouchIcon.src, sizes: "180x180"}],
 	},
 	manifest: "/site.webmanifest",
 	appleWebApp: {
@@ -52,7 +54,7 @@ export const metadata = {
 		siteName: "MakerChat",
 		images: [
 			{
-				url: "/uploads/photos/makerchat-group-photo.webp",
+				url: Images.groupPhoto.src,
 				width: 1200,
 				height: 630,
 				alt: "MakerChat Open Graph Image",
@@ -64,7 +66,7 @@ export const metadata = {
 		card: "summary_large_image",
 		title: "Home – MakerChat",
 		description: "where makers meet to chat and build together",
-		images: ["/uploads/photos/makerchat-group-photo.webp"],
+		images: [Images.groupPhoto.src],
 	},
 	robots: "index, follow",
 };
@@ -115,7 +117,7 @@ export default function Home() {
 							We needed <span className="">real conversations.</span>
 						</p>
 						<p className="text-lg md:text-xl text-center md:text-left font-normal text-muted-foreground">
-							That’s when{" "}
+							That&apos;s when{" "}
 							<span className="font-semibold text-[#1e1e1e]">MakerChat</span>{" "}
 							was born — to bring meaningful, creator-first dialogues to life.
 						</p>
@@ -124,7 +126,7 @@ export default function Home() {
 					{/* Image Block */}
 					<div className="relative flex justify-center">
 						<Image
-							src="/uploads/team-chat-poster.png"
+							src={Images.teamChatPoster}
 							alt="Our Story"
 							width={600}
 							height={400}
@@ -146,7 +148,7 @@ export default function Home() {
 				<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
 					{placesData.ids.map((placeId: string) => {
 						const place = placesData.details[placeId];
-						return <PlaceCard key={placeId} {...place} />;
+						return <PlaceCard key={placeId} {...place} id={placeId} />;
 					})}
 				</div>
 			</section>
@@ -167,7 +169,9 @@ export default function Home() {
 							return (
 								<SpeakerCard
 									key={review}
-									img={speaker.avtarImg}
+									img={
+										Images.speakers[speaker.id as keyof typeof Images.speakers]
+									}
 									name={speaker.firstName}
 									designation={speaker.designation}
 								/>

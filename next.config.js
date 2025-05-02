@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-// next.config.js
-const {withContentlayer} = require("next-contentlayer");
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
 	output: "export",
 	trailingSlash: true, // GitHub Pages prefers this for routing
@@ -10,7 +6,7 @@ const nextConfig = {
 	basePath: "/makerchat.co-website", // Add basePath for GitHub Pages
 	assetPrefix: "/makerchat.co-website/", // Add assetPrefix for GitHub Pages
 	images: {
-		unoptimized: true, // ✅ Required for `next export`
+		unoptimized: true, // Required for `next export`
 		remotePatterns: [
 			{
 				protocol: "https",
@@ -42,6 +38,17 @@ const nextConfig = {
 			},
 		],
 	},
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.(mp4|webm|ogg)$/,
+			type: "asset/resource",
+			generator: {
+				filename: "static/media/[name].[hash][ext]",
+			},
+		});
+
+		return config;
+	},
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = nextConfig;
