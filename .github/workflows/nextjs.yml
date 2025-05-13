@@ -64,6 +64,12 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
+      # Enable Corepack and install the correct Yarn version (3.5.0) as defined in package.json
+      - name: Enable Corepack and install Yarn
+        run: |
+          corepack enable
+          corepack prepare yarn@3.5.0 --activate
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
