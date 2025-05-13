@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/MakerGram/makerchat.co-website/compare/v0.1.0...v0.1.1) (2025-05-13)
+
+
+### Bug Fixes
+
+* **build:** add support yarn@3.5 in gh pages workflow ([a9106ac](https://github.com/MakerGram/makerchat.co-website/commit/a9106ac0a573e34ad7ca34c0c3c0d34237af2b06))
+
 ## 0.1.0 (2025-05-13)
 
 
