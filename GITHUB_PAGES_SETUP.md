@@ -35,7 +35,7 @@ This ensures the image path utility works correctly both locally and in producti
 To test GitHub Pages deployment locally:
 
 1. Set `NEXT_PUBLIC_BASE_PATH` as mentioned above
-2. Build your project: `npm run build`
+2. Build your project: `yarn build`
 3. Serve the output directory: `npx serve out`
 
 This ensures your images will work correctly when deployed to GitHub Pages.
