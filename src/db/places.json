@@ -1,0 +1,37 @@
+{
+	"ids": ["kochi", "bangalore", "hyderabad", "dubai"],
+	"details": {
+		"kochi": {
+			"id": "kochi",
+			"title": "India",
+			"location": "Kochi",
+			"image": "/uploads/photos/kochi.jpg",
+			"url": "/location/kochi",
+			"description": "Where conversations flow like the backwaters"
+		},
+		"bangalore": {
+			"id": "bangalore",
+			"title": "India",
+			"location": "Bangalore",
+			"image": "/uploads/photos/blr-1.jpg",
+			"url": "/location/bangalore",
+			"description": "Innovation meets coffee and code"
+		},
+		"hyderabad": {
+			"id": "hyderabad",
+			"title": "India",
+			"location": "Hyderabad",
+			"image": "/uploads/photos/hyd-char.jpg",
+			"url": "/location/hyderabad",
+			"description": "City of Pearls, powered by ideas"
+		},
+		"dubai": {
+			"id": "dubai",
+			"title": "Dubai",
+			"location": "Dubai",
+			"image": "/uploads/photos/dubai-1.jpg",
+			"url": "/#/location/dubai",
+			"description": "Desert dreams. Global voices."
+		}
+	}
+}

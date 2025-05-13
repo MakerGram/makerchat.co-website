@@ -1,0 +1,28 @@
+{
+	"ids": [
+		"e60aa346-f6da-11ed-b67e-0242ac120002",
+		"e60aa347-f6da-11ed-b67e-0242ac120002",
+		"e60aa348-f6da-11ed-b67e-0242ac120002"
+	],
+
+	"details": {
+		"e60aa346-f6da-11ed-b67e-0242ac120002": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120002",
+			"name": "SeedStudio",
+			"logoImg": "./uploads/sponsors/seed-studio.webp",
+			"website": "https://www.seedstudio.in/"
+		},
+		"e60aa347-f6da-11ed-b67e-0242ac120002": {
+			"id": "e60aa347-f6da-11ed-b67e-0242ac120002",
+			"name": "Edge Impulse",
+			"logoImg": "./uploads/sponsors/edge-impulse.svg",
+			"website": "https://www.edgeimpulse.com/"
+		},
+		"e60aa348-f6da-11ed-b67e-0242ac120002": {
+			"id": "e60aa348-f6da-11ed-b67e-0242ac120002",
+			"name": "Tinkerhub",
+			"logoImg": "./uploads/sponsors/tinkerspace.webp",
+			"website": "https://www.tinkerhub.org/"
+		}
+	}
+}
