@@ -71,6 +71,7 @@ jobs:
           cache: yarn
 
       - name: Setup Pages
+        if: github.actor != 'nektos/act'
         uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in your Next.js configuration file and disable
@@ -91,18 +92,25 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: |
+          if [ "${{ github.actor }}" = "nektos/act" ]; then
+            yarn install --no-immutable
+          else
+            yarn install --immutable
+          fi
 
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact
+        if: github.actor != 'nektos/act'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
   # Deployment job
   deploy:
+    if: github.actor != 'nektos/act'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
