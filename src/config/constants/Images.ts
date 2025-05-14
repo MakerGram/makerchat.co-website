@@ -15,10 +15,10 @@ import mgLogoWhite from "../../../public/mg-logo-white.png";
 import testimonialPrajith from "../../../public/uploads/testimonials/prajith-docker.jpeg";
 import testimonialJogin from "../../../public/uploads/testimonials/jogin-fablab.jpeg";
 // Location images
-import kochiImage from "../../../public/uploads/photos/kochi.jpg";
-import bangaloreImage from "../../../public/uploads/photos/blr-1.jpg";
-import hyderabadImage from "../../../public/uploads/photos/hyd-char.jpg";
-import dubaiImage from "../../../public/uploads/photos/dubai-1.jpg";
+import kochiImage from "../../../public/uploads/photos/asia-bg-cat.webp";
+import bangaloreImage from "../../../public/uploads/photos/tiger.jpg";
+import hyderabadImage from "../../../public/uploads/photos/hyd-char.avif";
+import dubaiImage from "../../../public/uploads/photos/dubai-1.avif";
 // Speaker images
 import salmanFarisImage from "../../../public/uploads/speakers/salman-faris.webp";
 import rahulImage from "../../../public/uploads/speakers/rahul.webp";

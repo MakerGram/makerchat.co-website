@@ -13,35 +13,45 @@
 			"firstName": "Salman Faris",
 			"lastName": "",
 			"designation": "Co-founder, MakerGram",
-			"avtarImg": "/uploads/speakers/salman-faris.webp"
+			"avtarImg": "/uploads/speakers/salman-faris.webp",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
 		},
 		"e60aa346-f6da-11ed-b67e-0242ac120003": {
 			"id": "e60aa346-f6da-11ed-b67e-0242ac120003",
 			"firstName": "Rohith t p",
 			"lastName": "T P",
 			"designation": "Solutions Architect, Lascade",
-			"avtarImg": "/uploads/speakers/rahul.webp"
+			"avtarImg": "/uploads/speakers/rahul.webp",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
 		},
 		"e60aa346-f6da-11ed-b67e-0242ac120004": {
 			"id": "e60aa346-f6da-11ed-b67e-0242ac120004",
 			"firstName": "Muhammed Zain",
 			"lastName": "",
 			"designation": "Artificial Intelligence and Robotics Laboratory",
-			"avtarImg": "/uploads/speakers/zain.jpeg"
+			"avtarImg": "/uploads/speakers/zain.jpeg",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
 		},
 		"e60aa346-f6da-11ed-b67e-0242ac120005": {
 			"id": "e60aa346-f6da-11ed-b67e-0242ac120005",
 			"firstName": "Vignesh Naduvathuparambil",
 			"lastName": "",
 			"designation": "CEO, MeviTech",
-			"avtarImg": "/uploads/speakers/vignesh.jpeg"
+			"avtarImg": "/uploads/speakers/vignesh.jpeg",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
 		},
 		"e60aa346-f6da-11ed-b67e-0242ac120006": {
 			"id": "e60aa346-f6da-11ed-b67e-0242ac120006",
 			"firstName": "Swalah amani",
 			"lastName": "",
 			"designation": "Co-founder, MakerGram",
-			"avtarImg": "/uploads/speakers/swalah.jpeg"
+			"avtarImg": "/uploads/speakers/swalah.jpeg",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
 		}
 	}
 }

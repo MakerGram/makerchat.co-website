@@ -120,30 +120,73 @@ export default function Sponsor() {
 			{/* Foreground content */}
 			<div className="mx-auto max-w-7xl relative z-10 px-4">
 				{/* Sponsor intro section */}
-				<div className="mb-12 text-center max-w-4xl mx-auto">
-					<h2 className="text-left md:text-center text-sm md:text-base text-neutral-500 uppercase tracking-widest mb-2">
+				<section
+					className=" py-16 md:py-20 px-2 md:px-2 font-manrope relative"
+					aria-labelledby="sponsor-heading"
+				>
+					<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 						Why Sponsor Us
 					</h2>
-					<p className="text-left md:text-center text-3xl md:text-4xl font-semibold text-neutral-900 mb-6 leading-snug">
-						Plant Your Flag in the Maker Community
+					<p className="text-center text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight lg:text-6xl mb-6">
+						Plant your flag in the
+						<br />
+						<span className="font-tiemposHeadline font-medium">
+							maker community
+						</span>
 					</p>
-					<p className="text-left md:text-center text-lg text-neutral-600 font-light mb-6 max-w-3xl mx-auto">
-						MakerChat is more than an event — its a movement of builders,
-						creators, and dreamers. By sponsoring us, youre not just placing
-						your logo — youre planting your flag in the heart of the maker
-						community.
+					<p className="text-base md:text-lg text-center font-manrope text-muted-foreground mb-8 max-w-3xl mx-auto">
+						<span className="font-tiempos font-bold text-black">MakerChat</span>{" "}
+						is more than an event — its a movement of{" "}
+						<span className="font-tiempos text-black">builders</span>,{" "}
+						<span className="font-tiempos text-black">creators</span>, and{" "}
+						<span className="font-tiempos text-black">dreamers</span>. By
+						sponsoring us, youre not just placing your logo — youre planting
+						your flag in the heart of the maker community.
 					</p>
-					<ul className="text-neutral-700 space-y-2 text-base max-w-3xl mx-auto list-disc list-inside text-left md:text-center">
-						<li>
-							Boost your brand visibility among an engaged, innovative audience
-						</li>
-						<li>Support grassroots innovation and the maker ecosystem</li>
-						<li>
-							Create meaningful relationships with future tech leaders and
-							creators
-						</li>
-					</ul>
-				</div>
+					<div className="flex flex-col md:flex-row items-center justify-center gap-8">
+						<div
+							className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+							role="list"
+						>
+							<div className="text-center" role="listitem">
+								<p className="text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi">
+									Brand Visibility
+								</p>
+								<p className="mt-1 md:mt-2 text-base text-gray-600">
+									Boost your brand among an engaged, innovative audience
+								</p>
+							</div>
+
+							<div
+								className="w-20 h-[1px] md:h-20 md:w-[1px] bg-[#bb8f5e] opacity-30"
+								aria-hidden="true"
+							></div>
+
+							<div className="text-center" role="listitem">
+								<p className="text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi">
+									Support Innovation
+								</p>
+								<p className="mt-1 md:mt-2 text-base text-gray-600">
+									Support grassroots innovation and the maker ecosystem
+								</p>
+							</div>
+
+							<div
+								className="w-20 h-[1px] md:h-20 md:w-[1px] bg-[#bb8f5e] opacity-30"
+								aria-hidden="true"
+							></div>
+
+							<div className="text-center" role="listitem">
+								<p className="text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi">
+									Build Relationships
+								</p>
+								<p className="mt-1 md:mt-2 text-base text-gray-600">
+									Create meaningful relationships with future tech leaders
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
 				{/* Sponsorship tiers */}
 				<section className="md:p-4 rounded-lg">
