@@ -3,6 +3,8 @@ const nextConfig = {
 	output: "export",
 	trailingSlash: true, // GitHub Pages prefers this for routing
 	reactStrictMode: false,
+	basePath: "", // Add basePath for custom domain
+	assetPrefix: "", //
 	images: {
 		unoptimized: true, // Required for `next export`
 		remotePatterns: [
