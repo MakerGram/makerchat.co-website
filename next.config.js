@@ -3,8 +3,6 @@ const nextConfig = {
 	output: "export",
 	trailingSlash: true, // GitHub Pages prefers this for routing
 	reactStrictMode: false,
-	basePath: "/makerchat.co-website", // Add basePath for GitHub Pages
-	assetPrefix: "/makerchat.co-website/", // Add assetPrefix for GitHub Pages
 	images: {
 		unoptimized: true, // Required for `next export`
 		remotePatterns: [
