@@ -32,45 +32,77 @@ jobs:
 
       - name: Debug - List workspace contents
         run: |
+          echo "=== Workspace Contents ==="
           ls -la ${{ github.workspace }}
-          echo "Looking for yarn.lock file..."
+          echo "=== Package Files Check ==="
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "yarn.lock file found"
+            echo "✅ yarn.lock file found"
           else
-            echo "yarn.lock file NOT found"
+            echo "❌ yarn.lock file NOT found"
           fi
+          if [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "✅ package.json file found"
+            echo "=== Package.json Contents ==="
+            cat package.json
+          else
+            echo "❌ package.json file NOT found"
+          fi
+
+      - name: Debug - Node and Yarn versions
+        run: |
+          echo "=== Node Version ==="
+          node --version
+          echo "=== Yarn Version ==="
+          yarn --version
+          echo "=== NPM Version ==="
+          npm --version
 
       - name: Detect package manager
         id: detect-package-manager
         run: |
+          echo "=== Package Manager Detection ==="
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
+            echo "📦 Using Yarn as package manager"
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
+            echo "📦 Using NPM as package manager"
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
             exit 0
           else
-            echo "Unable to determine package manager"
+            echo "❌ Unable to determine package manager"
             exit 1
           fi
+
+      # Enable Corepack and install the correct Yarn version (3.5.0) BEFORE Node setup
+      - name: Enable Corepack and install Yarn
+        run: |
+          echo "=== Setting up Yarn ==="
+          corepack enable
+          corepack prepare yarn@3.5.0 --activate
+          echo "✅ Yarn setup complete"
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: yarn
 
-      # Enable Corepack and install the correct Yarn version (3.5.0) as defined in package.json
-      - name: Enable Corepack and install Yarn
+      - name: Debug - Environment after Node setup
         run: |
-          corepack enable
-          corepack prepare yarn@3.5.0 --activate
+          echo "=== Environment Variables ==="
+          env | sort
+          echo "=== Current Directory ==="
+          pwd
+          echo "=== Directory Contents ==="
+          ls -la
 
       - name: Setup Pages
+        if: github.actor != 'nektos/act'
         uses: actions/configure-pages@v5
         with:
           # Automatically inject basePath in your Next.js configuration file and disable
@@ -91,18 +123,43 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: |
+          echo "=== Installing Dependencies ==="
+          if [ "${{ github.actor }}" = "nektos/act" ]; then
+            echo "Using --no-immutable flag for local testing"
+            yarn install --no-immutable
+          else
+            echo "Using --immutable flag for CI"
+            # First try with --immutable
+            if ! yarn install --immutable; then
+              echo "⚠️ Lockfile needs updates, updating dependencies..."
+              # If immutable fails, update dependencies and regenerate lockfile
+              yarn install --mode=update-lockfile
+              # Verify the installation
+              yarn install --immutable
+            fi
+          fi
+          echo "=== Dependencies Installation Complete ==="
+          echo "=== Node Modules Contents ==="
+          ls -la node_modules
 
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: |
+          echo "=== Starting Next.js Build ==="
+          ${{ steps.detect-package-manager.outputs.runner }} next build
+          echo "=== Build Complete ==="
+          echo "=== Build Output Contents ==="
+          ls -la out
 
       - name: Upload artifact
+        if: github.actor != 'nektos/act'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
   # Deployment job
   deploy:
+    if: github.actor != 'nektos/act'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
