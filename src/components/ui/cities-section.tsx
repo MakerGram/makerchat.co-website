@@ -5,7 +5,7 @@ import PlaceCard from "@/components/ui/location-card";
 
 export default function CitiesSection() {
 	return (
-		<section className="bg-white px-4 md:px-8 lg:px-16 py-10">
+		<section className="bg-white px-4 md:px-0 py-10">
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				MakerChat across the Cities
 			</h2>

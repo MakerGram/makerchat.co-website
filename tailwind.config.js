@@ -127,6 +127,16 @@ module.exports = {
 						transform: "translateY(calc(-100% - var(--gap)))",
 					},
 				},
+				"scroll-down": {
+					"0%, 100%": {
+						transform: "translateY(0)",
+						opacity: "0.4",
+					},
+					"50%": {
+						transform: "translateY(12px)",
+						opacity: "1",
+					},
+				},
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
@@ -134,6 +144,7 @@ module.exports = {
 				marquee: "marquee var(--duration) linear infinite",
 				"marquee-vertical": "marquee-vertical var(--duration) linear infinite",
 				fill: "fill 4s linear forwards",
+				"scroll-down": "scroll-down 2s ease-in-out infinite",
 			},
 		},
 	},

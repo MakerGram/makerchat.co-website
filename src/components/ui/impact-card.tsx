@@ -81,7 +81,7 @@ export default function ImpactCard() {
 						>
 							<motion.p
 								variants={numberVariants}
-								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
+								className="text-7xl md:text-7xl  font-normal lg:text-6xl  tracking-wide"
 								aria-label="28 plus offline events"
 							>
 								28+
@@ -112,7 +112,7 @@ export default function ImpactCard() {
 						>
 							<motion.p
 								variants={numberVariants}
-								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl  tracking-wide"
 								aria-label="41 plus maker chats"
 							>
 								41+
@@ -143,7 +143,7 @@ export default function ImpactCard() {
 						>
 							<motion.p
 								variants={numberVariants}
-								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl  tracking-wide"
 								aria-label="520 plus attendees"
 							>
 								520+

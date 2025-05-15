@@ -64,7 +64,7 @@ export const metadata = {
 
 export default function Events() {
 	return (
-		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-16 md:mt-24">
+		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-24 md:mt-24">
 			{/* Background Mask */}
 
 			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
@@ -88,8 +88,8 @@ export default function Events() {
 					className="opacity-10 object-cover"
 				/>
 			</div>
-			<div className="mx-auto max-w-7xl relative z-10 px-4">
-				<section className=" px-4 md:px-8 lg:px-16 z-50">
+			<div className="mx-auto  relative z-10 px-4 md:px-0">
+				<section className="  lg:px-16 z-50">
 					<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 						MakerChat across the Cities
 					</h2>

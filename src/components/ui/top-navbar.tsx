@@ -109,6 +109,7 @@ const DockNavBar = () => {
 							</Link>
 						);
 					})}
+
 					<Link
 						href="/sponsor"
 						className="ml-4 px-6 py-2 bg-white text-black text-base font-medium rounded-full shadow transition-all duration-200 hover:bg-black hover:text-white flex items-center gap-2"
@@ -131,7 +132,20 @@ const DockNavBar = () => {
 							>
 								<Icon
 									className="w-5 h-5 mb-1"
-									fill={isActive(href) ? "white" : "none"}
+									fill={
+										isActive(href)
+											? href === "/sponsor"
+												? "white"
+												: "white"
+											: "none"
+									}
+									stroke={
+										isActive(href)
+											? href === "/sponsor"
+												? "white"
+												: "white"
+											: "white"
+									}
 								/>
 								{label}
 							</Link>

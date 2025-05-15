@@ -51,17 +51,17 @@ export default function LocationHero({slug, data}: iLocationHeroProps) {
 	};
 
 	return (
-		<div className="relative z-20 flex flex-col items-center justify-center px-5 md:px-16 min-h-dvh h-full w-full max-w-3xl mx-auto">
-			<div className="w-full text-white space-y-4 bg-black/10 backdrop-blur-sm rounded-xl p-6 min-h-[300px]">
+		<div className="relative z-20 flex flex-col items-center justify-center px-5 md:px-16 h-dvh w-full max-w-3xl mx-auto">
+			<div className="w-full text-white space-y-4 bg-black/25 backdrop-blur-sm rounded-xl p-6 min-h-[300px]">
 				<div
 					className={`inline-flex items-center px-3 py-1.5 rounded-full backdrop-blur-sm text-sm uppercase tracking-wide text-white/80 font-semibold ${
 						slug === "kochi"
-							? "bg-green-500/20"
+							? "bg-green-500/40"
 							: slug === "bangalore"
-								? "bg-yellow-500/20"
+								? "bg-yellow-500/40"
 								: slug === "hyderabad"
-									? "bg-[#79405c]/20"
-									: "bg-[#87CEEB]/20"
+									? "bg-[#79405c]/40"
+									: "bg-[#87CEEB]/40"
 					}`}
 				>
 					{status === "active" && "Happening Now"}
@@ -69,7 +69,7 @@ export default function LocationHero({slug, data}: iLocationHeroProps) {
 					{status === "interest" && "Express Your Interest"}
 				</div>
 
-				<h1 className="text-4xl md:text-5xl font-bold flex items-center gap- font-tiemposHeadline tracking-wider">
+				<h1 className="text-5xl md:text-5xl font-bold flex items-center gap- font-manrope">
 					{data.location}
 				</h1>
 

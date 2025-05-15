@@ -63,7 +63,7 @@ export const metadata = {
 
 export default function Blog() {
 	return (
-		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-16 md:mt-24">
+		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-24 md:mt-24">
 			{/* Radial background mask */}
 			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
