@@ -96,12 +96,12 @@ export default async function LocationPage({params}: {params: Params}) {
 
 	return (
 		<>
-			<div className="relative w-full min-h-screen overflow-hidden">
+			<div className="relative h-auto min-h-screen overflow-hidden">
 				<Image
 					src={Images.locations[data.id as keyof typeof Images.locations]}
 					alt={data.location}
 					fill
-					className="object-cover"
+					className="object-cover h-dvh min-h-screen"
 					priority
 				/>
 				<div className="absolute inset-0 z-10 bg-gradient-to-t md:bg-gradient-to-l from-black/70 to-transparent" />

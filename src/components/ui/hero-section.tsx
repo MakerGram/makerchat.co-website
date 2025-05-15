@@ -17,13 +17,14 @@ export default function HeroSection() {
 	const [isMuted, setIsMuted] = useState(true);
 
 	return (
-		<section className="relative flex items-end md:items-center justify-center md:justify-center min-h-dvh bg-black overflow-hidden flex-col w-full">
+		<section className="relative flex items-end md:items-center justify-center md:justify-center h-screen bg-black overflow-hidden flex-col w-full">
 			<video
 				ref={videoRef}
 				autoPlay
 				muted={isMuted}
 				playsInline
-				className="absolute inset-0 w-full h-full object-cover fixed"
+				className="absolute inset-0 w-full h-screen object-cover"
+				preload="auto"
 			>
 				<source src={Images.heroVideo} type="video/mp4" />
 				Your browser does not support the video tag.

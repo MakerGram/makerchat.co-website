@@ -26,7 +26,11 @@ export default function PlaceCard({
 				{/* Background Image */}
 				<div className="relative w-full h-[280px]">
 					<Image
-						src={Images.locations[id as keyof typeof Images.locations]}
+						src={
+							Images.locationsThumbnail[
+								id as keyof typeof Images.locationsThumbnail
+							]
+						}
 						alt={title || "Place Image"}
 						fill
 						className="object-cover transition-transform duration-500 group-hover:scale-105"

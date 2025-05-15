@@ -146,10 +146,17 @@ export default function QuoteSlider() {
 						variants={itemVariants}
 						className="space-y-4 md:space-y-6"
 					>
-						<h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-900 lowercase">
-							Loved by the community
+						<h2 className="text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
+							Testimonials
 						</h2>
-						<p className="text-base sm:text-lg text-gray-700">
+						<h2 className="text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight text-gray-900 mb-6">
+							Loved by the
+							<br />
+							<span className="font-tiemposHeadline font-medium">
+								community
+							</span>
+						</h2>
+						<p className="text-xl sm:text-xl text-gray-700 lowercase">
 							Real voices from real makers, changemakers, and innovators.
 						</p>
 					</motion.div>
@@ -234,7 +241,7 @@ export default function QuoteSlider() {
 													className={`relative ${showFull ? "max-h-[200px] sm:max-h-[240px] md:max-h-[280px] overflow-y-auto pr-2" : ""}`}
 												>
 													<p
-														className={`text-base sm:text-base md:text-lg text-gray-800 leading-relaxed font-light font-manrope ${!showFull && isLong ? "line-clamp-4 sm:line-clamp-5 md:line-clamp-6" : ""}`}
+														className={`text-lg sm:text-lg md:text-lg text-gray-800 leading-relaxed font-light  lowercase font-manrope ${!showFull && isLong ? "line-clamp-4 sm:line-clamp-5 md:line-clamp-6" : ""}`}
 													>
 														{displayedDesc}
 													</p>

@@ -81,27 +81,27 @@ export default function ImpactCard() {
 						>
 							<motion.p
 								variants={numberVariants}
-								className="text-4xl md:text-5xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
 								aria-label="28 plus offline events"
 							>
 								28+
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="mt-2 md:mt-3 text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi"
+								className="mt-2 md:mt-3 text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi"
 							>
 								Offline Events
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="mt-1 md:mt-2 text-base text-gray-600"
+								className="mt-1 md:mt-2 text-lg text-gray-600 lowercase"
 							>
 								City-based meetups where ideas spark
 							</motion.p>
 						</motion.div>
 
 						<div
-							className="w-20 h-[1px] md:h-20 md:w-[1px] bg-[#bb8f5e] opacity-30"
+							className="w-20 h-[1px] md:h-20 md:w-[1px] bg-gray-400 opacity-30"
 							aria-hidden="true"
 						></div>
 
@@ -112,27 +112,27 @@ export default function ImpactCard() {
 						>
 							<motion.p
 								variants={numberVariants}
-								className="text-4xl md:text-5xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
 								aria-label="41 plus maker chats"
 							>
 								41+
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="mt-2 md:mt-3 text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi"
+								className="mt-2 md:mt-3 text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi"
 							>
 								MakerChats
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="mt-1 md:mt-2 text-base text-gray-600"
+								className="mt-1 md:mt-2 text-lg text-gray-600 lowercase"
 							>
 								Real-world tech sessions
 							</motion.p>
 						</motion.div>
 
 						<div
-							className="w-20 h-[1px] md:h-20 md:w-[1px] bg-[#bb8f5e] opacity-30"
+							className="w-20 h-[1px] md:h-20 md:w-[1px] bg-gray-400 opacity-30"
 							aria-hidden="true"
 						></div>
 
@@ -143,20 +143,20 @@ export default function ImpactCard() {
 						>
 							<motion.p
 								variants={numberVariants}
-								className="text-4xl md:text-5xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl font-tiemposHeadline tracking-wide"
 								aria-label="520 plus attendees"
 							>
 								520+
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="mt-2 md:mt-3 text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi"
+								className="mt-2 md:mt-3 text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi"
 							>
 								Attendees
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="mt-1 md:mt-2 text-base text-gray-600"
+								className="mt-1 md:mt-2 text-lg text-gray-600 lowercase"
 							>
 								Together for a future shaped from the ground up
 							</motion.p>

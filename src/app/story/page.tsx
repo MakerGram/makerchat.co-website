@@ -63,9 +63,9 @@ export const metadata = {
 
 export default function Blog() {
 	return (
-		<section className="bg-grid-black/10 relative pb-32 pt-16 md:pt-10">
+		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-16 md:mt-24">
 			{/* Radial background mask */}
-			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)] z-0" />
+			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
 			{/* Background Images */}
 			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
@@ -77,7 +77,7 @@ export default function Blog() {
 					className="opacity-10 object-contain"
 				/>
 			</div>
-			<div className="absolute -bottom-36 -right-20 flex justify-start items-center pointer-events-none z-0">
+			<div className="absolute -bottom-36 -right-0 flex justify-start items-center pointer-events-none z-0">
 				<Image
 					src={Images.elements.arduinoSkelton.src}
 					width={500}
@@ -89,11 +89,13 @@ export default function Blog() {
 
 			{/* Top headline */}
 			<div className="relative z-10 text-center px-4 md:px-8">
-				<h2 className="text-sm md:text-base text-neutral-500 uppercase tracking-widest mb-2 text-left md:text-center">
-					MakerChat Blog
+				<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
+					MakerChat Stories
 				</h2>
-				<p className="text-3xl md:text-4xl font-semibold text-neutral-900 text-left md:text-center">
-					Fresh from the Maker Zone
+				<p className="text-center text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight lg:text-6xl mb-6">
+					where makers
+					<br />
+					<span className="font-tiemposHeadline font-medium">thrive</span>
 				</p>
 			</div>
 

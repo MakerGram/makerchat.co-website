@@ -12,7 +12,14 @@ import Images from "@/config/constants/Images";
 
 const navItems = [
 	{href: "/", label: "Home", icon: Home},
-	{href: "/sponsor", label: "Sponsor", icon: Bookmark},
+	{href: "/speaker", label: "Speaker", icon: Bookmark},
+	{href: "/events", label: "Events", icon: Calendar},
+	{href: "/story", label: "Blog", icon: BookOpen},
+];
+const navItemsMobile = [
+	{href: "/", label: "Home", icon: Home},
+	{href: "/sponsor", label: "Sponsor", icon: Heart},
+	{href: "/speaker", label: "Speaker", icon: Bookmark},
 	{href: "/events", label: "Events", icon: Calendar},
 	{href: "/story", label: "Blog", icon: BookOpen},
 ];
@@ -103,8 +110,8 @@ const DockNavBar = () => {
 						);
 					})}
 					<Link
-						href="/schedule-call"
-						className="ml-4 px-6 py-2 bg-white text-black text-base font-medium rounded-full shadow transition-all duration-200 hover:bg-[#d94c22] flex items-center gap-2"
+						href="/sponsor"
+						className="ml-4 px-6 py-2 bg-white text-black text-base font-medium rounded-full shadow transition-all duration-200 hover:bg-black hover:text-white flex items-center gap-2"
 					>
 						<Heart className="w-5 h-5" />
 						Sponsor Us
@@ -115,7 +122,7 @@ const DockNavBar = () => {
 			{/* Mobile Navigation */}
 			<nav className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
 				<div className="flex gap-6 px-6 py-3 bg-black/40 backdrop-blur-sm shadow-xl rounded-full border border-white/5">
-					{navItems.map(({href, label, icon: Icon}) => {
+					{navItemsMobile.map(({href, label, icon: Icon}) => {
 						return (
 							<Link
 								key={label}

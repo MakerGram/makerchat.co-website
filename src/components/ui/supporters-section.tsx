@@ -8,7 +8,7 @@ import {sponsorData} from "@/db";
 
 export default function SupportersSection() {
 	const title = "Our Supporters";
-	const sponsorText = "Interested in sponsoring? Learn more →";
+	const sponsorText = "Interested in Sponsoring - Learn more →";
 
 	return (
 		<section className="mx-auto py-16 md:py-20 max-w-6xl px-2 md:px-0 relative">
@@ -42,7 +42,7 @@ export default function SupportersSection() {
 					);
 				})}
 			</div>
-			<div className="text-center mt-8">
+			<div className="text-center mt-8 lowercase">
 				<Link
 					href="/sponsor"
 					className="text-[#0071e3] text-base hover:underline underline-offset-8"

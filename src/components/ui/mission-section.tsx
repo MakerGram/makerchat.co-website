@@ -75,9 +75,9 @@ const MissionSection = () => {
 							variants={containerVariants}
 							initial="hidden"
 							animate={isMissionInView ? "visible" : "hidden"}
-							className="space-y-8 z-50 md:mt-0 text-lg md:text-lg text-gray-800 flex flex-col items-center md:items-start"
+							className="space-y-8 z-50 md:mt-0 text-xl md:text-xl text-gray-800 flex flex-col items-center md:items-start lowercase"
 						>
-							<div className="flex items-center w-full gap-4 mb-3">
+							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
 									className="text-sm md:text-base text-gray-600 uppercase tracking-widest whitespace-nowrap"
@@ -88,16 +88,13 @@ const MissionSection = () => {
 							</div>
 							<motion.p
 								variants={itemVariants}
-								className="font-manrope leading-relaxed"
+								className="font-manrope leading-relaxed "
 							>
-								At <span className="font-tiempos font-bold">MakerChat</span>,
-								were reimagining the future of work by empowering the
-								intelligence to unlock human potential.
+								At <span className="">MakerChat</span>, were reimagining the
+								future of work by empowering the intelligence to unlock human
+								potential.
 							</motion.p>
-							<motion.p
-								variants={itemVariants}
-								className="font-manrope leading-relaxed"
-							>
+							<motion.p variants={itemVariants} className=" leading-relaxed">
 								As an <span className="font-semibold">innovation lab</span>, we
 								develop breakthrough solutions that make complex tasks more
 								intuitive, collaboration more powerful, and creativity more
@@ -120,15 +117,15 @@ const MissionSection = () => {
 			</section>
 			<section className="bg-white text-black md:py-20 py-10  md:px-20 px-4">
 				<div className="max-w-7xl mx-auto">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center lowercase">
 						{/* Left: Content */}
 						<motion.div
 							variants={containerVariants}
 							initial="hidden"
 							animate={isVisionInView ? "visible" : "hidden"}
-							className="space-y-8 z-50 md:mt-0 text-lg md:text-lg text-gray-800 flex flex-col items-center md:items-start order-2 md:order-1"
+							className="space-y-8 z-50 md:mt-0 text-xl md:text-xl text-gray-800 flex flex-col items-center md:items-start order-2 md:order-1"
 						>
-							<div className="flex items-center w-full gap-4 mb-3">
+							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
 									className="text-sm md:text-base text-gray-600 uppercase tracking-widest whitespace-nowrap"
@@ -141,17 +138,17 @@ const MissionSection = () => {
 								variants={itemVariants}
 								className="font-manrope leading-relaxed"
 							>
-								At <span className="font-tiempos font-bold">MakerChat</span>,
-								were reimagining the future of work by empowering the
-								intelligence to unlock human potential.
+								At <span className="">MakerChat</span>, were reimagining the
+								future of work by empowering the intelligence to unlock human
+								potential.
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
 								className="font-manrope leading-relaxed"
 							>
-								As an <span className="font-semibold">innovation lab</span>, we
-								develop breakthrough solutions that make complex tasks more
-								intuitive, collaboration more powerful, and creativity more
+								As an <span className="">innovation lab</span>, we develop
+								breakthrough solutions that make complex tasks more intuitive,
+								collaboration more powerful, and creativity more
 								impactful—always with a human-centric focus.
 							</motion.p>
 							<motion.p

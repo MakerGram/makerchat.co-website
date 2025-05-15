@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Check, XCircle} from "lucide-react";
+import {Check, XCircle, Eye, Lightbulb, Users} from "lucide-react";
 import Image from "next/image";
 
 import {Card, CardContent} from "@/components/ui/card";
@@ -93,7 +93,7 @@ const sponsorshipTiers = [
 
 export default function Sponsor() {
 	return (
-		<section className="bg-grid-[#4b3f33]/10 relative pb-32 pt-16 md:pt-10">
+		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-16 md:mt-24">
 			{/* Background mask */}
 			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
@@ -104,7 +104,7 @@ export default function Sponsor() {
 					width={600}
 					height={600}
 					alt="Raspberry Pi"
-					className="opacity-10 object-contain"
+					className="opacity-5 md:opacity-10 object-contain"
 				/>
 			</div>
 			<div className="absolute -bottom-36 -right-0 flex justify-start items-center pointer-events-none z-0">
@@ -121,38 +121,40 @@ export default function Sponsor() {
 			<div className="mx-auto max-w-7xl relative z-10 px-4">
 				{/* Sponsor intro section */}
 				<section
-					className=" py-16 md:py-20 px-2 md:px-2 font-manrope relative"
+					className="px-2 md:px-2 font-manrope relative"
 					aria-labelledby="sponsor-heading"
 				>
 					<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 						Why Sponsor Us
 					</h2>
 					<p className="text-center text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight lg:text-6xl mb-6">
-						Plant your flag in the
+						Plant your flag⛳ in the
 						<br />
 						<span className="font-tiemposHeadline font-medium">
 							maker community
 						</span>
 					</p>
-					<p className="text-base md:text-lg text-center font-manrope text-muted-foreground mb-8 max-w-3xl mx-auto">
-						<span className="font-tiempos font-bold text-black">MakerChat</span>{" "}
-						is more than an event — its a movement of{" "}
-						<span className="font-tiempos text-black">builders</span>,{" "}
-						<span className="font-tiempos text-black">creators</span>, and{" "}
-						<span className="font-tiempos text-black">dreamers</span>. By
-						sponsoring us, youre not just placing your logo — youre planting
-						your flag in the heart of the maker community.
+					<p className="text-xl md:text-xl text-center font-manrope text-muted-foreground mb-8 max-w-3xl mx-auto">
+						<span className="">MakerChat</span> is more than an event — its a
+						movement of <span className=" text-black">builders</span>,{" "}
+						<span className=" text-black">creators</span>, and{" "}
+						<span className=" text-black">dreamers</span>. By sponsoring us,
+						youre not just placing your logo — youre planting your flag in the
+						heart of the maker community.
 					</p>
-					<div className="flex flex-col md:flex-row items-center justify-center gap-8">
+					<div className="flex flex-col md:flex-row items-center justify-center  md:gap-8 mb-10">
 						<div
-							className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+							className="flex flex-col md:flex-row items-center gap-4 md:gap-12"
 							role="list"
 						>
 							<div className="text-center" role="listitem">
-								<p className="text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi">
+								<div className="flex justify-center mb-3">
+									<Eye className="w-8 h-8 text-[#bb8f5e]" />
+								</div>
+								<p className="text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi">
 									Brand Visibility
 								</p>
-								<p className="mt-1 md:mt-2 text-base text-gray-600">
+								<p className="mt-1 md:mt-2 text-lg text-gray-600">
 									Boost your brand among an engaged, innovative audience
 								</p>
 							</div>
@@ -163,10 +165,13 @@ export default function Sponsor() {
 							></div>
 
 							<div className="text-center" role="listitem">
-								<p className="text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi">
+								<div className="flex justify-center mb-3">
+									<Lightbulb className="w-8 h-8 text-[#bb8f5e]" />
+								</div>
+								<p className="text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi">
 									Support Innovation
 								</p>
-								<p className="mt-1 md:mt-2 text-base text-gray-600">
+								<p className="mt-1 md:mt-2 text-lg text-gray-600">
 									Support grassroots innovation and the maker ecosystem
 								</p>
 							</div>
@@ -177,10 +182,13 @@ export default function Sponsor() {
 							></div>
 
 							<div className="text-center" role="listitem">
-								<p className="text-base md:text-lg font-medium tracking-wide text-gray-700 font-nohemi">
+								<div className="flex justify-center mb-3">
+									<Users className="w-8 h-8 text-[#bb8f5e]" />
+								</div>
+								<p className="text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi">
 									Build Relationships
 								</p>
-								<p className="mt-1 md:mt-2 text-base text-gray-600">
+								<p className="mt-1 md:mt-2 text-lg text-gray-600">
 									Create meaningful relationships with future tech leaders
 								</p>
 							</div>
@@ -195,8 +203,8 @@ export default function Sponsor() {
 							return (
 								<Card
 									key={index}
-									className={`relative overflow-hidden pt-6 pb-6 rounded-3xl bg-[#f5f5f7] shadow-[0_10px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.02] ${
-										index === 1 ? "ring-2 ring-neutral-400" : ""
+									className={`relative overflow-hidden pt-6  rounded-3xl bg-[#f5f5f7] shadow-[0_10px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.02] ${
+										index === 1 ? "ring-2 ring-[#bb8f5e]" : ""
 									}`}
 								>
 									<CardContent className="relative z-10 flex flex-col items-start text-center px-6">
@@ -225,7 +233,7 @@ export default function Sponsor() {
 										</div>
 										<a
 											href="mailto:contact@makergram.com"
-											className="mt-auto block w-full bg-black hover:bg-neutral-800 text-white text-base py-2 font-medium text-center rounded-md"
+											className="mt-auto block w-full bg-black hover:bg-neutral-900 text-white text-base py-2.5 font-medium text-center rounded-full transition-all duration-200 shadow-sm hover:shadow-md"
 										>
 											Lets talk
 										</a>

@@ -74,7 +74,7 @@ export default function StorySection() {
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="text-base md:text-lg text-center md:text-left font-manrope text-gray-800 max-w-xl"
+								className="text-xl md:text-xl text-center md:text-left font-manrope text-gray-800 max-w-xl lowercase"
 							>
 								That&apos;s when{" "}
 								<span className="font-normal text-gray-800">MakerChat</span> was

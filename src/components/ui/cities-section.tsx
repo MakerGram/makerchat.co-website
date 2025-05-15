@@ -7,7 +7,7 @@ export default function CitiesSection() {
 	return (
 		<section className="bg-white px-4 md:px-8 lg:px-16 py-10">
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
-				Our Supporters
+				MakerChat across the Cities
 			</h2>
 			<h2 className="text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-10">
 				MakerChat across the
