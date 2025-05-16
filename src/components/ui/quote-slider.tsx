@@ -133,7 +133,7 @@ export default function QuoteSlider() {
 	return (
 		<section
 			ref={sectionRef}
-			className="w-full px-4 py-10 md:py-20 bg-[#f5f5f7]"
+			className="w-full px-4 py-10 md:py-20 bg-[#f5f5f7] md:px-20"
 		>
 			<div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-8 md:gap-12 lg:gap-16">
 				<motion.div
@@ -149,7 +149,7 @@ export default function QuoteSlider() {
 						<h2 className="text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 							Testimonials
 						</h2>
-						<h2 className="text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight text-gray-900 mb-6">
+						<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-gray-900 mb-6">
 							Loved by the
 							<br />
 							<span className="font-tiemposHeadline font-medium">

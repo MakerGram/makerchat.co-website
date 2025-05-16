@@ -1,8 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Image from "next/image";
 
 import BlogCards from "@/components/ui/blog-cards";
 import Images from "@/config/constants/Images";
+import BackgroundImages from "@/components/BackgroundImages";
 
 export const metadata = {
 	title: "Blog – MakerChat",
@@ -63,44 +63,25 @@ export const metadata = {
 
 export default function Blog() {
 	return (
-		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-24 md:mt-24">
+		<section className="bg-grid-[#4b3f33]/5 relative bg-[#f5f5f7] md:px-20 px-4">
 			{/* Radial background mask */}
 			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
 			{/* Background Images */}
-			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
-				<Image
-					src={Images.elements.piSkelton.src}
-					width={600}
-					height={600}
-					alt="Raspberry Pi"
-					className="opacity-10 object-contain"
-				/>
-			</div>
-			<div className="absolute -bottom-36 -right-0 flex justify-start items-center pointer-events-none z-0">
-				<Image
-					src={Images.elements.arduinoSkelton.src}
-					width={500}
-					height={500}
-					alt="Arduino"
-					className="opacity-10 object-cover"
-				/>
-			</div>
+			<BackgroundImages />
 
 			{/* Top headline */}
-			<div className="relative z-10 text-center px-4 md:px-8">
+			<div className="relative z-10 text-center  py-32 md:px-0">
 				<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 					MakerChat Stories
 				</h2>
-				<p className="text-center text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight lg:text-6xl mb-6">
+				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-6">
 					where makers
 					<br />
 					<span className="font-tiemposHeadline font-medium">thrive</span>
 				</p>
+				<BlogCards />
 			</div>
-
-			{/* Blog Cards from client component */}
-			<BlogCards />
 		</section>
 	);
 }

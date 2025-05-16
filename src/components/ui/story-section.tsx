@@ -50,7 +50,7 @@ export default function StorySection() {
 	};
 
 	return (
-		<section className="w-full px-4 py-10 md:py-0 bg-white">
+		<section className="w-full px-4 py-10 md:py-0 bg-white md:px-20">
 			<div className="mx-auto flex flex-col md:flex-row gap-12 items-center justify-between max-w-7xl">
 				{/* Text Content */}
 				<div className="relative flex items-start gap-8">
@@ -64,7 +64,7 @@ export default function StorySection() {
 						>
 							<motion.p
 								variants={itemVariants}
-								className="text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight text-center md:text-left text-gray-900"
+								className=" text-center md:text-left text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight"
 							>
 								We needed real
 								<br />

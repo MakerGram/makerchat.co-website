@@ -48,7 +48,7 @@ export default function BlogCards() {
 	}
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 max-w-7xl mx-auto px-4 mt-10">
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10  mx-auto  max-w-7xl">
 			{stories.ids.map((item) => {
 				const {featuredImage, title, readingTime, publishedAt, postUrl} =
 					stories.items[item];
@@ -87,7 +87,7 @@ export default function BlogCards() {
 
 						{/* Content */}
 						<div className="absolute inset-0 flex flex-col justify-end p-6">
-							<div className="transform transition-all duration-500 ease-out group-hover:translate-y-[-8px]">
+							<div className="transform transition-all duration-500 ease-out group-hover:translate-y-[-8px] text-left">
 								<h3 className="text-white text-xl font-medium tracking-tight mb-2 drop-shadow-lg">
 									{title}
 								</h3>

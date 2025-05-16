@@ -1,6 +1,9 @@
 "use client";
 import React, {useRef, useState, useEffect} from "react";
 
+import Link from "next/link";
+import {ArrowRight} from "lucide-react";
+
 import {speakers} from "@/db";
 import {SpeakerCard} from "@/components/ui/speaker-card";
 import Images from "@/config/constants/Images";
@@ -49,16 +52,13 @@ export default function SpeakersSection() {
 	};
 
 	return (
-		<section className="bg-[#f5f5f7] px-4 md:px-8 lg:px-16 py-16">
+		<section className="bg-[#f5f5f7] px-4  md:px-20 pt-16 pb-32">
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				Our Speakers
 			</h2>
-			<h2 className="text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-12">
-				Where Founders, Builders &
-				<br />
-				<span className="font-tiemposHeadline font-medium">
-					Experts Inspire
-				</span>
+			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-12">
+				Where Founders, Builders & <br className="hidden md:block" /> Experts{" "}
+				<span className="font-tiemposHeadline font-medium">Inspire</span>
 			</h2>
 
 			<div className="relative w-full max-w-7xl mx-auto">
@@ -152,13 +152,14 @@ export default function SpeakersSection() {
 					</div>
 				</div>
 			</div>
-			<div className="text-center mt-12 lowercase">
-				<a
+			<div className="text-center mt-14">
+				<Link
 					href="/sponsor"
-					className="text-[#0071e3] text-base hover:underline underline-offset-8 transition-all duration-300"
+					className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#1d1d1f] to-[#2d2d2f] text-white font-medium hover:from-[#2d2d2f] hover:to-[#3d3d3f] transition-all duration-200 shadow-sm hover:shadow-md"
 				>
-					Become a Speaker - Apply Now →
-				</a>
+					Become a Speaker - Apply Now
+					<ArrowRight className="w-4 h-4" />
+				</Link>
 			</div>
 		</section>
 	);

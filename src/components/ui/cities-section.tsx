@@ -5,13 +5,12 @@ import PlaceCard from "@/components/ui/location-card";
 
 export default function CitiesSection() {
 	return (
-		<section className="bg-white px-4 md:px-0 py-10">
+		<section className="bg-white px-4  py-10 md:px-20">
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				MakerChat across the Cities
 			</h2>
-			<h2 className="text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-10">
-				MakerChat across the
-				<br />
+			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-10">
+				MakerChat across the <br className="hidden md:block" />
 				<span className="font-tiemposHeadline font-medium">Cities</span>
 			</h2>
 

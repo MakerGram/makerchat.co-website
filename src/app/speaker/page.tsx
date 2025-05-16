@@ -1,6 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
 import {
 	Languages,
 	Users,
@@ -13,6 +12,7 @@ import {
 } from "lucide-react";
 
 import Images from "@/config/constants/Images";
+import BackgroundImages from "@/components/BackgroundImages";
 
 export const metadata = {
 	title: "Speaker Guidelines – MakerChat",
@@ -69,51 +69,34 @@ export const metadata = {
 
 export default function Speaker() {
 	return (
-		<section className="bg-grid-[#4b3f33]/10 relative pb-28 mt-24 md:mt-24">
+		<section className="bg-grid-[#4b3f33]/5 relative bg-[#f5f5f7]">
 			{/* Background mask */}
 			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
 			{/* Background images */}
-			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
-				<Image
-					src={Images.elements.piSkelton.src}
-					width={600}
-					height={600}
-					alt="Raspberry Pi"
-					className="opacity-10 object-contain"
-				/>
-			</div>
-			<div className="absolute -bottom-36 -right-0 flex justify-start items-center pointer-events-none z-0">
-				<Image
-					src={Images.elements.arduinoSkelton.src}
-					width={500}
-					height={500}
-					alt="Arduino"
-					className="opacity-10 object-cover"
-				/>
-			</div>
+			<BackgroundImages />
 
 			{/* Foreground content */}
-			<div className="mx-auto max-w-4xl relative z-10 px-4">
+			<div className="mx-auto max-w-5xl relative z-10 px-4 py-32 md:px-0">
 				{/* Speaker intro section */}
 
 				<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 					Speaker Guidelines
 				</h2>
-				<p className="text-center text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight lg:text-6xl mb-6">
+				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-6">
 					Share your knowledge with the{" "}
 					<span className="font-tiemposHeadline font-medium">Community</span>
 				</p>
 
 				{/* Guidelines Content */}
-				<div className="max-w-4xl mx-auto space-y-12 ">
+				<div className=" mx-auto space-y-12 ">
 					{/* Language Section */}
 					<div className="bg-white/80 backdrop-blur-xl p-6 md:p-8 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#e5e5e5] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300">
 						<div className="flex items-center gap-4 mb-6">
 							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#0071e3] to-[#42a1ec] flex items-center justify-center shadow-lg">
 								<Languages className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl font-medium bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+							<h3 className="text-xl font-medium bg-gradient-to-r from-[#0071e3] to-[#42a1ec] bg-clip-text text-transparent">
 								Session Language Medium
 							</h3>
 						</div>
@@ -154,7 +137,7 @@ export default function Speaker() {
 							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg">
 								<Users className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl font-medium bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+							<h3 className="text-xl font-medium bg-gradient-to-r from-purple-500 to-purple-600 bg-clip-text text-transparent">
 								Attitude Towards Attendees
 							</h3>
 						</div>
@@ -195,7 +178,7 @@ export default function Speaker() {
 							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg">
 								<MessageSquare className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl font-medium bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+							<h3 className="text-xl font-medium bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent">
 								Language Etiquettes
 							</h3>
 						</div>
@@ -237,7 +220,7 @@ export default function Speaker() {
 							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg">
 								<FileText className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl font-medium bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+							<h3 className="text-xl font-medium bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
 								Session Content
 							</h3>
 						</div>
@@ -269,7 +252,7 @@ export default function Speaker() {
 							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg">
 								<Presentation className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl font-medium bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+							<h3 className="text-xl font-medium bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">
 								Presentation Style
 							</h3>
 						</div>
@@ -311,7 +294,7 @@ export default function Speaker() {
 							<div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-lg">
 								<Monitor className="w-6 h-6 text-white" />
 							</div>
-							<h3 className="text-xl font-medium bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+							<h3 className="text-xl font-medium bg-gradient-to-r from-indigo-500 to-indigo-600 bg-clip-text text-transparent">
 								Technical Requirements
 							</h3>
 						</div>
@@ -415,7 +398,7 @@ export default function Speaker() {
 					<div className="text-center mt-12">
 						<a
 							href="#"
-							className="mt-auto  w-full max-w-xs mx-auto bg-gradient-to-br from-[#0071e3] to-[#42a1ec] hover:from-[#0077ed] hover:to-[#42a7f2] text-white text-[15px] py-3 font-medium text-center rounded-full transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center gap-2 uppercase"
+							className="mt-auto w-full max-w-xs mx-auto bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] hover:from-[#2d2d2f] hover:to-[#3d3d3f] text-white text-[15px] py-3 font-medium text-center rounded-full transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center gap-2 uppercase"
 						>
 							Register as a Speaker
 							<User className="w-5 h-5" />

@@ -6,6 +6,47 @@ import Image from "next/image";
 import {motion} from "framer-motion";
 import {useInView} from "framer-motion";
 
+import Images from "@/config/constants/Images";
+
+const contentData = {
+	mission: {
+		title: "Our Mission",
+		image: "uploads/photos/3d-print.gif",
+		paragraphs: [
+			{
+				text: "At MakerChat, were reimagining the future of work by empowering the intelligence to unlock human potential.",
+				highlight: "MakerChat",
+			},
+			{
+				text: "As an innovation lab, we develop breakthrough solutions that make complex tasks more intuitive, collaboration more powerful, and creativity more impactful—always with a human-centric focus.",
+				highlight: "innovation lab",
+			},
+			{
+				text: "Our mission is to harness technology to amplify human ingenuity, champion innovation, and ultimately transform how the world works. We invite every innovator, creator, and collaborator to join us in shaping the workplace of tomorrow.",
+				highlight: "harness technology",
+			},
+		],
+	},
+	vision: {
+		title: "Our Vision",
+		image: "uploads/photos/makerchat-group-photo.webp",
+		paragraphs: [
+			{
+				text: "At MakerChat, were reimagining the future of work by empowering the intelligence to unlock human potential.",
+				highlight: "MakerChat",
+			},
+			{
+				text: "As an innovation lab, we develop breakthrough solutions that make complex tasks more intuitive, collaboration more powerful, and creativity more impactful—always with a human-centric focus.",
+				highlight: "innovation lab",
+			},
+			{
+				text: "Our mission is to harness technology to amplify human ingenuity, champion innovation, and ultimately transform how the world works. We invite every innovator, creator, and collaborator to join us in shaping the workplace of tomorrow.",
+				highlight: "harness technology",
+			},
+		],
+	},
+};
+
 // Place this at the top level, outside the component:
 const MissionSection = () => {
 	const missionRef = useRef(null);
@@ -62,7 +103,7 @@ const MissionSection = () => {
 						>
 							<div className="absolute inset-0 transition-all duration-500 ease-in-out group-hover:scale-[1.02] rounded-3xl overflow-hidden bg-[#eee] ">
 								<Image
-									src="uploads/photos/3d-print.gif"
+									src={Images.missionAndVision.mission}
 									alt="Mountain Hiking View"
 									fill
 									className="object-cover shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 ease-in-out"
@@ -80,37 +121,36 @@ const MissionSection = () => {
 							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
-									className="text-sm md:text-base text-gray-600 uppercase tracking-widest whitespace-nowrap"
+									className="text-lg md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
 								>
-									Our Mission
+									{contentData.mission.title}
 								</motion.h2>
 								<div className="h-[1px] bg-gray-300 w-full"></div>
 							</div>
-							<motion.p
-								variants={itemVariants}
-								className="font-manrope leading-relaxed "
-							>
-								At <span className="">MakerChat</span>, were reimagining the
-								future of work by empowering the intelligence to unlock human
-								potential.
-							</motion.p>
-							<motion.p variants={itemVariants} className=" leading-relaxed">
-								As an <span className="font-semibold">innovation lab</span>, we
-								develop breakthrough solutions that make complex tasks more
-								intuitive, collaboration more powerful, and creativity more
-								impactful—always with a human-centric focus.
-							</motion.p>
-							<motion.p
-								variants={itemVariants}
-								className="font-manrope leading-relaxed"
-							>
-								Our mission is to{" "}
-								<span className="font-semibold">harness technology</span> to
-								amplify human ingenuity, champion innovation, and ultimately
-								transform how the world works. We invite every innovator,
-								creator, and collaborator to join us in shaping the workplace of
-								tomorrow.
-							</motion.p>
+							{contentData.mission.paragraphs.map((paragraph, index) => {
+								return (
+									<motion.p
+										key={index}
+										variants={itemVariants}
+										className="font-manrope leading-relaxed"
+									>
+										{paragraph.text
+											.split(paragraph.highlight)
+											.map((part, i, arr) => {
+												return (
+													<React.Fragment key={i}>
+														{part}
+														{i < arr.length - 1 && (
+															<span className="font-semibold">
+																{paragraph.highlight}
+															</span>
+														)}
+													</React.Fragment>
+												);
+											})}
+									</motion.p>
+								);
+							})}
 						</motion.div>
 					</div>
 				</div>
@@ -128,40 +168,36 @@ const MissionSection = () => {
 							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
-									className="text-sm md:text-base text-gray-600 uppercase tracking-widest whitespace-nowrap"
+									className="text-lg md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
 								>
-									Our Vision
+									{contentData.vision.title}
 								</motion.h2>
 								<div className="h-[1px] bg-gray-300 w-full"></div>
 							</div>
-							<motion.p
-								variants={itemVariants}
-								className="font-manrope leading-relaxed"
-							>
-								At <span className="">MakerChat</span>, were reimagining the
-								future of work by empowering the intelligence to unlock human
-								potential.
-							</motion.p>
-							<motion.p
-								variants={itemVariants}
-								className="font-manrope leading-relaxed"
-							>
-								As an <span className="">innovation lab</span>, we develop
-								breakthrough solutions that make complex tasks more intuitive,
-								collaboration more powerful, and creativity more
-								impactful—always with a human-centric focus.
-							</motion.p>
-							<motion.p
-								variants={itemVariants}
-								className="font-manrope leading-relaxed"
-							>
-								Our mission is to{" "}
-								<span className="font-semibold">harness technology</span> to
-								amplify human ingenuity, champion innovation, and ultimately
-								transform how the world works. We invite every innovator,
-								creator, and collaborator to join us in shaping the workplace of
-								tomorrow.
-							</motion.p>
+							{contentData.vision.paragraphs.map((paragraph, index) => {
+								return (
+									<motion.p
+										key={index}
+										variants={itemVariants}
+										className="font-manrope leading-relaxed"
+									>
+										{paragraph.text
+											.split(paragraph.highlight)
+											.map((part, i, arr) => {
+												return (
+													<React.Fragment key={i}>
+														{part}
+														{i < arr.length - 1 && (
+															<span className="font-semibold">
+																{paragraph.highlight}
+															</span>
+														)}
+													</React.Fragment>
+												);
+											})}
+									</motion.p>
+								);
+							})}
 						</motion.div>
 						{/* Right: Image */}
 						<motion.div
@@ -173,7 +209,7 @@ const MissionSection = () => {
 						>
 							<div className="absolute inset-0 transition-all duration-500 ease-in-out group-hover:scale-[1.02] rounded-3xl overflow-hidden bg-[#eee] ">
 								<Image
-									src="uploads/photos/makerchat-group-photo.webp"
+									src={Images.missionAndVision.vision}
 									alt="Mountain Hiking View"
 									fill
 									className="object-cover shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 ease-in-out"

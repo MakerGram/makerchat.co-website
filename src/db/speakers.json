@@ -13,7 +13,7 @@
 			"firstName": "Salman Faris",
 			"lastName": "",
 			"designation": "Co-founder, MakerGram",
-			"avtarImg": "/uploads/speakers/salman-faris.webp",
+			"avtarImg": "./uploads/speakers/salman-faris.webp",
 			"twitter": "https://twitter.com/dummy",
 			"linkedin": "https://linkedin.com/in/dummy"
 		},

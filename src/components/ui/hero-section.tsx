@@ -49,7 +49,7 @@ export default function HeroSection() {
 			</Button>
 
 			{/* Text content */}
-			<div className="relative  flex items-center md:justify-center justify-start z-10 w-fit px-5 md:px-0">
+			<div className="relative  flex items-center md:justify-center justify-start z-10 w-fit px-5 md:px-0 -mt-14 md:mt-0">
 				<div className="relative z-10 flex flex-col items-start md:items-center text-left md:text-center md:max-w-5xl ">
 					<span className="text-sm text-white font-manrope font-normal tracking-wide mt-6 italic flex items-center gap-2 mb-2 lowercase border-b border-white/30 pb-2">
 						by{" "}
@@ -61,7 +61,7 @@ export default function HeroSection() {
 							className="inline-block"
 						/>
 					</span>
-					<p className="text-5xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-words">
+					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-words">
 						where{" "}
 						<span className="font-tiemposHeadline  font-light tracking-wide">
 							makers{" "}

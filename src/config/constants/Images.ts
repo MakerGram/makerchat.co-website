@@ -44,6 +44,13 @@ import astrekPoster from "../../../public/uploads/posters/astrek-poster.webp";
 import magicWandPoster from "../../../public/uploads/posters/magic-wand-poster.webp";
 import arduinoDayPoster from "../../../public/uploads/posters/arduino-day-poster.webp";
 import viewAllPoster from "../../../public/uploads/posters/view-all-poster.webp";
+// Sponsor images
+import seedStudioImage from "../../../public/uploads/sponsors/seed-studio.webp";
+import edgeImpulseImage from "../../../public/uploads/sponsors/edge-impulse.svg";
+import tinkerhubImage from "../../../public/uploads/sponsors/tinkerspace.webp";
+// Mission images
+import missionImage from "../../../public/uploads/photos/3d-print.gif";
+import visionImage from "../../../public/uploads/photos/makerchat-group-photo.webp";
 
 const Images = {
 	brandIcon: brandIcon,
@@ -96,6 +103,15 @@ const Images = {
 		magicWand: magicWandPoster,
 		arduinoDay: arduinoDayPoster,
 		viewAll: viewAllPoster,
+	},
+	sponsors: {
+		SeedStudio: seedStudioImage,
+		"Edge Impulse": edgeImpulseImage,
+		Tinkerhub: tinkerhubImage,
+	},
+	missionAndVision: {
+		mission: missionImage,
+		vision: visionImage,
 	},
 };
 

@@ -1,6 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-import ImpactCard from "@/components/ui/impact-card";
 import HeroSection from "@/components/ui/hero-section";
 import QuoteSlider from "@/components/ui/quote-slider";
 import Images from "@/config/constants/Images";
@@ -9,6 +8,7 @@ import SupportersSection from "@/components/ui/supporters-section";
 import StorySection from "@/components/ui/story-section";
 import SpeakersSection from "@/components/ui/speakers-section";
 import CitiesSection from "@/components/ui/cities-section";
+import BrandPromoCard from "@/components/ui/brand-promo-card";
 
 export const metadata = {
 	title: "Home – MakerChat",
@@ -78,8 +78,9 @@ export default function Home() {
 
 			<SupportersSection />
 
-			<ImpactCard />
+			{/* <ImpactCard /> */}
 			<StorySection />
+			<BrandPromoCard />
 
 			<MissionSection />
 
