@@ -12,7 +12,7 @@ import {VelocityScroll} from "./scroll-based-velocity";
 const Footer = () => {
 	return (
 		<>
-			<div className="px-4 pt-24 mx-auto w-full lg:max-w-full bg-[#f5f5f7] relative pb-28">
+			<div className="px-4 pt-24 mx-auto w-full lg:max-w-full bg-white relative pb-28 md:pb-0">
 				<VelocityScroll
 					numRows={1}
 					className="absolute -top-8 left-0 font-normal z-20 py-2 font-manrope border-t border-b border-[#d6d6d6] text-xl md:text-4xl text-[#1d1d1f] bg-[#e8e8ed]"

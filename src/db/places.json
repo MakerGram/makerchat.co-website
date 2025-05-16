@@ -5,7 +5,7 @@
 			"id": "kochi",
 			"title": "India",
 			"location": "Kochi",
-			"image": "/uploads/photos/kochi.jpg",
+			"image": "/uploads/photos/asia-bg-cat.webp",
 			"url": "/location/kochi",
 			"description": "Where conversations flow like the backwaters"
 		},
@@ -30,7 +30,7 @@
 			"title": "Dubai",
 			"location": "Dubai",
 			"image": "/uploads/photos/dubai-1.jpg",
-			"url": "/#/location/dubai",
+			"url": "/location/dubai",
 			"description": "Desert dreams. Global voices."
 		}
 	}

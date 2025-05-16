@@ -22,30 +22,36 @@ export default function PlaceCard({
 }) {
 	return (
 		<Link href={url || "#"} passHref>
-			<div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer border border-white/10 backdrop-blur-md">
+			<div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer border border-white/20 backdrop-blur-xl bg-white/5">
 				{/* Background Image */}
-				<div className="relative w-full h-80">
+				<div className="relative w-full h-[280px]">
 					<Image
-						src={Images.locations[id as keyof typeof Images.locations]}
+						src={
+							Images.locationsThumbnail[
+								id as keyof typeof Images.locationsThumbnail
+							]
+						}
 						alt={title || "Place Image"}
 						fill
-						className="object-cover"
+						className="object-cover transition-transform duration-500 group-hover:scale-105"
 					/>
 				</div>
 
 				{/* Content Overlay */}
-				<div className="absolute inset-0 flex flex-col justify-end p-5 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
-					<h3 className="text-white text-xl font-semibold">{location}</h3>
+				<div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+					<h3 className="text-white text-2xl font-semibold tracking-tight">
+						{location}
+					</h3>
 					{description && (
-						<p className="text-white/90 text-lg mt-1 line-clamp-2">
+						<p className="text-white/90 text-base mt-2 line-clamp-2 font-light">
 							{description}
 						</p>
 					)}
 				</div>
 
 				{/* Arrow Icon */}
-				<div className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md p-2 rounded-full transition-all">
-					<ArrowUpRight className="text-white w-4 h-4" />
+				<div className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 backdrop-blur-xl p-3 rounded-full transition-all duration-300 group-hover:scale-110 border border-white/20">
+					<ArrowUpRight className="text-white w-5 h-5" />
 				</div>
 			</div>
 		</Link>

@@ -8,7 +8,7 @@ import TransitionComponent from "@/components/ui/transition";
 export default function RootLayout({children}: {children: React.ReactNode}) {
 	return (
 		<>
-			<TransitionComponent>{children}</TransitionComponent>
+			<TransitionComponent type="slide">{children}</TransitionComponent>
 		</>
 	);
 }

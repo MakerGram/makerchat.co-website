@@ -6,7 +6,7 @@ import {useRef, useState} from "react";
 
 import Image from "next/image";
 import {useRouter} from "next/navigation";
-import {Volume2, VolumeOff} from "lucide-react";
+import {Volume2, VolumeX} from "lucide-react";
 
 import {Button} from "@/components/ui/button";
 import Images from "@/config/constants/Images";
@@ -17,21 +17,21 @@ export default function HeroSection() {
 	const [isMuted, setIsMuted] = useState(true);
 
 	return (
-		<section className="relative flex items-end md:items-start justify-end md:justify-end h-[100dvh] bg-black overflow-hidden flex-col w-full">
+		<section className="relative flex items-end md:items-center justify-center md:justify-center h-screen bg-black overflow-hidden flex-col w-full">
 			<video
 				ref={videoRef}
 				autoPlay
 				muted={isMuted}
 				playsInline
-				loop
-				className="absolute inset-0 w-full h-full object-cover"
+				className="absolute  w-full h-screen object-cover"
+				preload="auto"
 			>
 				<source src={Images.heroVideo} type="video/mp4" />
 				Your browser does not support the video tag.
 			</video>
 
 			{/* Dark overlay for readability */}
-			<div className="absolute inset-0  z-10" />
+			<div className="absolute inset-0 bg-black/40 pointer-events-none z-10" />
 
 			{/* Bottom gradient fade */}
 			<div className="absolute bottom-0 left-0 w-full h-60 bg-gradient-to-t from-black via-black/60 to-transparent pointer-events-none z-10" />
@@ -43,15 +43,15 @@ export default function HeroSection() {
 						return !prev;
 					});
 				}}
-				className="z-50 absolute bottom-28 md:top-auto md:bottom-12 right-6 w-12 h-12 rounded-full border border-white/30 text-white bg-white/5 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center"
+				className="z-50 absolute bg-transparent bottom-auto top-4 md:top-auto md:bottom-12 right-4 md:right-8 w-10 h-10 rounded-full border text-white  transition-all duration-300 flex items-center justify-center"
 			>
-				{isMuted ? <Volume2 size={28} /> : <VolumeOff size={28} />}
+				{isMuted ? <Volume2 size={30} /> : <VolumeX size={30} />}
 			</Button>
 
 			{/* Text content */}
-			<div className="relative  flex items-center justify-start z-10 bg-black/40 w-full  px-5 md:px-20 pb-28">
-				<div className="relative z-10 flex flex-col items-start md:items-start text-left md:text-left md:max-w-5xl ">
-					<span className="text-sm text-white font-manrope font-normal tracking-wide mt-2 italic flex items-center gap-2 mb-2 lowercase">
+			<div className="relative  flex items-center md:justify-center justify-start z-10 w-fit px-5 md:px-0 -mt-14 md:mt-0">
+				<div className="relative z-10 flex flex-col items-start md:items-center text-left md:text-center md:max-w-5xl ">
+					<span className="text-sm text-white font-manrope font-normal tracking-wide mt-6 italic flex items-center gap-2 mb-2 lowercase border-b border-white/30 pb-2">
 						by{" "}
 						<Image
 							src={Images.mgLogoWhite}
@@ -61,13 +61,13 @@ export default function HeroSection() {
 							className="inline-block"
 						/>
 					</span>
-					<p className="text-4xl md:text-6xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-words">
+					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-words">
 						where{" "}
-						<span className="font-tiemposHeadline italic font-light tracking-wide">
+						<span className="font-tiemposHeadline  font-light tracking-wide">
 							makers{" "}
 						</span>{" "}
 						meet to chat and build{" "}
-						<span className="font-tiemposHeadline italic font-light tracking-wide">
+						<span className="font-tiemposHeadline  font-light tracking-wide">
 							together{" "}
 						</span>
 					</p>
@@ -75,7 +75,7 @@ export default function HeroSection() {
 						onClick={() => {
 							return router.push("/events");
 						}}
-						className="font-manrope text-base md:text-small px-6 md:px-8  rounded-full border border-white/30 text-white font-medium bg-white/5 backdrop-blur-sm hover:bg-white hover:text-black transition-all duration-300 mt-5"
+						className="lowercase font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-3 mb-6"
 					>
 						Register Now →
 					</Button>

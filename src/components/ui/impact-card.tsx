@@ -1,89 +1,169 @@
 /* eslint-disable react/react-in-jsx-scope */
 "use client";
 
-import Image from "next/image";
+import {useRef} from "react";
 
-import Images from "@/config/constants/Images";
+import {motion} from "framer-motion";
+import {useInView} from "framer-motion";
 
 export default function ImpactCard() {
+	const ref = useRef(null);
+	const isInView = useInView(ref, {once: true, amount: 0.2});
+
+	const containerVariants = {
+		hidden: {opacity: 0},
+		visible: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	const itemVariants = {
+		hidden: {opacity: 0, y: 20},
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.6,
+				ease: "easeOut",
+			},
+		},
+	};
+
+	const numberVariants = {
+		hidden: {opacity: 0, scale: 0.5},
+		visible: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				duration: 0.8,
+				ease: [0.6, -0.05, 0.01, 0.99],
+			},
+		},
+	};
+
 	return (
-		<div className="bg-[#f5f5f7] py-16 px-4 md:px-16 font-manrope">
-			<h2 className="text-center text-sm md:text-base text-gray-400 uppercase tracking-widest mb-2">
-				Our impact so far
-			</h2>
-			<p className="text-center text-3xl md:text-4xl font-bold text-[#1e1916] mb-12 leading-snug">
-				Real moments. Real impact.
-			</p>
+		<section
+			ref={ref}
+			className="bg-[#f5f5f7] py-16 md:py-20 px-2 md:px-2 font-manrope relative"
+			aria-labelledby="impact-heading"
+		>
+			<motion.div
+				initial={{opacity: 0, y: 20}}
+				animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 20}}
+				transition={{duration: 0.5}}
+				className="flex items-center gap-4 mb-6 max-w-sm mx-auto"
+			>
+				<div className="h-px bg-gray-300 flex-1"></div>
+				<h2 className="text-sm md:text-base text-gray-600 uppercase tracking-widest whitespace-nowrap">
+					Our impact so far
+				</h2>
+				<div className="h-px bg-gray-300 flex-1"></div>
+			</motion.div>
 
-			<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-				{/* Card 1 */}
-				<div className="relative rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300 shadow-md h-64">
-					<Image
-						src={Images.impact.offlineEvents}
-						alt="Offline Events"
-						fill
-						sizes="(max-width: 768px) 100vw, 33vw"
-						className="object-cover"
-						priority
-					/>
-					<div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300 z-0" />
-					<div className="relative z-10 p-4 h-full flex flex-col justify-end">
-						<p className="text-white">
-							<span className="text-3xl md:text-6xl font-extrabold">28+</span>{" "}
-							<span className="text-2xl font-medium text-white">
+			<div className="px-4 md:px-10 lg:px-0 mx-auto">
+				<motion.div
+					variants={containerVariants}
+					initial="hidden"
+					animate={isInView ? "visible" : "hidden"}
+					className="flex flex-col md:flex-row items-center justify-center gap-8"
+				>
+					<div
+						className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+						role="list"
+					>
+						<motion.div
+							variants={itemVariants}
+							className="text-center"
+							role="listitem"
+						>
+							<motion.p
+								variants={numberVariants}
+								className="text-7xl md:text-7xl  font-normal lg:text-6xl  tracking-wide"
+								aria-label="28 plus offline events"
+							>
+								28+
+							</motion.p>
+							<motion.p
+								variants={itemVariants}
+								className="mt-2 md:mt-3 text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi"
+							>
 								Offline Events
-							</span>
-						</p>
-						<p className="text-gray-100 text-lg leading-snug mt-1">
-							City-based meetups where ideas spark and makers connect.
-						</p>
-					</div>
-				</div>
+							</motion.p>
+							<motion.p
+								variants={itemVariants}
+								className="mt-1 md:mt-2 text-lg text-gray-600 lowercase"
+							>
+								City-based meetups where ideas spark
+							</motion.p>
+						</motion.div>
 
-				{/* Card 2 */}
-				<div className="relative rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300 shadow-md h-64">
-					<Image
-						src={Images.impact.makerChats}
-						alt="MakerChats"
-						fill
-						sizes="(max-width: 768px) 100vw, 33vw"
-						className="object-cover"
-					/>
-					<div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300 z-0" />
-					<div className="relative z-10 p-4 h-full flex flex-col justify-end">
-						<p className="text-white">
-							<span className="text-3xl md:text-6xl font-extrabold">41+</span>{" "}
-							<span className="text-2xl font-medium text-white">
+						<div
+							className="w-20 h-[1px] md:h-20 md:w-[1px] bg-gray-400 opacity-30"
+							aria-hidden="true"
+						></div>
+
+						<motion.div
+							variants={itemVariants}
+							className="text-center"
+							role="listitem"
+						>
+							<motion.p
+								variants={numberVariants}
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl  tracking-wide"
+								aria-label="41 plus maker chats"
+							>
+								41+
+							</motion.p>
+							<motion.p
+								variants={itemVariants}
+								className="mt-2 md:mt-3 text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi"
+							>
 								MakerChats
-							</span>
-						</p>
-						<p className="text-gray-100 text-lg leading-snug mt-1">
-							Real-world tech sessions by the community.
-						</p>
-					</div>
-				</div>
+							</motion.p>
+							<motion.p
+								variants={itemVariants}
+								className="mt-1 md:mt-2 text-lg text-gray-600 lowercase"
+							>
+								Real-world tech sessions
+							</motion.p>
+						</motion.div>
 
-				{/* Card 3 */}
-				<div className="relative rounded-2xl overflow-hidden group hover:shadow-xl transition-all duration-300 shadow-md h-64">
-					<Image
-						src={Images.impact.attendees}
-						alt="Attendees"
-						fill
-						sizes="(max-width: 768px) 100vw, 33vw"
-						className="object-cover"
-					/>
-					<div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300 z-0" />
-					<div className="relative z-10 p-4 h-full flex flex-col justify-end">
-						<p className="text-white">
-							<span className="text-3xl md:text-6xl font-extrabold">520+</span>{" "}
-							<span className="text-2xl font-medium text-white">Attendee</span>
-						</p>
-						<p className="text-gray-100 text-lg leading-snug mt-1">
-							Together for a future shaped from the ground up.
-						</p>
+						<div
+							className="w-20 h-[1px] md:h-20 md:w-[1px] bg-gray-400 opacity-30"
+							aria-hidden="true"
+						></div>
+
+						<motion.div
+							variants={itemVariants}
+							className="text-center"
+							role="listitem"
+						>
+							<motion.p
+								variants={numberVariants}
+								className="text-7xl md:text-7xl font-normal text-black lg:text-6xl  tracking-wide"
+								aria-label="520 plus attendees"
+							>
+								520+
+							</motion.p>
+							<motion.p
+								variants={itemVariants}
+								className="mt-2 md:mt-3 text-xl md:text-xl font-medium tracking-wide text-gray-700 font-nohemi"
+							>
+								Attendees
+							</motion.p>
+							<motion.p
+								variants={itemVariants}
+								className="mt-1 md:mt-2 text-lg text-gray-600 lowercase"
+							>
+								Together for a future shaped from the ground up
+							</motion.p>
+						</motion.div>
 					</div>
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</section>
 	);
 }

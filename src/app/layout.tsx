@@ -93,7 +93,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 				TiemposHeadline.variable,
 			)}
 		>
-			<body className="flex flex-col min-h-screen bg-white antialiased font-manrope ">
+			<body className="flex flex-col min-h-screen h-dvh bg-white antialiased font-manrope ">
 				<main className="flex-grow">
 					<TopNavBar />
 					{children}
