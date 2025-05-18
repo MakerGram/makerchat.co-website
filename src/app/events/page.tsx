@@ -6,6 +6,7 @@ import Image from "next/image";
 import {placesData} from "@/db";
 import PlaceCard from "@/components/ui/location-card";
 import Images from "@/config/constants/Images";
+import BackgroundImages from "@/components/BackgroundImages";
 
 export const metadata = {
 	title: "Cities – MakerChat",
@@ -64,46 +65,34 @@ export const metadata = {
 
 export default function Events() {
 	return (
-		<section className="bg-grid-black/10 relative pb-32 pt-16 md:pt-10">
+		<section className="bg-grid-[#4b3f33]/5 relative bg-[#f5f5f7]">
 			{/* Background Mask */}
 
-			<div className="absolute inset-0 pointer-events-none bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,white)] z-0" />
+			<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,#fff9eb)] z-0"></div>
 
 			{/* Background Image */}
-			<div className="absolute top-0 left-0 flex justify-start items-center pointer-events-none z-0">
-				<Image
-					src={Images.elements.piSkelton.src}
-					width={600}
-					height={600}
-					alt="Raspberry Pi"
-					className="opacity-10 object-contain"
-				/>
-			</div>
-			<div className="absolute -bottom-36 -right-20 flex justify-start items-center pointer-events-none z-0">
-				<Image
-					src={Images.elements.arduinoSkelton.src}
-					width={500}
-					height={500}
-					alt="Arduino"
-					className="opacity-10 object-cover"
-				/>
-			</div>
+			<BackgroundImages />
+			<div className="mx-auto  relative z-10  px-4 py-32 md:px-0">
+				<section className="  lg:px-16 z-50">
+					<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
+						MakerChat across the Cities
+					</h2>
+					<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-10">
+						Where MakerChat
+						<br />
+						<span className="font-tiemposHeadline font-medium">
+							comes to life
+						</span>
+					</p>
 
-			<section className=" px-4 md:px-8 lg:px-16 z-50">
-				<h2 className="text-left md:text-center text-sm md:text-base text-gray-500 uppercase tracking-widest mb-2">
-					MakerChat across the Cities
-				</h2>
-				<p className="text-left md:text-center text-3xl md:text-4xl font-bold text-[#1d1d1f] mb-10 leading-snug">
-					Where MakerChat Comes to Life
-				</p>
-
-				<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
-					{placesData.ids.map((placeId: string) => {
-						const place = placesData.details[placeId];
-						return <PlaceCard key={placeId} {...place} />;
-					})}
-				</div>
-			</section>
+					<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+						{placesData.ids.map((placeId: string) => {
+							const place = placesData.details[placeId];
+							return <PlaceCard key={placeId} {...place} />;
+						})}
+					</div>
+				</section>
+			</div>
 		</section>
 	);
 }

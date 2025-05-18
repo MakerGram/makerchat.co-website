@@ -45,11 +45,13 @@ const HorizontalScrollCarousel = () => {
 
 	return (
 		<section className="relative bg-[#f5f5f7] py-20 px-4 md:px-16">
-			<h2 className="text-center text-sm md:text-base text-gray-500 uppercase tracking-widest mb-2">
+			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				Past Events
 			</h2>
-			<p className="text-center text-3xl md:text-4xl font-bold text-[#1d1d1f] mb-12 leading-snug">
-				Highlights from our recent events
+			<p className="text-center text-4xl md:text-5xl font-light font-tiemposHeadline lowercase leading-tight lg:text-6xl mb-16">
+				Relive our
+				<br />
+				<span className="font-tiemposHeadline font-medium">maker moments</span>
 			</p>
 
 			<div className="relative max-w-7xl mx-auto px-4">
