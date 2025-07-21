@@ -7,6 +7,7 @@ import {placesData} from "@/db";
 import PlaceCard from "@/components/ui/location-card";
 import Images from "@/config/constants/Images";
 import BackgroundImages from "@/components/BackgroundImages";
+import CitiesSection from "@/components/ui/cities-section";
 
 export const metadata = {
 	title: "Cities – MakerChat",
@@ -72,26 +73,8 @@ export default function Events() {
 
 			{/* Background Image */}
 			<BackgroundImages />
-			<div className="mx-auto  relative z-10  px-4 py-32 md:px-0">
-				<section className="  lg:px-16 z-50">
-					<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
-						MakerChat across the Cities
-					</h2>
-					<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-10">
-						Where MakerChat
-						<br />
-						<span className="font-tiemposHeadline font-medium">
-							comes to life
-						</span>
-					</p>
-
-					<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
-						{placesData.ids.map((placeId: string) => {
-							const place = placesData.details[placeId];
-							return <PlaceCard key={placeId} {...place} />;
-						})}
-					</div>
-				</section>
+			<div className="mx-auto  relative z-10  py-20">
+				<CitiesSection />
 			</div>
 		</section>
 	);

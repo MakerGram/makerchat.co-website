@@ -8,7 +8,7 @@ export function useCountdown(targetDate: number | null): iCountdown {
 		hours: 0,
 		minutes: 0,
 		seconds: 0,
-		isDone: false,
+		isDone: true,
 	});
 
 	useEffect(() => {

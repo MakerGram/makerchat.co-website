@@ -84,6 +84,10 @@ const Images = {
 		"e60aa346-f6da-11ed-b67e-0242ac120004": zainImage,
 		"e60aa346-f6da-11ed-b67e-0242ac120005": vigneshImage,
 		"e60aa346-f6da-11ed-b67e-0242ac120006": swalahImage,
+		"e60aa346-f6da-11ed-b67e-0242ac120006s":
+			"https://media.licdn.com/dms/image/v2/D5603AQFYE8EiW_MTnw/profile-displayphoto-shrink_400_400/B56ZbV6QeRHgAo-/0/1747345543302?e=1755734400&v=beta&t=X5palwEgD1x_9FJ2fvo4KftkLtF3H9Cp5r-ydQeWOHw",
+		"e60aa346-f6da-11ed-b67e-0242ac120006s1":
+			"https://media.licdn.com/dms/image/v2/D5603AQGZP1CcCltoOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729510248489?e=1755734400&v=beta&t=eR0VXvHNtF5OwufBbOpbt2CQj_6hGyDl5OUF4QGl09Y",
 	},
 	elements: {
 		piSkelton: piSkeltonImage,

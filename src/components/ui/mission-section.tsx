@@ -14,16 +14,8 @@ const contentData = {
 		image: "uploads/photos/3d-print.gif",
 		paragraphs: [
 			{
-				text: "At MakerChat, were reimagining the future of work by empowering the intelligence to unlock human potential.",
-				highlight: "MakerChat",
-			},
-			{
-				text: "As an innovation lab, we develop breakthrough solutions that make complex tasks more intuitive, collaboration more powerful, and creativity more impactful—always with a human-centric focus.",
-				highlight: "innovation lab",
-			},
-			{
-				text: "Our mission is to harness technology to amplify human ingenuity, champion innovation, and ultimately transform how the world works. We invite every innovator, creator, and collaborator to join us in shaping the workplace of tomorrow.",
-				highlight: "harness technology",
+				text: "To build a vibrant and inclusive community where makers and thinkers come together to learn, share, and shape the future together.",
+				highlight: "",
 			},
 		],
 	},
@@ -32,16 +24,8 @@ const contentData = {
 		image: "uploads/photos/makerchat-group-photo.webp",
 		paragraphs: [
 			{
-				text: "At MakerChat, were reimagining the future of work by empowering the intelligence to unlock human potential.",
-				highlight: "MakerChat",
-			},
-			{
-				text: "As an innovation lab, we develop breakthrough solutions that make complex tasks more intuitive, collaboration more powerful, and creativity more impactful—always with a human-centric focus.",
-				highlight: "innovation lab",
-			},
-			{
-				text: "Our mission is to harness technology to amplify human ingenuity, champion innovation, and ultimately transform how the world works. We invite every innovator, creator, and collaborator to join us in shaping the workplace of tomorrow.",
-				highlight: "harness technology",
+				text: "MakerChat exists to create a space where curiosity meets community. We host honest and insightful conversations that connect people, spark ideas, and celebrate the journey of making, no matter where you are starting from",
+				highlight: "",
 			},
 		],
 	},

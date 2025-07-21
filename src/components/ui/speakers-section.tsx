@@ -68,7 +68,7 @@ export default function SpeakersSection() {
 						scroll("left");
 					}}
 					disabled={!canScrollLeft}
-					className={`md:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.1)] transition-all duration-200 ease-out ${
+					className={`max-[1396px]:flex min-[1397px]:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.1)] transition-all duration-200 ease-out ${
 						canScrollLeft
 							? "hover:bg-white hover:shadow-[0_2px_4px_rgba(0,0,0,0.12)] active:scale-[0.98]"
 							: "opacity-35 cursor-not-allowed"
@@ -99,7 +99,7 @@ export default function SpeakersSection() {
 						scroll("right");
 					}}
 					disabled={!canScrollRight}
-					className={`md:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.1)] transition-all duration-200 ease-out ${
+					className={`max-[1396px]:flex min-[1397px]:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full shadow-[0_1px_3px_rgba(0,0,0,0.1)] transition-all duration-200 ease-out ${
 						canScrollRight
 							? "hover:bg-white hover:shadow-[0_2px_4px_rgba(0,0,0,0.12)] active:scale-[0.98]"
 							: "opacity-35 cursor-not-allowed"
@@ -126,16 +126,16 @@ export default function SpeakersSection() {
 
 				<div
 					ref={scrollContainerRef}
-					className="relative w-full overflow-x-auto flex scrollbar-hide scroll-smooth"
+					className="relative w-full overflow-x-auto md:overflow-x-visible scrollbar-hide scroll-smooth"
 				>
-					<div className="flex flex-row gap-8 w-max items-center pb-4">
+					<div className="flex flex-row gap-8 w-max items-center pb-4 min-[1397px]:grid min-[1397px]:grid-cols-4 min-[1397px]:gap-10 min-[1397px]:w-full min-[1397px]:justify-center min-[1397px]:items-stretch">
 						{speakers.ids.map((review) => {
 							const speaker = speakers.details[review];
 							if (!speaker) return null;
 							return (
 								<div
 									key={review}
-									className="min-w-[260px] md:min-w-[300px] flex justify-center"
+									className="min-w-[260px] md:min-w-0 flex justify-center md:block"
 								>
 									<SpeakerCard
 										img={

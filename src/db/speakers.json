@@ -4,7 +4,9 @@
 		"e60aa346-f6da-11ed-b67e-0242ac120003",
 		"e60aa346-f6da-11ed-b67e-0242ac120004",
 		"e60aa346-f6da-11ed-b67e-0242ac120005",
-		"e60aa346-f6da-11ed-b67e-0242ac120006"
+		"e60aa346-f6da-11ed-b67e-0242ac120006",
+		"e60aa346-f6da-11ed-b67e-0242ac120006s",
+		"e60aa346-f6da-11ed-b67e-0242ac120006s1"
 	],
 
 	"details": {
@@ -50,6 +52,24 @@
 			"lastName": "",
 			"designation": "Co-founder, MakerGram",
 			"avtarImg": "/uploads/speakers/swalah.jpeg",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120006s": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120006s",
+			"firstName": "Muhammed Azhar SM",
+			"lastName": "",
+			"designation": "Co-founder, COO, Autobonics",
+			"avtarImg": "",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120006s1": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120006s1",
+			"firstName": "Prajith Nair",
+			"lastName": "",
+			"designation": "Founder & CEO at Docker Vision",
+			"avtarImg": "",
 			"twitter": "https://twitter.com/dummy",
 			"linkedin": "https://linkedin.com/in/dummy"
 		}

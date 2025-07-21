@@ -11,9 +11,7 @@ import Images from "@/config/constants/Images";
 
 export default function StorySection() {
 	const textRef = useRef(null);
-	const imageRef = useRef(null);
 	const isTextInView = useInView(textRef, {once: true, amount: 0.2});
-	const isImageInView = useInView(imageRef, {once: true, amount: 0.2});
 
 	const containerVariants = {
 		hidden: {opacity: 0},
@@ -38,13 +36,13 @@ export default function StorySection() {
 	};
 
 	const imageVariants = {
-		hidden: {opacity: 0, scale: 0.95},
-		visible: {
-			opacity: 1,
-			scale: 1,
+		animate: {
+			y: [0, -20, 0, 20, 0],
 			transition: {
-				duration: 0.8,
-				ease: [0.6, -0.05, 0.01, 0.99],
+				duration: 20,
+				repeat: Infinity,
+				ease: "linear",
+				times: [0, 0.25, 0.5, 0.75, 1],
 			},
 		},
 	};
@@ -89,10 +87,8 @@ export default function StorySection() {
 
 				{/* Image Block */}
 				<motion.div
-					ref={imageRef}
 					variants={imageVariants}
-					initial="hidden"
-					animate={isImageInView ? "visible" : "hidden"}
+					animate="animate"
 					className="relative flex justify-center"
 				>
 					<Image

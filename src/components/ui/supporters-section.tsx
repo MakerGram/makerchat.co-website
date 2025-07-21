@@ -22,7 +22,7 @@ export default function SupportersSection() {
 				<div className="h-px bg-gray-300 flex-1"></div>
 			</div>
 
-			<div className="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-4 lg:grid-cols-3">
+			<div className="grid grid-cols-2 gap-8 sm:gap-12 sm:grid-cols-4 lg:grid-cols-3  max-w-7xl mx-auto">
 				{sponsorData.ids.map((sponsorId) => {
 					const sponsor = sponsorData.details[sponsorId];
 					return (

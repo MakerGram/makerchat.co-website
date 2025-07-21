@@ -4,6 +4,7 @@
 
 import {Metadata} from "next";
 import Image from "next/image";
+import {notFound} from "next/navigation";
 
 import EventCards from "@/components/ui/scroll-both";
 import {placesData} from "@/db";
@@ -92,11 +93,15 @@ export async function generateMetadata({
 export default async function LocationPage({params}: {params: Params}) {
 	const {slug} = await params;
 
+	if (!placesData.ids.includes(slug)) {
+		notFound();
+	}
+
 	const data = placesData.details[slug as keyof typeof placesData.details];
 
 	return (
 		<>
-			<div className="relative h-dvh min-h-dvh overflow-hidden">
+			<div className="relative h-[80vh] overflow-hidden">
 				<Image
 					src={Images.locations[data.id as keyof typeof Images.locations]}
 					alt={data.location}
@@ -104,12 +109,12 @@ export default async function LocationPage({params}: {params: Params}) {
 					className="object-cover absolute inset-0"
 					priority
 				/>
-				<div className="absolute inset-0 z-10 bg-gradient-to-t md:bg-gradient-to-l from-black/70 to-transparent" />
+				<div className="absolute inset-0 z-10 bg-gradient-to-t md:bg-gradient-to-l from-black/90 to-transparent" />
 				<LocationHero slug={slug} data={data} />
 
 				{/* Scroll indicator for Kochi */}
 				{slug === "kochi" && (
-					<div className="absolute bottom-12 md:bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-3">
+					<div className="hidden md:flex absolute bottom-12 md:bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex-col items-center gap-3">
 						<div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1">
 							<div className="w-1.5 h-1.5 rounded-full bg-white/80 animate-scroll-down" />
 						</div>

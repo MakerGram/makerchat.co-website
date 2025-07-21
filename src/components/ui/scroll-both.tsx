@@ -3,11 +3,12 @@
 "use client";
 
 import * as React from "react";
-import {useState, useRef} from "react";
+import {useState, useEffect} from "react";
 
 import Image from "next/image";
 import {ChevronLeft, ChevronRight} from "lucide-react";
 import {StaticImageData} from "next/image";
+import {motion, useAnimation} from "framer-motion";
 
 import Images from "@/config/constants/Images";
 
@@ -21,16 +22,36 @@ const EventCards = () => {
 
 const HorizontalScrollCarousel = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
-	const scrollContainerRef = useRef<HTMLDivElement>(null);
 	const cardsPerView = 3;
+	const cardWidth = 392 + 16; // card width + gap (adjust as needed)
+	const totalCards = cards.length;
+	const maxIndex = totalCards - cardsPerView;
 
+	const controls = useAnimation();
+
+	// Auto-scroll effect
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrentIndex((prev) => {
+				const next = prev + 1 > maxIndex ? 0 : prev + 1;
+				controls.start({
+					x: -next * cardWidth,
+					transition: {duration: 1.5, ease: "easeInOut"},
+				});
+				return next;
+			});
+		}, 4000); // scroll every 4 seconds
+		return () => {
+			return clearInterval(interval);
+		};
+	}, [controls, maxIndex, cardWidth]);
+
+	// Manual scroll to card
 	const scrollToCard = (index: number) => {
-		if (scrollContainerRef.current) {
-			const card = scrollContainerRef.current.querySelectorAll("a")[index];
-			if (card) {
-				card.scrollIntoView({behavior: "smooth", inline: "start"});
-			}
-		}
+		controls.start({
+			x: -index * cardWidth,
+			transition: {duration: 0.8, ease: "easeInOut"},
+		});
 		setCurrentIndex(index);
 	};
 
@@ -39,12 +60,14 @@ const HorizontalScrollCarousel = () => {
 	};
 
 	const handleNext = () => {
-		if (currentIndex < cards.length - cardsPerView)
-			scrollToCard(currentIndex + 1);
+		if (currentIndex < maxIndex) scrollToCard(currentIndex + 1);
 	};
 
 	return (
-		<section className="relative bg-[#f5f5f7] py-20 px-4 md:px-16">
+		<section
+			className="relative bg-[#f5f5f7] py-20 px-4 md:px-16 overflow-hidden
+		"
+		>
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				Past Events
 			</h2>
@@ -56,47 +79,50 @@ const HorizontalScrollCarousel = () => {
 
 			<div className="relative max-w-7xl mx-auto px-4">
 				{/* Carousel wrapper */}
-				<div className="relative">
-					<div
-						ref={scrollContainerRef}
-						className="flex overflow-x-auto no-scrollbar scroll-smooth gap-4"
+				<div className="relative overflow-hidden">
+					<motion.div
+						className="flex gap-4"
+						animate={controls}
+						drag="x"
+						dragConstraints={{left: -maxIndex * cardWidth, right: 0}}
+						style={{cursor: "grab"}}
 					>
 						{cards.map((card) => {
 							return <Card card={card} key={card.id} />;
 						})}
-					</div>
-
-					{/* Arrows */}
-					<button
-						onClick={handlePrev}
-						className="absolute top-1/2 -left-5 transform -translate-y-1/2 z-20 p-2 bg-white shadow rounded-full"
-					>
-						<ChevronLeft size={24} />
-					</button>
-					<button
-						onClick={handleNext}
-						className="absolute top-1/2 -right-5 transform -translate-y-1/2 z-20 p-2 bg-white shadow rounded-full"
-					>
-						<ChevronRight size={24} />
-					</button>
+					</motion.div>
 				</div>
 
-				{/* Bullets */}
-				<div className="flex justify-center mt-6 gap-2">
-					{cards.slice(0, cards.length - cardsPerView + 1).map((_, idx) => {
-						return (
-							<button
-								key={idx}
-								onClick={() => {
-									return scrollToCard(idx);
-								}}
-								className={`h-2 w-2 rounded-full transition-colors duration-300 ${
-									idx === currentIndex ? "bg-[#bb8f5e]" : "bg-gray-300"
-								}`}
-							/>
-						);
-					})}
-				</div>
+				{/* Arrows */}
+				<button
+					onClick={handlePrev}
+					className="absolute top-1/2 -left-5 transform -translate-y-1/2 z-20 p-2 bg-white shadow rounded-full"
+				>
+					<ChevronLeft size={24} />
+				</button>
+				<button
+					onClick={handleNext}
+					className="absolute top-1/2 -right-5 transform -translate-y-1/2 z-20 p-2 bg-white shadow rounded-full"
+				>
+					<ChevronRight size={24} />
+				</button>
+			</div>
+
+			{/* Bullets */}
+			<div className="flex justify-center mt-6 gap-2">
+				{cards.slice(0, cards.length - cardsPerView + 1).map((_, idx) => {
+					return (
+						<button
+							key={idx}
+							onClick={() => {
+								scrollToCard(idx);
+							}}
+							className={`h-2 w-2 rounded-full transition-colors duration-300 ${
+								idx === currentIndex ? "bg-[#bb8f5e]" : "bg-gray-300"
+							}`}
+						/>
+					);
+				})}
 			</div>
 		</section>
 	);

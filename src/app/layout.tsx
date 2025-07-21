@@ -2,6 +2,7 @@
 // by default and can not be set to a Client Component.
 import React from "react";
 
+import {Toaster} from "sonner";
 import {Manrope, Instrument_Serif} from "next/font/google";
 const manrope = Manrope({subsets: ["latin"], variable: "--font-manrope"});
 import localFont from "next/font/local";
@@ -94,11 +95,12 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 			)}
 		>
 			<body className="flex flex-col min-h-screen h-dvh bg-white antialiased font-manrope ">
-				<main className="flex-grow">
+				<main className="">
 					<TopNavBar />
 					{children}
 				</main>
 				<Footer />
+				<Toaster position="top-center" />
 			</body>
 		</html>
 	);
