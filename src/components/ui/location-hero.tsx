@@ -3,7 +3,6 @@
 
 import {useMemo} from "react";
 
-import {placesData} from "@/db";
 import {useCountdown} from "@/hooks/use-countdown";
 import {iLocationHeroProps} from "@/customTypes/location";
 import {
@@ -11,7 +10,6 @@ import {
 	LOCATION_STATUS,
 } from "@/config/constants/LocationConstants";
 
-import {OtherLocations} from "./other-locations";
 import {EventStats} from "./event-stats";
 import {NotifySection} from "./notify-section";
 import {InterestSection} from "./interest-section";
@@ -25,17 +23,6 @@ export default function LocationHero({slug, data}: iLocationHeroProps) {
 	}, [slug]);
 
 	const countdown = useCountdown(countdownTarget);
-
-	// Get other locations excluding current one
-	const otherLocations = useMemo(() => {
-		return placesData.ids
-			.filter((id) => {
-				return id !== slug;
-			})
-			.map((id) => {
-				return placesData.details[id];
-			});
-	}, [slug]);
 
 	const renderStatusContent = () => {
 		switch (status) {
@@ -57,7 +44,7 @@ export default function LocationHero({slug, data}: iLocationHeroProps) {
 	};
 
 	return (
-		<div className="relative z-20 flex flex-col items-center justify-center px-5 md:px-16 h-screen w-full max-w-3xl mx-auto">
+		<div className="relative z-20 flex flex-col items-center justify-center px-5 md:px-16 h-full w-full max-w-3xl mx-auto">
 			<div className="w-full text-white space-y-4 bg-black/25 backdrop-blur-lg rounded-xl p-6 min-h-[300px]">
 				<div
 					className={`inline-flex items-center px-3 py-1.5 rounded-full backdrop-blur-sm text-sm uppercase tracking-wide text-white/80 font-semibold ${
@@ -86,7 +73,7 @@ export default function LocationHero({slug, data}: iLocationHeroProps) {
 				{renderStatusContent()}
 			</div>
 
-			<OtherLocations locations={otherLocations} />
+			{/* <OtherLocations locations={otherLocations} /> */}
 		</div>
 	);
 }

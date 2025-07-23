@@ -76,6 +76,7 @@
 		"next-contentlayer": "^0.3.4",
 		"next-mdx-remote": "^5.0.0",
 		"ogl": "^1.0.11",
+		"powerglitch": "^2.4.0",
 		"react": "19.0.0-rc-69d4b800-20241021",
 		"react-dom": "19.0.0-rc-69d4b800-20241021",
 		"react-leaflet": "v5.0.0-rc.1",

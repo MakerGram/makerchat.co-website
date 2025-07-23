@@ -100,12 +100,12 @@ const MissionSection = () => {
 							variants={containerVariants}
 							initial="hidden"
 							animate={isMissionInView ? "visible" : "hidden"}
-							className="space-y-8 z-50 md:mt-0 text-xl md:text-xl text-gray-800 flex flex-col items-center md:items-start lowercase"
+							className="space-y-8 z-50 md:mt-0 text-xl md:text-xl text-gray-800 flex flex-col items-center md:items-start"
 						>
 							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
-									className="text-lg md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
+									className="text-xl md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
 								>
 									{contentData.mission.title}
 								</motion.h2>
@@ -116,7 +116,7 @@ const MissionSection = () => {
 									<motion.p
 										key={index}
 										variants={itemVariants}
-										className="font-manrope leading-relaxed"
+										className="font-manrope leading-relaxed text-xl"
 									>
 										{paragraph.text
 											.split(paragraph.highlight)
@@ -141,7 +141,7 @@ const MissionSection = () => {
 			</section>
 			<section className="bg-white text-black md:py-20 py-10  md:px-20 px-4">
 				<div className="max-w-7xl mx-auto">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center lowercase">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
 						{/* Left: Content */}
 						<motion.div
 							variants={containerVariants}
@@ -152,7 +152,7 @@ const MissionSection = () => {
 							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
-									className="text-lg md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
+									className="text-xl md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
 								>
 									{contentData.vision.title}
 								</motion.h2>
@@ -163,7 +163,7 @@ const MissionSection = () => {
 									<motion.p
 										key={index}
 										variants={itemVariants}
-										className="font-manrope leading-relaxed"
+										className="font-manrope leading-relaxed text-xl"
 									>
 										{paragraph.text
 											.split(paragraph.highlight)

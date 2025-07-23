@@ -1,32 +1,32 @@
 import React from "react";
 
-import {MapPin, CalendarDays, UsersRound} from "lucide-react";
+import {CalendarDays, UsersRound} from "lucide-react";
+
+import {impactData} from "@/db";
 
 const STATS = [
-	{icon: <MapPin />, value: "28+", label: "Ongoing Offline Events"},
-	{icon: <CalendarDays />, value: "41+", label: "MakerChats Conducted"},
-	{icon: <UsersRound />, value: "520+", label: "Attendees Engaged"},
+	{icon: <CalendarDays />, value: impactData.totalEvents, label: "MakerChats"},
+	{icon: <UsersRound />, value: impactData.totalAttendees, label: "Attendees"},
+	{
+		icon: <UsersRound />,
+		value: impactData.offlineEvents,
+		label: "OfflineEvents",
+	},
 ];
 
 export function EventStats() {
 	return (
-		<div className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
+		<div className="-mt-0 md:-mt-10 flex-1 flex flex-row  gap-5">
 			{STATS.map((item, idx) => {
 				return (
-					<div
-						key={idx}
-						className="bg-white/10 rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center gap-3 md:gap-4 shadow-lg"
-					>
-						<div className="w-6 h-6 md:w-8 md:h-8 text-white/80">
-							{item.icon}
-						</div>
+					<div key={idx} className="flex-1 flex flex-col items-center gap-5">
 						<div>
-							<p className="text-xl md:text-4xl font-black text-white leading-tight tracking-tight">
+							<p className="text-xl font-ocean text-center md:text-4xl font-black text-black leading-tight tracking-wide">
 								{item.value}
 							</p>
-							<p className="text-xs md:text-sm text-white/70 font-medium mt-0.5 md:mt-1 lowercase">
+							<span className="text-base font-instrumentSerif text-center md:text-base text-black/70 font-medium mt-0.5 md:mt-1">
 								{item.label}
-							</p>
+							</span>
 						</div>
 					</div>
 				);

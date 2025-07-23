@@ -1,3 +1,4 @@
+"use client";
 import React, {useState} from "react";
 
 import {toast} from "sonner";
@@ -34,7 +35,7 @@ export function InterestSection({slug}: iInterestSectionProps) {
 
 	return (
 		<div className="text-white font-manrope space-y-4">
-			<p className="text-lg text-white/80">
+			<p className="text-lg text-white/80 text-center">
 				Leave your email and we&apos;ll notify you when we launch!
 			</p>
 			<form
@@ -44,7 +45,7 @@ export function InterestSection({slug}: iInterestSectionProps) {
 				<input
 					type="email"
 					placeholder="me@email.com"
-					className="px-4 py-2 w-full md:w-[500px] rounded-full text-white bg-white/10 border border-white/20 placeholder-white/60 backdrop-blur-sm focus:outline-none"
+					className="px-4 py-2 w-full md:w-[300px] rounded-full text-white bg-white/10 border border-white/20 placeholder-white/60 backdrop-blur-sm focus:outline-none"
 					value={email}
 					onChange={(e) => {
 						return setEmail(e.target.value);
@@ -53,7 +54,7 @@ export function InterestSection({slug}: iInterestSectionProps) {
 				/>
 				<button
 					type="submit"
-					className="px-4 py-2 bg-white w-full text-black text-base font-medium rounded-full whitespace-nowrap hover:bg-gray-200 transition font-manrope"
+					className="px-4 py-2 bg-white md:w-[200px] w-full text-black text-base font-medium rounded-full whitespace-nowrap hover:bg-gray-200 transition font-manrope"
 					disabled={isLoading}
 				>
 					{isLoading ? "Submitting..." : "Show Interest"}

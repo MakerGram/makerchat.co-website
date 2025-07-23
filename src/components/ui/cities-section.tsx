@@ -52,7 +52,7 @@ export default function CitiesSection() {
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				MakerChat across the Cities
 			</h2>
-			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-10">
+			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline  leading-tight text-center text-gray-900 mb-10">
 				MakerChat across the <br className="hidden md:block" />
 				<span className="font-tiemposHeadline font-medium">Cities</span>
 			</h2>

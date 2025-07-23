@@ -8122,6 +8122,7 @@ __metadata:
     next-mdx-remote: ^5.0.0
     ogl: ^1.0.11
     postcss: ^8.4.47
+    powerglitch: ^2.4.0
     prettier: ^3.0.2
     react: 19.0.0-rc-69d4b800-20241021
     react-dom: 19.0.0-rc-69d4b800-20241021
@@ -10529,6 +10530,13 @@ __metadata:
     picocolors: ^1.1.1
     source-map-js: ^1.2.1
   checksum: da574620eb84ff60e65e1d8fc6bd5ad87a19101a23d0aba113c653434161543918229a0f673d89efb3b6d4906287eb04b957310dbcf4cbebacad9d1312711461
+  languageName: node
+  linkType: hard
+
+"powerglitch@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "powerglitch@npm:2.4.0"
+  checksum: 82b6818394dd51b055833d873ef2218a58eac6f16b5024922d0dc64f64fce6b2d49cf682c94c1127c46b207edd638a939ee6efd3c3c59a42d2e76873088d85ff
   languageName: node
   linkType: hard
 

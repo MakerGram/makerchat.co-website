@@ -83,6 +83,7 @@ export type NormalizedSpeakerType = iNormalizedObject<iSpeaker>;
 export interface iMetricsType {
 	totalEvents: number;
 	totalAttendees: number;
+	offlineEvents: number;
 }
 
 interface iPlaceDetails {

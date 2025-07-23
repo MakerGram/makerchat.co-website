@@ -52,7 +52,7 @@ export default function HeroSection() {
 			<div className="relative  flex items-center md:justify-center justify-start z-10 w-fit px-5 md:px-0  md:mt-0">
 				<div className="relative z-10 flex flex-col items-start md:items-center text-left md:text-center md:max-w-5xl ">
 					<span className="text-sm text-white font-manrope font-normal tracking-wide mt-6 italic flex items-center gap-2 mb-2 lowercase border-b border-white/30 pb-2">
-						by{" "}
+						by
 						<Image
 							src={Images.mgLogoWhite}
 							alt="MakerGram Logo"
@@ -61,7 +61,7 @@ export default function HeroSection() {
 							className="inline-block"
 						/>
 					</span>
-					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-words">
+					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-word">
 						Where{" "}
 						<span className="font-tiemposHeadline  font-light tracking-wide">
 							makers{" "}
@@ -75,7 +75,7 @@ export default function HeroSection() {
 						onClick={() => {
 							return router.push("/events");
 						}}
-						className="lowercase font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-3 mb-6"
+						className=" font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-3 mb-6"
 					>
 						Register Now →
 					</Button>

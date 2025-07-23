@@ -89,6 +89,9 @@ module.exports = {
 				manrope: ["var(--font-manrope)"],
 				instrumentSerif: ["var(--font-instrument-serif)"],
 				tiemposHeadline: ["var(--TiemposHeadline)"],
+				yultan: ["var(--font-yultan)"],
+				cyber: ["var(--font-cyber)"],
+				ocean: ["var(--font-ocean)"],
 			},
 			keyframes: {
 				fill: {

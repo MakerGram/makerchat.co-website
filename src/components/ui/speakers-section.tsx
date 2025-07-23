@@ -56,7 +56,7 @@ export default function SpeakersSection() {
 			<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 				Our Speakers
 			</h2>
-			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-center text-gray-900 mb-12">
+			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline  leading-tight text-center text-gray-900 mb-12">
 				Where Founders, Builders & <br className="hidden md:block" /> Experts{" "}
 				<span className="font-tiemposHeadline font-medium">Inspire</span>
 			</h2>

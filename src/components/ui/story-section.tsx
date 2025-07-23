@@ -35,20 +35,8 @@ export default function StorySection() {
 		},
 	};
 
-	const imageVariants = {
-		animate: {
-			y: [0, -20, 0, 20, 0],
-			transition: {
-				duration: 20,
-				repeat: Infinity,
-				ease: "linear",
-				times: [0, 0.25, 0.5, 0.75, 1],
-			},
-		},
-	};
-
 	return (
-		<section className="w-full px-4 py-10 md:py-0 bg-white md:px-20">
+		<section className="w-full px-4 pb-10 pt-20 md:py-0 bg-white md:px-20">
 			<div className="mx-auto flex flex-col md:flex-row gap-12 items-center justify-between max-w-7xl">
 				{/* Text Content */}
 				<div className="relative flex items-start gap-8">
@@ -60,23 +48,30 @@ export default function StorySection() {
 							animate={isTextInView ? "visible" : "hidden"}
 							className="space-y-6"
 						>
+							{/* <Image
+								src={Images.Resistor}
+								alt="MakerGram Brand Icon"
+								width={200}
+								height={200}
+								className="absolute -top-24 z-10 left-1/2  transform -translate-x-1/2 -rotate-12"
+							/> */}
 							<motion.p
 								variants={itemVariants}
-								className=" text-center md:text-left text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight"
+								className=" text-center md:text-left z-20 text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline leading-tight"
 							>
 								We needed real
 								<br />
 								<span className="font-tiemposHeadline font-medium">
-									conversations
+									Conversations
 								</span>
 							</motion.p>
 							<motion.p
 								variants={itemVariants}
-								className="text-xl md:text-xl text-center md:text-left font-manrope text-gray-800 max-w-xl lowercase"
+								className="text-2xl md:text-xl text-center md:text-left font-manrope text-gray-800 max-w-xl"
 							>
 								That&apos;s when{" "}
 								<span className="font-normal text-gray-800">MakerChat</span> was
-								born —a space for{" "}
+								born, a space for{" "}
 								<span className="font-normal text-gray-800">creators</span> to
 								connect, share stories, and dive deep into what truly{" "}
 								<span className="font-normal text-gray-800">drives them</span>.
@@ -87,7 +82,7 @@ export default function StorySection() {
 
 				{/* Image Block */}
 				<motion.div
-					variants={imageVariants}
+					// variants={imageVariants}
 					animate="animate"
 					className="relative flex justify-center"
 				>

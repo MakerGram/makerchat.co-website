@@ -4,6 +4,8 @@ import React from "react";
 import {motion, useInView} from "framer-motion";
 import {Users, MessageCircle, UserPlus} from "lucide-react";
 
+import {impactData} from "@/db";
+
 const cardVariants = {
 	hidden: {opacity: 0, y: 60},
 	visible: (i: number) => {
@@ -27,7 +29,7 @@ function PromoCard({
 	index,
 }: {
 	icon: React.ReactNode;
-	value: string;
+	value: string | number;
 	title: string;
 	description: string;
 	index: number;
@@ -47,7 +49,7 @@ function PromoCard({
 			<div className="flex items-center gap-3 mb-6">
 				{icon}
 				<div className="text-7xl font-medium text-white tracking-wide font-instrumentSerif">
-					{value}
+					{value}+
 				</div>
 			</div>
 			<h3 className="text-white uppercase text-xl font-medium mb-3 tracking-tight">
@@ -64,20 +66,20 @@ export default function BrandPromoCard() {
 	const cards = [
 		{
 			icon: <Users className="w-8 h-8 text-white" strokeWidth={2} />,
-			value: "28+",
+			value: impactData.offlineEvents,
 			title: "Offline Events",
 			description:
 				"City-based meetups where ideas spark and connections flourish",
 		},
 		{
 			icon: <MessageCircle className="w-8 h-8 text-white" strokeWidth={2} />,
-			value: "41+",
+			value: impactData.totalEvents,
 			title: "MakerChats",
 			description: "Real-world tech sessions fostering innovation and learning",
 		},
 		{
 			icon: <UserPlus className="w-8 h-8 text-white" strokeWidth={2} />,
-			value: "520+",
+			value: impactData.totalAttendees,
 			title: "Attendees",
 			description: "Together for a future shaped from the ground up",
 		},
@@ -88,8 +90,8 @@ export default function BrandPromoCard() {
 			className=" py-16 md:py-20 font-manrope relative px-4 md:px-0 lg:px-0 max-w-7xl mx-auto"
 			aria-labelledby="impact-heading"
 		>
-			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-left text-gray-900 mb-20 -mt-20">
-				impact so far <span className="italic">!</span>
+			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline  leading-tight text-left text-gray-900 mb-20 -mt-20">
+				Impact so far <span className="italic">!...</span>
 			</h2>
 
 			<div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 ">
