@@ -83,7 +83,7 @@ export default function Speaker() {
 				<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 					Speaker Guidelines
 				</h2>
-				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-6">
+				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline  leading-tight  mb-6">
 					Share your knowledge with the{" "}
 					<span className="font-tiemposHeadline font-medium">Community</span>
 				</p>

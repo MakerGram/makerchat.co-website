@@ -1,10 +1,16 @@
 {
 	"ids": [
+		"f8123d67-9a0c-4e23-9a38-e4f0c4fs9bb8ass",
 		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8a",
 		"e60aa346-f6da-11ed-b67e-0242ac120003",
 		"e60aa346-f6da-11ed-b67e-0242ac120004",
 		"e60aa346-f6da-11ed-b67e-0242ac120005",
-		"e60aa346-f6da-11ed-b67e-0242ac120006"
+		"e60aa346-f6da-11ed-b67e-0242ac120006",
+		"e60aa346-f6da-11ed-b67e-0242ac120006s",
+		"e60aa346-f6da-11ed-b67e-0242ac120006s1",
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8as",
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8ass",
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8mdkdnmkj"
 	],
 
 	"details": {
@@ -13,13 +19,31 @@
 			"firstName": "Salman Faris",
 			"lastName": "",
 			"designation": "Co-founder, MakerGram",
-			"avtarImg": "./uploads/speakers/salman-faris.webp",
+			"avtarImg": "https://media.licdn.com/dms/image/v2/C5603AQEGZ6RLQ8iyWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1620924580345?e=1756339200&v=beta&t=bQcfL0S8c2hen_ox8a3VKB_W7Uy0-MR2h664lf3j5VM",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
+		},
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8ass": {
+			"id": "f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8ass",
+			"firstName": "Jogin Francis",
+			"lastName": "",
+			"designation": "Kerala Startup Mission | Technical lead Super Fablab Kochi",
+			"avtarImg": "https://media.licdn.com/dms/image/v2/C5603AQEGZ6RLQ8iyWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1620924580345?e=1756339200&v=beta&t=bQcfL0S8c2hen_ox8a3VKB_W7Uy0-MR2h664lf3j5VM",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
+		},
+		"f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8as": {
+			"id": "f8123d67-9a0c-4e23-9a38-e4f0c4f9bb8as",
+			"firstName": "Saheen Palayi",
+			"lastName": "",
+			"designation": "Maker | Product Design Engineer",
+			"avtarImg": "https://media.licdn.com/dms/image/v2/C5603AQEGZ6RLQ8iyWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1620924580345?e=1756339200&v=beta&t=bQcfL0S8c2hen_ox8a3VKB_W7Uy0-MR2h664lf3j5VM",
 			"twitter": "https://twitter.com/dummy",
 			"linkedin": "https://linkedin.com/in/dummy"
 		},
 		"e60aa346-f6da-11ed-b67e-0242ac120003": {
 			"id": "e60aa346-f6da-11ed-b67e-0242ac120003",
-			"firstName": "Rohith t p",
+			"firstName": "Rohith T P",
 			"lastName": "T P",
 			"designation": "Solutions Architect, Lascade",
 			"avtarImg": "/uploads/speakers/rahul.webp",
@@ -50,6 +74,24 @@
 			"lastName": "",
 			"designation": "Co-founder, MakerGram",
 			"avtarImg": "/uploads/speakers/swalah.jpeg",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120006s": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120006s",
+			"firstName": "Muhammed Azhar SM",
+			"lastName": "",
+			"designation": "Co-founder, COO, Autobonics",
+			"avtarImg": "",
+			"twitter": "https://twitter.com/dummy",
+			"linkedin": "https://linkedin.com/in/dummy"
+		},
+		"e60aa346-f6da-11ed-b67e-0242ac120006s1": {
+			"id": "e60aa346-f6da-11ed-b67e-0242ac120006s1",
+			"firstName": "Prajith Nair",
+			"lastName": "",
+			"designation": "Founder & CEO at Docker Vision",
+			"avtarImg": "",
 			"twitter": "https://twitter.com/dummy",
 			"linkedin": "https://linkedin.com/in/dummy"
 		}

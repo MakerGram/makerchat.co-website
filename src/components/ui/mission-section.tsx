@@ -14,16 +14,8 @@ const contentData = {
 		image: "uploads/photos/3d-print.gif",
 		paragraphs: [
 			{
-				text: "At MakerChat, were reimagining the future of work by empowering the intelligence to unlock human potential.",
-				highlight: "MakerChat",
-			},
-			{
-				text: "As an innovation lab, we develop breakthrough solutions that make complex tasks more intuitive, collaboration more powerful, and creativity more impactful—always with a human-centric focus.",
-				highlight: "innovation lab",
-			},
-			{
-				text: "Our mission is to harness technology to amplify human ingenuity, champion innovation, and ultimately transform how the world works. We invite every innovator, creator, and collaborator to join us in shaping the workplace of tomorrow.",
-				highlight: "harness technology",
+				text: "To build a vibrant and inclusive community where makers and thinkers come together to learn, share, and shape the future together.",
+				highlight: "",
 			},
 		],
 	},
@@ -32,16 +24,8 @@ const contentData = {
 		image: "uploads/photos/makerchat-group-photo.webp",
 		paragraphs: [
 			{
-				text: "At MakerChat, were reimagining the future of work by empowering the intelligence to unlock human potential.",
-				highlight: "MakerChat",
-			},
-			{
-				text: "As an innovation lab, we develop breakthrough solutions that make complex tasks more intuitive, collaboration more powerful, and creativity more impactful—always with a human-centric focus.",
-				highlight: "innovation lab",
-			},
-			{
-				text: "Our mission is to harness technology to amplify human ingenuity, champion innovation, and ultimately transform how the world works. We invite every innovator, creator, and collaborator to join us in shaping the workplace of tomorrow.",
-				highlight: "harness technology",
+				text: "MakerChat exists to create a space where curiosity meets community. We host honest and insightful conversations that connect people, spark ideas, and celebrate the journey of making, no matter where you are starting from",
+				highlight: "",
 			},
 		],
 	},
@@ -116,12 +100,12 @@ const MissionSection = () => {
 							variants={containerVariants}
 							initial="hidden"
 							animate={isMissionInView ? "visible" : "hidden"}
-							className="space-y-8 z-50 md:mt-0 text-xl md:text-xl text-gray-800 flex flex-col items-center md:items-start lowercase"
+							className="space-y-8 z-50 md:mt-0 text-xl md:text-xl text-gray-800 flex flex-col items-center md:items-start"
 						>
 							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
-									className="text-lg md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
+									className="text-xl md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
 								>
 									{contentData.mission.title}
 								</motion.h2>
@@ -132,7 +116,7 @@ const MissionSection = () => {
 									<motion.p
 										key={index}
 										variants={itemVariants}
-										className="font-manrope leading-relaxed"
+										className="font-manrope leading-relaxed text-xl"
 									>
 										{paragraph.text
 											.split(paragraph.highlight)
@@ -157,7 +141,7 @@ const MissionSection = () => {
 			</section>
 			<section className="bg-white text-black md:py-20 py-10  md:px-20 px-4">
 				<div className="max-w-7xl mx-auto">
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center lowercase">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
 						{/* Left: Content */}
 						<motion.div
 							variants={containerVariants}
@@ -168,7 +152,7 @@ const MissionSection = () => {
 							<div className="flex items-center w-full gap-4">
 								<motion.h2
 									variants={itemVariants}
-									className="text-lg md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
+									className="text-xl md:text-lg text-gray-600 uppercase tracking-widest whitespace-nowrap"
 								>
 									{contentData.vision.title}
 								</motion.h2>
@@ -179,7 +163,7 @@ const MissionSection = () => {
 									<motion.p
 										key={index}
 										variants={itemVariants}
-										className="font-manrope leading-relaxed"
+										className="font-manrope leading-relaxed text-xl"
 									>
 										{paragraph.text
 											.split(paragraph.highlight)

@@ -78,7 +78,6 @@ export default function Home() {
 
 			<SupportersSection />
 
-			{/* <ImpactCard /> */}
 			<StorySection />
 			<BrandPromoCard />
 

@@ -17,7 +17,7 @@ export default function HeroSection() {
 	const [isMuted, setIsMuted] = useState(true);
 
 	return (
-		<section className="relative flex items-end md:items-center justify-center md:justify-center h-screen bg-black overflow-hidden flex-col w-full">
+		<section className="relative flex items-end md:items-center justify-center md:justify-center  h-screen bg-black overflow-hidden flex-col w-full">
 			<video
 				ref={videoRef}
 				autoPlay
@@ -49,10 +49,10 @@ export default function HeroSection() {
 			</Button>
 
 			{/* Text content */}
-			<div className="relative  flex items-center md:justify-center justify-start z-10 w-fit px-5 md:px-0 -mt-14 md:mt-0">
+			<div className="relative  flex items-center md:justify-center justify-start z-10 w-fit px-5 md:px-0  md:mt-0">
 				<div className="relative z-10 flex flex-col items-start md:items-center text-left md:text-center md:max-w-5xl ">
 					<span className="text-sm text-white font-manrope font-normal tracking-wide mt-6 italic flex items-center gap-2 mb-2 lowercase border-b border-white/30 pb-2">
-						by{" "}
+						by
 						<Image
 							src={Images.mgLogoWhite}
 							alt="MakerGram Logo"
@@ -61,25 +61,34 @@ export default function HeroSection() {
 							className="inline-block"
 						/>
 					</span>
-					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-words">
-						where{" "}
+					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-word">
+						Where{" "}
 						<span className="font-tiemposHeadline  font-light tracking-wide">
 							makers{" "}
 						</span>{" "}
 						meet to chat and build{" "}
 						<span className="font-tiemposHeadline  font-light tracking-wide">
-							together{" "}
+							together.{" "}
 						</span>
 					</p>
 					<Button
 						onClick={() => {
 							return router.push("/events");
 						}}
-						className="lowercase font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-3 mb-6"
+						className=" font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-3 mb-6"
 					>
 						Register Now →
 					</Button>
 				</div>
+			</div>
+			{/* Scroll down indicator */}
+			<div className="hidden md:flex absolute bottom-12 md:bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex-col items-center gap-3">
+				<div className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1">
+					<div className="w-1.5 h-1.5 rounded-full bg-white/80 animate-scroll-down" />
+				</div>
+				<p className="text-white/80 text-sm font-medium tracking-wide">
+					Scroll to explore
+				</p>
 			</div>
 		</section>
 	);

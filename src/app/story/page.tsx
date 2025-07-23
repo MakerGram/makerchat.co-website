@@ -75,8 +75,8 @@ export default function Blog() {
 				<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 					MakerChat Stories
 				</h2>
-				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-6">
-					where makers
+				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline leading-tight  mb-6">
+					Where makers
 					<br />
 					<span className="font-tiemposHeadline font-medium">thrive</span>
 				</p>

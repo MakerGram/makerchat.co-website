@@ -149,14 +149,14 @@ export default function QuoteSlider() {
 						<h2 className="text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 							Testimonials
 						</h2>
-						<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline lowercase leading-tight text-gray-900 mb-6">
+						<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline leading-tight text-gray-900 mb-6">
 							Loved by the
 							<br />
 							<span className="font-tiemposHeadline font-medium">
 								community
 							</span>
 						</h2>
-						<p className="text-xl sm:text-xl text-gray-700 lowercase">
+						<p className="text-xl sm:text-xl text-gray-700">
 							Real voices from real makers, changemakers, and innovators.
 						</p>
 					</motion.div>

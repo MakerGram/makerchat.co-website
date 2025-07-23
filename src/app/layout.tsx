@@ -2,6 +2,7 @@
 // by default and can not be set to a Client Component.
 import React from "react";
 
+import {Toaster} from "sonner";
 import {Manrope, Instrument_Serif} from "next/font/google";
 const manrope = Manrope({subsets: ["latin"], variable: "--font-manrope"});
 import localFont from "next/font/local";
@@ -15,6 +16,39 @@ const instrumentSerif = Instrument_Serif({
 	subsets: ["latin"],
 	weight: ["400"],
 	variable: "--font-instrument-serif",
+});
+
+const yultan = localFont({
+	src: [
+		{
+			path: "../../public/fonts/Barakallah-PERSONAL-USE ONLY.ttf",
+			weight: "400",
+			style: "normal",
+		},
+	],
+	variable: "--font-yultan",
+});
+
+const ocean = localFont({
+	src: [
+		{
+			path: "../../public/fonts/AMORIA.otf",
+			weight: "400",
+			style: "normal",
+		},
+	],
+	variable: "--font-ocean",
+});
+
+const cyber = localFont({
+	src: [
+		{
+			path: "../../public/fonts/Cyber City.otf",
+			weight: "300",
+			style: "normal",
+		},
+	],
+	variable: "--font-cyber",
 });
 
 const TiemposHeadline = localFont({
@@ -91,14 +125,18 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 				manrope.variable,
 				instrumentSerif.variable,
 				TiemposHeadline.variable,
+				yultan.variable,
+				cyber.variable,
+				ocean.variable,
 			)}
 		>
 			<body className="flex flex-col min-h-screen h-dvh bg-white antialiased font-manrope ">
-				<main className="flex-grow">
+				<main className="">
 					<TopNavBar />
 					{children}
 				</main>
 				<Footer />
+				<Toaster position="top-center" />
 			</body>
 		</html>
 	);

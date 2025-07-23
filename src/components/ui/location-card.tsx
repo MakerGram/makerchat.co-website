@@ -22,14 +22,14 @@ export default function PlaceCard({
 }) {
 	return (
 		<Link href={url || "#"} passHref>
-			<div className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer border border-white/20 backdrop-blur-xl bg-white/5">
+			<div className="group relative rounded-3xl overflow-hidden  transition-all duration-300 ease-in-out cursor-pointer border border-white/10 w-[260px] md:w-[300px]">
 				{/* Background Image */}
 				<div className="relative w-full h-[280px]">
 					<Image
 						src={
 							Images.locationsThumbnail[
 								id as keyof typeof Images.locationsThumbnail
-							]
+							] || "/uploads/photos/asia-bg-cat.webp"
 						}
 						alt={title || "Place Image"}
 						fill

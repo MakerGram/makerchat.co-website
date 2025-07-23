@@ -1,5 +1,13 @@
 {
 	"ids": [
+		"evt-evD2pe906LIDUHR",
+		"evt-TiIozIx2H2gO9ou",
+		"evt-9RJWODSCCXD3mtr",
+		"evt-n6iTczn0QHyUNC3",
+		"evt-GEU4gsYIa9e5kEY",
+		"evt-NIaBT86QljBC2Yg",
+		"evt-zi9ulEufaPDDo8B",
+		"evt-IEwhdpgfDWLBBGR",
 		"evt-mcHQC9Yh1hM9fv7",
 		"evt-0c9EomiYEQJ8Hbb",
 		"evt-I7G26hI7KtKwDrs",
@@ -41,6 +49,214 @@
 		"evt-FSHCYeCEx2pwVYE"
 	],
 	"details": {
+		"evt-evD2pe906LIDUHR": {
+			"id": "evt-evD2pe906LIDUHR",
+			"title": "MakerChat0x2E: Building with XIAO nRF",
+			"coverImg": "https://images.lumacdn.com/event-covers/tl/326091ff-2f91-46c1-b529-ce98389b9641.jpg",
+			"description": "MakerChat0x2E: Building with XIAO nRF",
+			"startDateTime": "2025-07-05T05:00:00.000Z",
+			"endDateTime": "2025-07-05T06:30:00.000Z",
+			"registerUrl": "vw1acnd4",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-TiIozIx2H2gO9ou": {
+			"id": "evt-TiIozIx2H2gO9ou",
+			"title": "MakerChat0x2D: Building Interactive Signage",
+			"coverImg": "https://images.lumacdn.com/event-covers/54/a60fd28b-34d4-4fd1-b131-6ce0b34c7985.png",
+			"description": "MakerChat0x2D: Building Interactive Signage",
+			"startDateTime": "2025-06-14T04:30:00.000Z",
+			"endDateTime": "2025-06-14T07:00:00.000Z",
+			"registerUrl": "i0nby974",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-9RJWODSCCXD3mtr": {
+			"id": "evt-9RJWODSCCXD3mtr",
+			"title": "MakerChat0x2C: Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/3j/6772ef38-ae2e-4375-af80-259fd8bd9b70.png",
+			"description": "MakerChat0x2C: Community Gathering",
+			"startDateTime": "2025-05-03T05:00:00.000Z",
+			"endDateTime": "2025-05-03T07:00:00.000Z",
+			"registerUrl": "w7pbvsye",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-n6iTczn0QHyUNC3": {
+			"id": "evt-n6iTczn0QHyUNC3",
+			"title": "MakerChat0x2B: Demystifying Cellular IoT - From Antenna to Cloud",
+			"coverImg": "https://images.lumacdn.com/event-covers/w0/09f909a2-cec0-4ff3-ad4f-5ff0a1f2b20b.png",
+			"description": "MakerChat0x2B: Demystifying Cellular IoT - From Antenna to Cloud",
+			"startDateTime": "2025-04-05T09:30:00.000Z",
+			"endDateTime": "2025-04-05T11:30:00.000Z",
+			"registerUrl": "0nx91yc3",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-GEU4gsYIa9e5kEY": {
+			"id": "evt-GEU4gsYIa9e5kEY",
+			"title": "MakerChat0x29: Artificial Intelligence: My Journey and Career",
+			"coverImg": "https://images.lumacdn.com/event-covers/0g/61c2f3fe-8dd6-461b-ace8-811b1f0b4819.png",
+			"description": "MakerChat0x29: Artificial Intelligence: My Journey and Career",
+			"startDateTime": "2025-02-01T05:00:00.000Z",
+			"endDateTime": "2025-02-01T07:00:00.000Z",
+			"registerUrl": "7mesdrph",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-NIaBT86QljBC2Yg": {
+			"id": "evt-NIaBT86QljBC2Yg",
+			"title": "MakerChat0x28: How to Build a Drone",
+			"coverImg": "https://images.lumacdn.com/event-covers/q4/9329e1c5-cdd4-4423-bc66-970dc79a7f12",
+			"description": "MakerChat0x28: How to Build a Drone",
+			"startDateTime": "2025-01-04T05:00:00.000Z",
+			"endDateTime": "2025-01-04T07:00:00.000Z",
+			"registerUrl": "yulr3vd9",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-zi9ulEufaPDDo8B": {
+			"id": "evt-zi9ulEufaPDDo8B",
+			"title": "TinyML Hackathon",
+			"coverImg": "https://images.lumacdn.com/event-covers/s8/ec5882fd-9191-43dc-adca-9fd7ab673b94",
+			"description": "TinyML Hackathon",
+			"startDateTime": "2024-12-21T04:30:00.000Z",
+			"endDateTime": "2024-12-22T12:30:00.000Z",
+			"registerUrl": "lpp7zsp6",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
+		"evt-IEwhdpgfDWLBBGR": {
+			"id": "evt-IEwhdpgfDWLBBGR",
+			"title": "MakerChat0x27: Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/zd/3aa77e09-adde-4dd6-bf91-3f77e1d253fe",
+			"description": "MakerChat0x27: Community Gathering",
+			"startDateTime": "2024-12-07T05:00:00.000Z",
+			"endDateTime": "2024-12-07T07:00:00.000Z",
+			"registerUrl": "iu7t07it",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "ChIJi3dgOm8NCDsRhOkWmFzpC4E",
+				"name": "TinkerSpace",
+				"city": "Kochi",
+				"state": "Kerala",
+				"country": "India",
+				"latitude": "10.0469797",
+				"longitude": "76.3351998",
+				"fullAddress": "TinkerSpace, 21/258, Cusat.P.O, Punnekkattumoola, Seaport - Airport Rd, Vidya Nagar Colony, Thrikkakara, Kalamassery, Kochi, Kerala 682022, India"
+			}
+		},
 		"evt-mcHQC9Yh1hM9fv7": {
 			"id": "evt-mcHQC9Yh1hM9fv7",
 			"title": "From Passion to Profit: My Journey from Maker to Entrepreneur",

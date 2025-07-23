@@ -103,7 +103,7 @@ export default function Sponsor() {
 				<h2 className="text-center text-sm md:text-base text-gray-600 uppercase tracking-widest mb-3">
 					Why Sponsor Us
 				</h2>
-				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline lowercase leading-tight  mb-6">
+				<p className="text-center text-5xl md:text-7xl lg:text-7xl font-light font-tiemposHeadline  leading-tight  mb-6">
 					Plant your flag in the
 					<span className="font-tiemposHeadline font-medium">
 						{" "}
@@ -111,7 +111,7 @@ export default function Sponsor() {
 						maker community
 					</span>
 				</p>
-				<p className="lowercase text-xl md:text-xl text-center font-manrope text-muted-foreground mb-8 max-w-3xl mx-auto">
+				<p className=" text-xl md:text-xl text-center font-manrope text-muted-foreground mb-8 max-w-3xl mx-auto">
 					<span className="">MakerChat</span> is more than an event — it&apos;s
 					a motion of <span className=" text-black">builders</span>,{" "}
 					<span className=" text-black">creators</span>, and{" "}
