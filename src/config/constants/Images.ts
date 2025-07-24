@@ -69,13 +69,13 @@ const Images = {
 	},
 	locations: {
 		kochi: kochiImage,
-		bangalore: bangaloreImage,
+		bengaluru: bangaloreImage,
 		hyderabad: hyderabadImage,
 		dubai: dubaiImage,
 	},
 	locationsThumbnail: {
 		kochi: kochiThumbnail,
-		bangalore: bangaloreThumbnail,
+		bengaluru: bangaloreThumbnail,
 		hyderabad: hyderabadThumbnail,
 		dubai: dubaiThumbnail,
 	},

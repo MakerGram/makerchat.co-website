@@ -1,5 +1,5 @@
 {
-	"ids": ["kochi", "bangalore", "hyderabad", "dubai"],
+	"ids": ["kochi", "bengaluru", "hyderabad", "dubai"],
 	"details": {
 		"kochi": {
 			"id": "kochi",
@@ -9,12 +9,12 @@
 			"url": "/location/kochi",
 			"description": "Where conversations flow like the backwaters"
 		},
-		"bangalore": {
-			"id": "bangalore",
+		"bengaluru": {
+			"id": "bengaluru",
 			"title": "India",
-			"location": "Bangalore",
+			"location": "Bengaluru",
 			"image": "/uploads/photos/blr-1.jpg",
-			"url": "/location/bangalore",
+			"url": "/location/bengaluru",
 			"description": "Innovation meets coffee and code"
 		},
 		"hyderabad": {
