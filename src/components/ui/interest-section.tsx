@@ -15,7 +15,7 @@ export function InterestSection({slug}: iInterestSectionProps) {
 		e.preventDefault();
 		setLoading(true);
 		try {
-			const res = await fetch("http://23.95.15.187:3231/api/interest-list", {
+			const res = await fetch("https://quasar.xistart.com/api/interest-list", {
 				method: "POST",
 				headers: {"Content-Type": "application/json"},
 				body: JSON.stringify({email, tag: {[slug]: ""}, name: email}),
