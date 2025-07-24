@@ -29,7 +29,7 @@ export const metadata = {
 	keywords: [
 		"MakerChat cities",
 		"MakerChat Kochi",
-		"MakerChat Bangalore",
+		"MakerChat Bengaluru",
 		"maker events India",
 		"startup meetups",
 		"tech meetups India",

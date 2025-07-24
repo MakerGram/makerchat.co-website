@@ -9,8 +9,8 @@ import Images from "@/config/constants/Images";
 import {InterestSection} from "@/components/ui/interest-section";
 
 export const metadata: Metadata = {
-	title: `${placesData.details.bangalore.location} Events`,
-	description: `Discover events and updates in ${placesData.details.bangalore.location}.`,
+	title: `${placesData.details.bengaluru.location} Events`,
+	description: `Discover events and updates in ${placesData.details.bengaluru.location}.`,
 	icons: {
 		icon: [
 			{url: Images.faviconIco.src},
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
 };
 
 export default function BangalorePage() {
-	const slug = "bangalore";
+	const slug = "bengaluru";
 	if (!placesData.ids.includes(slug)) {
 		notFound();
 	}
@@ -87,7 +87,7 @@ export default function BangalorePage() {
 				<div className="absolute flex items-center flex-col-reverse md:flex-col-reverse justify-center z-50 top-1/2 md:top-1/2  -translate-y-1/2 left-1/2 transform -translate-x-1/2 w-full px-4">
 					<InterestSection slug={slug} />
 					<div className="text-4xl md:text-7xl font-bold font-cyber text-[#76F6FB]">
-						Bengalore
+						Bengaluru
 					</div>
 				</div>
 			</div>

@@ -50,7 +50,7 @@ export default function LocationHero({slug, data}: iLocationHeroProps) {
 					className={`inline-flex items-center px-3 py-1.5 rounded-full backdrop-blur-sm text-sm uppercase tracking-wide text-white/80 font-semibold ${
 						slug === "kochi"
 							? "bg-green-500/40"
-							: slug === "bangalore"
+							: slug === "engaluru"
 								? "bg-yellow-500/40"
 								: slug === "hyderabad"
 									? "bg-[#79405c]/40"
