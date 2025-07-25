@@ -86,7 +86,7 @@ export default function BangalorePage() {
 
 				<div className="absolute flex items-center flex-col-reverse md:flex-col-reverse justify-center z-50 top-1/2 md:top-1/2  -translate-y-1/2 left-1/2 transform -translate-x-1/2 w-full px-4">
 					<InterestSection slug={slug} />
-					<div className="text-4xl md:text-7xl font-bold font-cyber text-[#76F6FB]">
+					<div className="text-3xl md:text-7xl font-bold font-cyber text-[#76F6FB]">
 						Bengaluru
 					</div>
 				</div>

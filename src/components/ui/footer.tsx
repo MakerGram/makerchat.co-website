@@ -84,17 +84,20 @@ const Footer = () => {
 										"Terms and Conditions",
 										"https://makergram.com/terms-and-conditions",
 									],
-									["Disclaimer", ""],
-									["Contact", "/"],
+									["Disclaimer", "https://legal.makergram.com/disclaimer"],
+									["Contact", "https://makergram.com/contact"],
 								],
 							},
 							{
 								title: "Join with us",
 								links: [
-									["Telegram", "/"],
-									["Whatsapp", "/"],
+									["Telegram", "https://t.me/makergram"],
+									[
+										"Whatsapp",
+										"https://whatsapp.com/channel/0029VaAvOPTElagtaAimSg38",
+									],
 									["Forum", "https://makergram.com/community/"],
-									["Work with us", "/"],
+									["Work with us", "https://makergram.typeform.com/to/M5QsIz"],
 								],
 							},
 							{
@@ -102,8 +105,8 @@ const Footer = () => {
 								links: [
 									["Community", "https://makergram.com/community/"],
 									["Workshops", "https://workshop.makergram.com/"],
-									["Hardware rental", "/"],
-									["Blog", "/story"],
+									// ["Hardware rental", "/"],
+									["Blog", "https://makergram.com/blog/"],
 								],
 							},
 						].map((section, idx) => {
@@ -141,25 +144,33 @@ const Footer = () => {
 					</p>
 					<div className="flex items-center mt-4 space-x-4 sm:mt-0">
 						<Link
-							href="https://www.instagram.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.instagram.com/maker_gram/"
 							className="text-[#1d1d1f] hover:text-[#888]"
 						>
 							<Icons.instgram className="h-4 w-4" />
 						</Link>
 						<Link
-							href="https://www.linkedin.com/company/"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.linkedin.com/company/makergram/"
 							className="text-[#1d1d1f] hover:text-[#888]"
 						>
 							<Icons.linkedIn className="h-4 w-4" />
 						</Link>
 						<Link
-							href="https://github.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://github.com/MakerGram"
 							className="text-[#1d1d1f] hover:text-[#888]"
 						>
 							<Icons.gitHub className="h-4 w-4" />
 						</Link>
 						<Link
-							href="https://twitter.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://x.com/Maker_Gram"
 							className="text-[#1d1d1f] hover:text-[#888]"
 						>
 							<Icons.twitter className="h-4 w-4" />
