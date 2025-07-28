@@ -12,6 +12,7 @@ const env = {
 	NEXT_PUBLIC_EVAPP_SEVER_REQUEST_TIMEOUT: Number(
 		process.env.NEXT_PUBLIC_EVAPP_SEVER_REQUEST_TIMEOUT,
 	),
+	CLARITY_ID: process.env.NEXT_PUBLIC_CLARITY_ID,
 };
 
 export default env;
