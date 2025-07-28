@@ -6,11 +6,13 @@ import {Toaster} from "sonner";
 import {Manrope, Instrument_Serif} from "next/font/google";
 const manrope = Manrope({subsets: ["latin"], variable: "--font-manrope"});
 import localFont from "next/font/local";
-
 import "./globals.css";
+import Script from "next/script";
+
 import TopNavBar from "@/components/ui/top-navbar";
 import {cn} from "@/lib/utils";
 import Footer from "@/components/ui/footer";
+import env from "@/config/env";
 
 const instrumentSerif = Instrument_Serif({
 	subsets: ["latin"],
@@ -130,6 +132,23 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 				ocean.variable,
 			)}
 		>
+			<head>
+				{/* Microsoft Clarity Tracking */}
+
+				<Script
+					id="clarity-script"
+					strategy="afterInteractive"
+					dangerouslySetInnerHTML={{
+						__html: `
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "${env.CLARITY_ID}");
+        `,
+					}}
+				/>
+			</head>
 			<body className="flex flex-col min-h-screen h-dvh bg-white antialiased font-manrope ">
 				<main className="">
 					<TopNavBar />
