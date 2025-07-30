@@ -397,7 +397,7 @@ export default function Speaker() {
 					{/* Register Button */}
 					<div className="text-center mt-12">
 						<a
-							href="https://forms.gle/GXaRRMBd46XwA7bB8"
+							href="https://go.makerchat.co/speaker-call"
 							target="_blank"
 							rel="noreferrer"
 							className="mt-auto w-full max-w-xs mx-auto bg-gradient-to-br from-[#1d1d1f] to-[#2d2d2f] hover:from-[#2d2d2f] hover:to-[#3d3d3f] text-white text-[15px] py-3 font-medium text-center rounded-full transition-all duration-200 shadow-sm hover:shadow-md flex items-center justify-center gap-2 uppercase"
