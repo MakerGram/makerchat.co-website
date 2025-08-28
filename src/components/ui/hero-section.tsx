@@ -61,7 +61,7 @@ export default function HeroSection() {
 							className="inline-block"
 						/>
 					</span>
-					<p className="text-6xl md:text-7xl font-bold tracking-tight text-white pointer-events-none whitespace-normal break-word">
+					<p className="text-6xl md:text-[7rem] lowercase font-bold tracking-tight text-white pointer-events-none whitespace-normal break-word">
 						Where{" "}
 						<span className="font-tiemposHeadline  font-light tracking-wide">
 							makers{" "}
@@ -75,7 +75,7 @@ export default function HeroSection() {
 						onClick={() => {
 							return router.push("/events");
 						}}
-						className=" font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-3 mb-6"
+						className=" font-manrope md:py-6 text-base md:text-xl px-6 md:px-8 rounded-full bg-transparent hover:bg-white/10 shadow-xl border border-white/30 text-white font-medium transition-all duration-300 mt-5 mb-6"
 					>
 						Register Now →
 					</Button>

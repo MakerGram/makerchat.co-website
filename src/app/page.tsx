@@ -11,7 +11,7 @@ import CitiesSection from "@/components/ui/cities-section";
 import BrandPromoCard from "@/components/ui/brand-promo-card";
 
 export const metadata = {
-	title: "Home – MakerChat",
+	title: "makerchat",
 	description: "where makers meet to chat and build together",
 	icons: {
 		icon: [
