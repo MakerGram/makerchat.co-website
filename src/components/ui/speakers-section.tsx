@@ -126,7 +126,7 @@ export default function SpeakersSection() {
 
 				<div
 					ref={scrollContainerRef}
-					className="relative w-full overflow-x-auto md:overflow-x-visible scrollbar-hide scroll-smooth"
+					className="relative w-full overflow-x-auto min-[1397px]:overflow-x-visible scrollbar-hide scroll-smooth"
 				>
 					<div className="flex flex-row gap-8 w-max items-center pb-4 min-[1397px]:grid min-[1397px]:grid-cols-4 min-[1397px]:gap-10 min-[1397px]:w-full min-[1397px]:justify-center min-[1397px]:items-stretch">
 						{speakers.ids.map((review) => {
