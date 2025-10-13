@@ -87,7 +87,7 @@ export default function BrandPromoCard() {
 
 	return (
 		<section
-			className=" py-16 md:py-20 font-manrope relative px-4 md:px-0 lg:px-0 max-w-7xl mx-auto"
+			className=" py-16 md:py-20 font-manrope relative px-4 md:px-20 max-w-7xl mx-auto"
 			aria-labelledby="impact-heading"
 		>
 			<h2 className="text-5xl md:text-7xl font-light font-tiemposHeadline  leading-tight text-left text-gray-900 mb-20 -mt-20">
