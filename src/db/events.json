@@ -1,5 +1,8 @@
 {
 	"ids": [
+		"evt-CqbcdqP0lF18Bc0",
+		"evt-gMlJZcrLDhl7K2a",
+		"evt-2GzXNppigIzaHGL",
 		"evt-zNdglGiriEH9e8F",
 		"evt-nIaEEGphsY2x2tD",
 		"evt-evD2pe906LIDUHR",
@@ -51,14 +54,66 @@
 		"evt-FSHCYeCEx2pwVYE"
 	],
 	"details": {
-		"evt-nIaEEGphsY2x2tD": {
-			"id": "evt-nIaEEGphsY2x2tD",
-			"title": "MakerChat0x2F: Community Gathering",
-			"coverImg": "https://images.lumacdn.com/event-covers/yg/c4bde60a-b9d4-4ed9-8305-8205937b2f71.png",
-			"description": "MakerChat0x2F: Community Gathering",
-			"startDateTime": "2025-08-16T09:15:00.000Z",
-			"endDateTime": "2025-08-16T11:15:00.000Z",
-			"registerUrl": "5lhjmx2k",
+		"evt-CqbcdqP0lF18Bc0": {
+			"id": "evt-CqbcdqP0lF18Bc0",
+			"title": "MakerChat0x33: AI Robotics & The Future of Compute",
+			"coverImg": "https://images.lumacdn.com/event-covers/cz/666f509f-2dbc-4073-b43a-90005e9e182c.jpg",
+			"description": "​For this edition of MakerChat, we dive into hands-on robotics and next-gen AI hardware powering the future. Two brilliant community members are taking the stage to break down practical tools, frameworks, and big-picture shifts shaping AI development today.",
+			"startDateTime": "2025-12-06T14:30:00.000Z",
+			"endDateTime": "2025-12-06T16:30:00.000Z",
+			"registerUrl": "4ygjvr86",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "",
+				"name": "",
+				"city": "",
+				"state": "",
+				"country": "",
+				"latitude": "",
+				"longitude": "",
+				"fullAddress": ""
+			}
+		},
+		"evt-gMlJZcrLDhl7K2a": {
+			"id": "evt-gMlJZcrLDhl7K2a",
+			"title": "MakerChat0x32: Stay Connected, Even Without the Internet!",
+			"coverImg": "https://images.lumacdn.com/event-covers/mt/31e48068-d81f-4145-88d6-4942228fc226.jpg",
+			"description": "Using Meshtastic, we built a simple off-grid network to communicate anywhere — no internet, no license, just fun tech! We’ll be sharing our journey of how we built the device ourselves.",
+			"startDateTime": "2025-11-01T14:30:00.000Z",
+			"endDateTime": "2025-11-01T16:30:00.000Z",
+			"registerUrl": "hptrxaf5",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "",
+				"name": "",
+				"city": "",
+				"state": "",
+				"country": "",
+				"latitude": "",
+				"longitude": "",
+				"fullAddress": ""
+			}
+		},
+		"evt-2GzXNppigIzaHGL": {
+			"id": "evt-2GzXNppigIzaHGL",
+			"title": "MakerChat0x31: Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/ea/0d02158f-cf0d-455d-8608-e578672a1420.png",
+			"description": "MakerChat0x31: Community Gathering",
+			"startDateTime": "2025-10-11T10:30:00.000Z",
+			"endDateTime": "2025-10-11T13:30:00.000Z",
+			"registerUrl": "fqab0np5",
 			"speaker": {
 				"id": "usr-HDGDsgBa1UJLWbW",
 				"firstName": "MakerGram",
@@ -85,6 +140,32 @@
 			"startDateTime": "2025-09-13T04:30:00.000Z",
 			"endDateTime": "2025-09-13T07:30:00.000Z",
 			"registerUrl": "1bdfsidj",
+			"speaker": {
+				"id": "usr-HDGDsgBa1UJLWbW",
+				"firstName": "MakerGram",
+				"lastName": "",
+				"designation": "Open Community for Makers and hardware enthusiasts to grow further!",
+				"avatarImg": "https://images.lumacdn.com/avatars/89/a8820299-ba37-4269-8685-2ca92e7a9462"
+			},
+			"venue": {
+				"id": "",
+				"name": "",
+				"city": "",
+				"state": "",
+				"country": "",
+				"latitude": "",
+				"longitude": "",
+				"fullAddress": ""
+			}
+		},
+		"evt-nIaEEGphsY2x2tD": {
+			"id": "evt-nIaEEGphsY2x2tD",
+			"title": "MakerChat0x2F: Community Gathering",
+			"coverImg": "https://images.lumacdn.com/event-covers/yg/c4bde60a-b9d4-4ed9-8305-8205937b2f71.png",
+			"description": "MakerChat0x2F: Community Gathering",
+			"startDateTime": "2025-08-16T09:15:00.000Z",
+			"endDateTime": "2025-08-16T11:15:00.000Z",
+			"registerUrl": "5lhjmx2k",
 			"speaker": {
 				"id": "usr-HDGDsgBa1UJLWbW",
 				"firstName": "MakerGram",
