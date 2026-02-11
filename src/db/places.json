@@ -1,20 +1,20 @@
 {
-	"ids": ["kochi", "bangalore", "hyderabad", "dubai"],
+	"ids": ["kochi", "bengaluru", "hyderabad", "dubai"],
 	"details": {
 		"kochi": {
 			"id": "kochi",
 			"title": "India",
 			"location": "Kochi",
-			"image": "/uploads/photos/kochi.jpg",
+			"image": "/uploads/photos/asia-bg-cat.webp",
 			"url": "/location/kochi",
 			"description": "Where conversations flow like the backwaters"
 		},
-		"bangalore": {
-			"id": "bangalore",
+		"bengaluru": {
+			"id": "bengaluru",
 			"title": "India",
-			"location": "Bangalore",
+			"location": "Bengaluru",
 			"image": "/uploads/photos/blr-1.jpg",
-			"url": "/location/bangalore",
+			"url": "/location/bengaluru",
 			"description": "Innovation meets coffee and code"
 		},
 		"hyderabad": {
@@ -23,14 +23,14 @@
 			"location": "Hyderabad",
 			"image": "/uploads/photos/hyd-char.jpg",
 			"url": "/location/hyderabad",
-			"description": "City of Pearls, powered by ideas"
+			"description": "City of Pearls Meets the Pulse of Cyberabad"
 		},
 		"dubai": {
 			"id": "dubai",
 			"title": "Dubai",
 			"location": "Dubai",
 			"image": "/uploads/photos/dubai-1.jpg",
-			"url": "/#/location/dubai",
+			"url": "/location/dubai",
 			"description": "Desert dreams. Global voices."
 		}
 	}

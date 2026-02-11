@@ -89,6 +89,9 @@ module.exports = {
 				manrope: ["var(--font-manrope)"],
 				instrumentSerif: ["var(--font-instrument-serif)"],
 				tiemposHeadline: ["var(--TiemposHeadline)"],
+				yultan: ["var(--font-yultan)"],
+				cyber: ["var(--font-cyber)"],
+				ocean: ["var(--font-ocean)"],
 			},
 			keyframes: {
 				fill: {
@@ -127,6 +130,16 @@ module.exports = {
 						transform: "translateY(calc(-100% - var(--gap)))",
 					},
 				},
+				"scroll-down": {
+					"0%, 100%": {
+						transform: "translateY(0)",
+						opacity: "0.4",
+					},
+					"50%": {
+						transform: "translateY(12px)",
+						opacity: "1",
+					},
+				},
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
@@ -134,6 +147,7 @@ module.exports = {
 				marquee: "marquee var(--duration) linear infinite",
 				"marquee-vertical": "marquee-vertical var(--duration) linear infinite",
 				fill: "fill 4s linear forwards",
+				"scroll-down": "scroll-down 2s ease-in-out infinite",
 			},
 		},
 	},
@@ -168,6 +182,20 @@ module.exports = {
 				},
 				{values: flattenColorPalette(theme("backgroundColor")), type: "color"},
 			);
+		},
+		function ({addUtilities}) {
+			addUtilities({
+				".scrollbar-hide": {
+					/* IE and Edge */
+					"-ms-overflow-style": "none",
+					/* Firefox */
+					"scrollbar-width": "none",
+					/* Safari and Chrome */
+					"&::-webkit-scrollbar": {
+						display: "none",
+					},
+				},
+			});
 		},
 	],
 };

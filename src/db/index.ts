@@ -4,6 +4,7 @@ import {
 	NormalizedSpeakerType,
 	NormalizedSponsorType,
 	NormalizedTestimonialType,
+	iMetricsType,
 	iNormalizedPlaceType,
 } from "@/customTypes/EventTypes";
 
@@ -13,6 +14,7 @@ import sponsor from "./sponsors.json";
 import questions from "./questions.json";
 import speaker from "./speakers.json";
 import places from "./places.json";
+import impact from "./metrics.json";
 
 const eventData = events as NormalizedEventType;
 const testimonialData = testimonial as NormalizedTestimonialType;
@@ -20,6 +22,7 @@ const sponsorData = sponsor as NormalizedSponsorType;
 const questionData = questions as NormalizedQuestionsType;
 const speakers = speaker as NormalizedSpeakerType;
 const placesData = places as iNormalizedPlaceType;
+const impactData = impact as iMetricsType;
 
 export {
 	eventData,
@@ -28,4 +31,5 @@ export {
 	questionData,
 	speakers,
 	placesData,
+	impactData,
 };

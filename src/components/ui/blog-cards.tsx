@@ -48,7 +48,7 @@ export default function BlogCards() {
 	}
 
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10 max-w-7xl mx-auto px-4 mt-10">
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10  mx-auto  max-w-7xl">
 			{stories.ids.map((item) => {
 				const {featuredImage, title, readingTime, publishedAt, postUrl} =
 					stories.items[item];
@@ -58,28 +58,43 @@ export default function BlogCards() {
 						href={postUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-[#f5f5f7] rounded-3xl shadow-[0_6px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.10)] transition-all duration-300 transform hover:scale-[1.015] overflow-hidden relative group"
+						className="group relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out cursor-pointer border border-white/20 backdrop-blur-xl bg-white/5"
 					>
+						{/* Background Image */}
 						<div className="relative aspect-[4/3]">
 							<Image
 								src={featuredImage}
 								fill
 								alt="Blog Cover"
-								className="object-cover"
+								className="object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
-							<div className="absolute top-2 left-2 text-white text-xs flex items-center px-2 py-1 shadow-md bg-black/50 rounded-md">
-								<Clock className="mr-1 h-3 w-3" />
+							{/* Gradient Overlay */}
+							<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+							<div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
+							<div className="absolute inset-0 backdrop-blur-[0.5px]" />
+
+							{/* Reading Time Badge */}
+							<div className="absolute top-4 left-4 text-white text-xs flex items-center px-3 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-xl rounded-full transition-all duration-300 border border-white/20">
+								<Clock className="mr-1.5 h-3.5 w-3.5" />
 								{readingTime} min read
 							</div>
-							<ArrowUpRight className="absolute top-2 right-2 h-6 w-6 text-white bg-black/40 p-1 rounded-full" />
+
+							{/* Arrow Icon */}
+							<div className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-xl p-2.5 rounded-full transition-all duration-300 group-hover:scale-110 border border-white/20">
+								<ArrowUpRight className="text-white w-5 h-5" />
+							</div>
 						</div>
-						<div className="p-6">
-							<p className="text-lg font-medium text-neutral-900 leading-snug mb-2">
-								{title}
-							</p>
-							<time className="text-sm text-neutral-500">
-								{moment(publishedAt).format("MMMM D, YYYY")}
-							</time>
+
+						{/* Content */}
+						<div className="absolute inset-0 flex flex-col justify-end p-6">
+							<div className="transform transition-all duration-500 ease-out group-hover:translate-y-[-8px] text-left">
+								<h3 className="text-white text-xl font-medium tracking-tight mb-2 drop-shadow-lg">
+									{title}
+								</h3>
+								<time className="text-white/90 text-sm font-light drop-shadow-md">
+									{moment(publishedAt).format("MMMM D, YYYY")}
+								</time>
+							</div>
 						</div>
 					</a>
 				);

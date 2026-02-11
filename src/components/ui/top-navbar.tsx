@@ -1,86 +1,152 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 "use client";
 
-import React, {useEffect, useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import Link from "next/link";
 import Image from "next/image";
 import {usePathname} from "next/navigation";
-import {Home, BookOpen, Calendar, Bookmark} from "lucide-react";
+import {Home, BookOpen, Calendar, Bookmark, Heart} from "lucide-react";
 
 import Images from "@/config/constants/Images";
 
-const dockItems = [
+const navItems = [
 	{href: "/", label: "Home", icon: Home},
-	{href: "/sponsor", label: "Sponsor", icon: Bookmark},
+	{href: "/speaker", label: "Speaker", icon: Bookmark},
+	{href: "/events", label: "Events", icon: Calendar},
+	{href: "/story", label: "Blog", icon: BookOpen},
+];
+const navItemsMobile = [
+	{href: "/", label: "Home", icon: Home},
+	{href: "/sponsor", label: "Sponsor", icon: Heart},
+	{href: "/speaker", label: "Speaker", icon: Bookmark},
 	{href: "/events", label: "Events", icon: Calendar},
 	{href: "/story", label: "Blog", icon: BookOpen},
 ];
 
 const DockNavBar = () => {
 	const pathname = usePathname();
-	const isActive = (href: string) => {
-		return pathname === href;
-	};
-
-	const [isShowLogo, setShowLogo] = useState(true);
+	const [isVisible, setIsVisible] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			const currentScrollY = window.scrollY;
-			if (currentScrollY > lastScrollY) {
-				setShowLogo(false); // scrolling down → hide
+
+			// Show navbar if scrolling up or at the top
+			if (currentScrollY < lastScrollY || currentScrollY < 10) {
+				setIsVisible(true);
 			} else {
-				setShowLogo(true); // scrolling up → show
+				setIsVisible(false);
 			}
+
 			setLastScrollY(currentScrollY);
 		};
 
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll, {passive: true});
 		return () => {
 			return window.removeEventListener("scroll", handleScroll);
 		};
 	}, [lastScrollY]);
 
+	const isActive = (href: string) => {
+		if (href === "/") {
+			return pathname === "/";
+		}
+		return pathname.startsWith(href);
+	};
+
 	return (
 		<>
-			{/* Sticky brand logo with scroll-hide effect */}
-			<div className="sticky top-0 z-50">
+			{/* Sticky brand logo */}
+			<div
+				className={`sticky top-0 left-0 z-50 transition-all duration-500 ease-in-out ${
+					isVisible
+						? "translate-y-0 opacity-100"
+						: "-translate-y-4 opacity-0 pointer-events-none"
+				}`}
+			>
 				<Link
 					href="/"
-					className={`fixed top-3 left-4 flex items-center gap-2 pl-1 pr-3 py-1 bg-black/60 backdrop-blur-md rounded-full shadow-lg border border-white/10 transition-all duration-300 ${
-						isShowLogo ? "opacity-100" : "opacity-0 pointer-events-none"
-					}`}
+					className={`fixed top-4 left-4 md:left-4 flex items-center gap-2 pr-2 pl-2 py-1.5 transition-all duration-300 hover:opacity-80 bg-black/40 backdrop-blur-sm shadow-xl rounded-full border border-white/5`}
 				>
-					<div className="w-7 h-7 rounded-full overflow-hidden border border-white/20 shadow-inner">
+					<div className="w-6 h-6 rounded-full overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10">
 						<Image
 							src={Images.brandIcon}
 							alt="Brand Logo"
-							width={32}
-							height={32}
+							width={24}
+							height={24}
 							className="object-cover"
 						/>
 					</div>
-					<span className="text-white font-bold text-sm font-manrope tracking-tight sm:inline">
+					<span
+						className={`font-medium tracking-wide font-sf-pro text-sm text-white`}
+					>
 						MakerChat
 					</span>
 				</Link>
 			</div>
 
-			{/* Bottom-centered dock navbar */}
-			<nav className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-				<div className="flex gap-6 px-6 py-3 bg-black/80 backdrop-blur-md shadow-xl rounded-full border border-white/10">
-					{dockItems.map(({href, label, icon: Icon}) => {
+			{/* Desktop Navigation */}
+			<nav
+				className={`hidden md:block fixed top-3 right-6 z-50 transition-all duration-300 ${
+					isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+				}`}
+			>
+				<div className="flex gap-6 pl-5 pr-2 py-2 bg-black/40 backdrop-blur-sm shadow-xl rounded-full border border-white/5 items-center lowercase">
+					{navItems.map(({href, label}) => {
 						return (
 							<Link
 								key={label}
 								href={href}
-								className={`flex flex-col items-center text-xs transition-all duration-200 ${
-									isActive(href) ? "text-white" : "text-gray-400"
-								} hover:text-white`}
+								className={`flex items-center gap-2 text-base font-medium text-white hover:text-white transition-all duration-200 relative ${
+									isActive(href)
+										? "after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-white after:rounded-full"
+										: ""
+								}`}
 							>
-								<Icon className="w-5 h-5 mb-1" />
+								{label}
+							</Link>
+						);
+					})}
+
+					<Link
+						href="/sponsor"
+						className="ml-4 px-6 py-2 bg-white text-black text-base font-medium rounded-full shadow transition-all duration-200 hover:bg-black hover:text-white flex items-center gap-2"
+					>
+						<Heart className="w-5 h-5" />
+						Sponsor Us
+					</Link>
+				</div>
+			</nav>
+
+			{/* Mobile Navigation */}
+			<nav className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+				<div className="flex gap-6 px-6 py-3 bg-black/40 backdrop-blur-sm shadow-xl rounded-full border border-white/5">
+					{navItemsMobile.map(({href, label, icon: Icon}) => {
+						return (
+							<Link
+								key={label}
+								href={href}
+								className={`flex flex-col items-center text-xs transition-all duration-200 text-white hover:text-white`}
+							>
+								<Icon
+									className="w-5 h-5 mb-1"
+									fill={
+										isActive(href)
+											? href === "/sponsor"
+												? "white"
+												: "white"
+											: "none"
+									}
+									stroke={
+										isActive(href)
+											? href === "/sponsor"
+												? "white"
+												: "white"
+											: "white"
+									}
+								/>
 								{label}
 							</Link>
 						);
