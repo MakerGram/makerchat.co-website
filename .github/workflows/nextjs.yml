@@ -101,6 +101,12 @@ jobs:
           echo "=== Directory Contents ==="
           ls -la
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: yarn
+
       - name: Setup Pages
         if: github.actor != 'nektos/act'
         uses: actions/configure-pages@v5
